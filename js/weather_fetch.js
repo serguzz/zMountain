@@ -25,7 +25,9 @@ function drawWeatherWidget() {
 
             } else {
 
-                document.querySelector('.weather_city').textContent = "Погода в " + data.name;
+              //  document.querySelector('.weather_city').textContent = "Погода в " + data.name;
+                document.querySelector('.weather_city').innerHTML = "Погода в " + `<img src="images/location_red.png" width="15" height="20" background="transparent">  ` +  data.name;
+
                 //data.main.temp содержит значение в Кельвинах, отнимаем от  273, чтобы получить значение в градусах Цельсия
               //  document.querySelector('.weather_forecast').innerHTML = Math.round(data.main.temp - 273) + '&deg;';
                 //Добавляем описание погоды

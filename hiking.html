@@ -16,12 +16,14 @@
   ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+	<!-- Modal windows styles -->
+	<link rel="stylesheet" href="css/modal.css">
 
 	<!-- Owl Carousel Assets -->
-    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
-    <!-- CSS
+  <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+  <!-- CSS
   ================================================== -->
-  	<link rel="stylesheet" href="css/zerogrid.css">
+  <link rel="stylesheet" href="css/zerogrid.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/menu.css">
 
@@ -99,7 +101,7 @@
 						<div class="bl"></div>
 					</div>
 					<div class="heading-text">
-						<h2>We do hiking</h2>
+						<h2>Походи в гори</h2>
 						<p>When you go beyond the boundary</p>
                        	 <p>  Mountains will support you</p>
 					</div>
@@ -116,7 +118,7 @@
 	<div class="wrap-container">
 		<!------------content-box-1-------------------->
 		<section class="content-box box-1">
-			<div class="">
+
 				<div class="row wrap-box"><!--Start Box-->
 					<div class="header">
 						<h2>Походи в Карпати</h2>
@@ -171,8 +173,93 @@
 						</div>
 					</div>
 				</div>
+
+		</section>
+
+		<!-----------------Tours descriptions box. With modal windows.
+		Styled like original content-box-4 (repeated below)------------>
+
+		<!-- Модальне вікно загальне  -->
+		<div class="modal" id="hiking_modal">
+			<div class="modal_content">
+				<button id="hiking_modal_closer" class="modal_closer"><img src="./images/close.png" width="35" alt="close"></button>
+				<!-- Контент модального окна -->
+				<img id="hiking_modal_img" class="hiking_modal_img" src="" alt="Говерла">
+				<h1 id="hiking_modal_title" class="modal_title">Тестовий похід</h1>
+				<p id="hiking_modal_description" class="modal_description">Тестове описання</p>
+				<a class="button button-skin button-service" href="tel:+380950137282">Хочу в похід</a>
+			</div>
+		</div>
+
+		<section class="content-box box-4">
+			<div class="zerogrid">
+				<div class="row wrap-box"><!--Start Box-->
+					<div class="header">
+						<h2>Маршрути</h2>
+						<p class="intro">На вибір варіанти маршрутів різної складності <br>для будь-якого рівня підготовки.</p>
+					</div>
+
+					<div class="content">
+						<div class="column sm-1-3">
+							<div class="wrap-col">
+								<div class="box-entry">
+
+									<div class="box-entry-inner hiking_modal_opener" data-name="hoverla">
+									<img src="images/mountains/hoverla_cut.jpg" class="img-responsive"/>
+									<div class="entry-details">
+											<div class="entry-des">
+												<span><a href="#">08th Apr 2017</a></span>
+												<h3><a href="#">Похід на Говерлу</a></h3>
+
+													<p>Гове́рла — найвища вершина Українських Карпат і найвища точка України, її висота становить 2 061 м над рівнем моря</p>
+
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+						<div class="column sm-1-3">
+							<div class="wrap-col">
+								<div class="box-entry">
+									<div class="box-entry-inner hiking_modal_opener" data-name="pipivan">
+										<img src="images/mountains/pipivan.jpg" class="img-responsive"/>
+										<div class="entry-details">
+											<div class="entry-des">
+												<span><a href="#">08th Apr 2017</a></span>
+												<h3><a href="#">Обсерваторія на Піп Іван</a></h3>
+												<p>Піп Іван Чорногірський (2028 м) – третя за висотою вершина Українських Карпат, одна з основних вершин Чорногірського хребта...</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="column sm-1-3">
+							<div class="wrap-col">
+								<div class="box-entry">
+									<div class="box-entry-inner hiking_modal_opener" data-name="homyak">
+										<img src="images/mountains/homyak_cut.jpg" class="img-responsive"/>
+										<div class="entry-details">
+											<div class="entry-des">
+												<span><a href="#">08th Apr 2017</a></span>
+												<h3><a href="#">гора Хом'як</a></h3>
+												<p>Гора Хом'як є популярним пунктом у пішохідних маршрутах вихідного дня. З вершини видно сусідні гори і хребти... </p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
 			</div>
 		</section>
+
 
 		<!-----------------content-box-2-------------------->
 		<section class="content-box box-2">
@@ -180,7 +267,7 @@
 				<div class="row wrap-box"><!--Start Box-->
 					<div class="column sm-1-2">
 						<div class="wrap-col">
-							<img src="images/about.png" />
+							<img src="images/mountains/hiking_about_cut.jpg" />
 						</div>
 					</div>
 					<div class="column sm-1-2">
@@ -603,6 +690,8 @@
 
 	<script type="text/javascript" src="js/validator.min.js"></script>
 	<script type="text/javascript" src="js/form-scripts.js"></script>
+
+	<script type="text/javascript" src="js/modal.js"></script>
 
 </div>
 </body>
