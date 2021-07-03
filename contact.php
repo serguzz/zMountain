@@ -9,14 +9,6 @@ if (empty($_POST["name"])) {
     $name = $_POST["name"];
 }
 
-// NAME2
-if (empty($_POST["name2"])) {
-    $name2 = "Name2 is empty ";
-} else {
-    $name2 = $_POST["name2"];
-}
-
-
 // EMAIL
 if (empty($_POST["email"])) {
     $errorMSG .= "Email is required ";
@@ -55,11 +47,6 @@ $Body .= "Name: ";
 $Body .= $name;
 $Body .= "\n";
 
-$Body .= "Name2: ";
-$Body .= $name2;
-$Body .= "\n";
-
-
 $Body .= "Email: ";
 $Body .= $email;
 $Body .= "\n";
@@ -70,9 +57,9 @@ $Body .= "\n";
 
 $Body .= "Subject: ";
 $Body .= $subject;
-$Body .= "\n";
+$Body .= "\n\n";
 
-$Body .= "Message: ";
+$Body .= "Message: \n\n";
 $Body .= $message;
 $Body .= "\n";
 
