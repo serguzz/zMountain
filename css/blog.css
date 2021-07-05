@@ -1,0 +1,85 @@
+.blogpost-container {
+  background: #f0f0f0;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 4px 2px -2px;
+  font-weight: 200;
+  margin: 60px auto;
+  width: 80%;
+
+}
+.blogpost-container a:hover {
+  border-color: #ff4d4d;
+  color: blue;
+}
+.blogpost-cover {
+    background: url(../images/mountains/machu_picchu_wide.jpg);
+    background-size: cover;
+    border-radius: 5px 5px 0 0;
+    height: 15rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 30px 30px 16px;
+}
+.blogpost-body {
+  margin: 0 auto;
+  width: 80%;
+}
+.blogpost-title h1 a {
+  color #333;
+  font-weight: 200;
+}
+.blogpost-text p {
+  color: #4d4d4d;
+}
+.blogpost-tags {
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-left: 0;
+}
+.blogpost-tags li + li {
+  margin-left: .5rem;
+}
+.blogpost-tags a {
+  border: 1px solid #999999;
+  border-radius: 3px;
+  color: #999999;
+  font-size: .75rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  letter-spacing: 1px;
+  padding: 0 0.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  width: 5rem;
+}
+.blogpost-footer {
+  border-top: 1px solid grey;
+  margin: 0 auto;
+  padding-bottom: 0.125rem;
+  width: 80%;
+}
+.blogpost-footer ul {
+  list-style: none;
+  display: flex;
+  flex: row wrap;
+  justify-content: flex-end;
+  padding-left: 0;
+}
+.blogpost-footer li {
+  color: #999999;
+  font-size: .75rem;
+  height: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  white-space: nowrap;
+}
+.published-date {
+  border: 1px solid #999999;
+  border-radius: 3px;
+  padding: 0 5px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}

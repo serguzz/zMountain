@@ -122,10 +122,11 @@ header#header .main-header{background: url(../images/hero.jpg);background-size: 
 header#header .windsurfing-header{background: url(../images/windsurfing/wind_main.jpg);background-size: cover;overflow: hidden;padding: 120px 0;position: relative}
 header#header .kiteboarding-header{background: url(../images/kiteboarding/marmari_kite.jpg);background-size: cover;overflow: hidden;padding: 120px 0;position: relative}
 header#header .hiking-header{background: url(../images/hero.jpg);background-size: cover;overflow: hidden;padding: 120px 0;position: relative}
+header#header .blog-header{background: url(../images/mountains/machu_picchu_wide.jpg);background-size: cover;overflow: hidden;padding: 120px 0;position: relative}
 
 
 header .main-header:before{position: absolute;content: ""; height: 100%; width: 100%;background: rgba(0, 0, 0, .55);top: 0;left: 0;right: 0;bottom: 0;}
-header .hiking-header:before{position: absolute;content: ""; height: 100%; width: 100%;background: rgba(0, 0, 0, .55);top: 0;left: 0;right: 0;bottom: 0;}
+header .hiking-header:before{position: absolute;content: ""; height: 100%; width: 100%;background: rgba(0, 0, 0, .25);top: 0;left: 0;right: 0;bottom: 0;}
 
 header .heading-text h2{font-family: 'Lobster', cursive;font-size: 65px;color: #fff; font-weight: 400;letter-spacing: 5px;margin: 40px 0 20px;}
 header .heading-text p{color: #fff; font-size: 25px;font-family: 'Poppins', sans-serif;line-height: 35px;}
