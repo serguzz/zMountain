@@ -128,7 +128,7 @@ header#header .blog-header{background: url(../images/mountains/machu_picchu_wide
 header .main-header:before{position: absolute;content: ""; height: 100%; width: 100%;background: rgba(0, 0, 0, .55);top: 0;left: 0;right: 0;bottom: 0;}
 header .hiking-header:before{position: absolute;content: ""; height: 100%; width: 100%;background: rgba(0, 0, 0, .25);top: 0;left: 0;right: 0;bottom: 0;}
 
-header .heading-text h2{font-family: 'Lobster', cursive;font-size: 65px;color: #fff; font-weight: 400;letter-spacing: 5px;margin: 40px 0 20px;}
+header .heading-text h2{font-family: 'Lobster', cursive;font-size: 55px;color: #fff; font-weight: 400;letter-spacing: 5px;margin: 10px 0 20px;}
 header .heading-text p{color: #fff; font-size: 25px;font-family: 'Poppins', sans-serif;line-height: 35px;}
 
 header #logo{}
@@ -159,7 +159,7 @@ header #logo{}
   .content-box .wrap-box {padding:20px 10px; position: relative;}
   .content-box .header {text-align: center; margin: 10px 0 20px;}
 }
-.content-box .header {text-align: center; margin: 20px 0 0px;}
+.content-box .header {text-align: center; margin: 20px 0 0px; margin-bottom: 30px;}
 .content-box .header h2{text-transform: uppercase;font-size: 30px;line-height: 40px;letter-spacing: 15px;font-weight: 500;color: #141414;margin-bottom: 25px;}
 .content-box .header .intro {color: #555;font-size: 16px;line-height: 23px;font-weight: 300;margin-bottom: 10px;}
 .content-box .content{margin: 50px auto 20px;}
@@ -180,6 +180,7 @@ header #logo{}
 .content-box.box-1 .owl-carousel .item p{margin: 0; }
 
 .content-box.box-2 .wrap-box{padding: 0 10px 100px;}
+.box-2 img {border-radius: 5px; margin: 12px 0px;}
 
 .content-box.box-3 .wrap-box{}
 
@@ -430,7 +431,7 @@ textarea {display:block;width:100%;height:200px;color:#111;border:1px solid #999
 
 
 
-.hero-heading {display: inline-block;font-weight: 300;letter-spacing: 4px;line-height: 41px;margin: 29px 15px 56px;min-height: 41px;padding-left: 0.3em;position: relative;text-transform: uppercase;}
+.hero-heading {display: inline-block;font-weight: 300;letter-spacing: 4px;line-height: 41px;margin: 29px 15px 56px;min-height: 41px;padding-left: 0.3em;position: relative;;}
 .hero-heading::before {border-top: 2px solid transparent;content: "";display: block;height: 17px;left: 0;position: absolute;top: -29px;width: 100%;}
 .hero-heading::after {border-bottom: 2px solid transparent;bottom: -31px;content: "";display: block;height: 17px;left: 0;position: absolute;width: 100%;}
 .hero-heading > span {display: block;margin: 0 -17px;font-size: 30px;}
@@ -449,7 +450,7 @@ textarea {display:block;width:100%;height:200px;color:#111;border:1px solid #999
 header .hero-heading{color: #fff;}
 header .hero-heading::before{top: -40px;}
 header .hero-heading::after{bottom: -40px;}
-header .hero-heading > span {font-size: 76px;margin: 10px -17px 0;font-family: 'Poppins', sans-serif;}
+header .hero-heading > span {font-size: 76px;margin: 10px -17px 0;font-family: 'Poppins', sans-serif; font-weight: 500;transform: scale(1.1, 1.4);}
 header .hero-heading .tl {top: -40px;height: 25px;}
 header .hero-heading .tr {top: -40px;height: 25px;}
 header .hero-heading .br {bottom: -40px;height: 25px;}
@@ -621,4 +622,19 @@ header .hero-heading .bl {bottom: -40px;height: 25px;}
 }
 .weather_icon {
   vertical-align: middle;
+}
+
+/* [1] The container */
+.img-hover-zoom {
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+  transition: transform .5s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  transform: scale(1.5);
 }

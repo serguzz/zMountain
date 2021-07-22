@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /db
+Disallow: /config
+Disallow: /db.php
+Allow: /*.css
+Allow: /*.js
+Host: https://travelearth.cu.ma
+Sitemap: https://travelearth.cu.ma/sitemap.xml
