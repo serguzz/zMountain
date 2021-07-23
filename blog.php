@@ -184,6 +184,7 @@
 			<div class="blogpost-container">
 				<div class="blogpost-header">
 					<div class="blogpost-cover">
+						<img src="images/blog/tenerife.jpg">
 					</div>
 				</div>
 				<div class="blogpost-body">

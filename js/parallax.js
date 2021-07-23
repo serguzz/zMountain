@@ -23,7 +23,7 @@ $('.img-parallax').each(function(){
     }
     img.css({
       top: imgPercent + '%',
-      transform: 'translate(-50%, -' + imgPercent + '%)'
+      transform: 'translate(0%, -' + imgPercent + '%)'
     });
   }
   $(document).on({

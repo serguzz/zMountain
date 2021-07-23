@@ -10,7 +10,7 @@ fetch("db/blogposts.php")
             let blog_html = '<div class="blogpost-container">'+
             				          '<div class="blogpost-header">' +
             				            '<div class="blogpost-cover" id="blogpost_' + blogItem['id'] + '_cover" >' +
-
+                                  '<img src="images/blog/' + blogItem['image'] + '">' +
                       					'</div>' +
                       				'</div>' +
                       				'<div class="blogpost-body">' +
@@ -37,8 +37,8 @@ fetch("db/blogposts.php")
 
             $('#blog_container').append(blog_html);
 
-            let blogpostCover = document.getElementById("blogpost_" + blogItem['id'] + "_cover");
-            blogpostCover.style.background = 'url(images/blog/' + blogItem['image'] + ')';
+            //let blogpostCover = document.getElementById("blogpost_" + blogItem['id'] + "_cover");
+            //blogpostCover.style.background = 'url(images/blog/' + blogItem['image'] + ')';
 
           }
       })

@@ -12,17 +12,31 @@
   color: blue;
 }
 .blogpost-cover {
-    background: url(../images/mountains/machu_picchu_wide.jpg);
-    background-size: cover;
+    /* background: url(../images/mountains/machu_picchu_wide.jpg);
+    background-size: cover; */
     border-radius: 5px 5px 0 0;
-    height: 40rem;
+    /* height: 40rem; */
     box-shadow: rgba(0, 0, 0, 0.3) 0 30px 30px 16px;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 50%;
+    position: relative;
+}
+.blogpost-cover img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
 }
 
 @media all and (max-width: 500px){
   .blogpost-cover {
-    height: 15rem;
+    /*height: 15rem;*/
     box-shadow: rgba(0, 0, 0, 0.3) 0 5px 10px 10px;
+    padding-top: 66%;
 
   }
   .blogpost-container {
