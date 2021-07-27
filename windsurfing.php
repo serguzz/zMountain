@@ -56,41 +56,10 @@
 
 <!--////////////////////////////////////Header-->
 <!---Top Menu--->
-<div id="cssmenu" >
-	<ul>
-	   <li class="active"><a href="index.php"><span>TravelEarth</span></a></li>
-	   <li class="has-sub"><a href="#"><span>Activities</span></a>
-		  <ul>
-			 <li class="has-sub"><a href="windsurfing.php"><span>Віндсерфінг</span></a>
-				<ul>
-				   <li><a href="#"><span>Навчання</span></a></li>
-				   <li class="last"><a href="#"><span>Прокат</span></a></li>
-				</ul>
-			 </li>
-			 <li><a href="kiteboarding.php"><span>Кайтбординг</span></a>
-			 </li>
-			 <li><a href="#"><span>SUP дошки</span></a>
+<?php
+include 'templates/menu.php';
+ ?>
 
-			 </li>
-			 <li><a href="hiking.php"><span>Походи</span></a>
-
-			 </li>
-		  </ul>
-	   </li>
-		 <li><a href="blog.php"><span>Блог</span></a></li>
-	   <li><a href="sandbox.php"><span>Sandbox</span></a></li>
-		 <li class="has-sub"><a href="#"><span>Партнери</span></a>
-			 	<ul>
-					<li><a href="https://travelearth.zyrosite.com"><span>TravelEarth</span></a>
-					<li><a href="https://www.facebook.com/sergiy.shevchenko.16"><span>Sergiy Shevchenko</span></a>
-
-	 			 </li>
-				</ul>
-		 </li>
-	   <li><a href="single.php"><span>Про нас</span></a></li>
-	   <li class="last"><a href="contact.html"><span>Контакти</span></a></li>
-	</ul>
-</div>
 <header id="header">
 	<div class="wrap-header" >
 		<!---Main Header--->
@@ -462,175 +431,30 @@
 			</div>
 		</section>
 
-		<!-----------------content-box-6-------------------->
-		<section class="content-box box-6 box-style-3">
-			<div class="zerogrid">
-			<div class="row wrap-box"><!--Start Box-->
-				<div class="">
-					<div class="box-text">
-						<div class="header">
-							<h2>Contact Me</h2>
-							<p class="intro">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming<br> id quod mazim placerat facer possim assum. </p>
-						</div>
-						<div class="content">
-							<div class="subscribe-form">
-								<form role="form" id="contactForm" data-toggle="validator">
-									<div class="row">
-										<div class="column sm-1-3">
-											<div class="wrap-col">
-												<input type="text" name="name" id="name" placeholder="Enter Your Email" required="required" />
-												<div class="help-block with-errors"></div>
-											</div>
-										</div>
-										<div class="column sm-1-3">
-											<div class="wrap-col">
-												<input type="email" name="email" id="email" placeholder="Enter Your Email" required="required" />
-												<div class="help-block with-errors"></div>
-											</div>
-										</div>
-										<div class="column sm-1-3">
-											<div class="wrap-col">
-												<input type="text" name="subject" id="subject" placeholder="Enter Your Subject" />
-												<div class="help-block with-errors"></div>
-											</div>
-										</div>
-									</div>
-									<div class="row">
-										<div class="column full">
-											<div class="wrap-col">
-												<textarea id="message" placeholder="Message"></textarea>
-												<div class="help-block with-errors"></div>
-											</div>
-										</div>
-									</div>
-									<div class="row">
-										<div class="column full">
-											<div class="wrap-col">
-												<button class="button button-skin button-subscribe" type="submit" name="Submit" >Send</button>
-												<div id="msgSubmit" class="h3 text-center hidden"></div>
-											</div>
-										</div>
-									</div>
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			</div>
-		</section>
+		<!-------content-box-6--Contact Me Section----------->
+		<?php
+ 			include 'templates/contact-me-section.php';
+		?>
+
 
 	</div>
 
 </section>
 
 
-<!--Red Pulse Callback button-->
-	<button id="callback-button" class="pulse-button">
-
-			<span class="pulse-button_text">Замовити дзвінок</span>
-			<span class="pulse-button_rings"></span>
-			<span class="pulse-button_rings"></span>
-			<span class="pulse-button_rings"></span>
-	</button>
-
-<!---Callback contact form (inside a collback modal window)------------>
-<!-- Модальне вікно замовлення callback  -->
-<div class="modal" id="callback_modal">
-	<div class="modal_content">
-		<button id="callback_modal_closer" class="modal_closer"><img src="./images/close.png" width="35" alt="close"></button>
-
-		<div class="contact">
-			<h3 style="margin: 20px 0 20px 30px">Залиште заявку на дзвінок</h3>
-			<div id="callback_form">
-				<form role="form" id="callbackForm" data-toggle="validator">
-					<div class="row">
-						<div class="col-sm-1-3">
-							<div class="wrap-col">
-								<input type="text" name="name" id="name" placeholder="Ваше ім'я" required="required" />
-								<div class="help-block with-errors"></div>
-							</div>
-						</div>
-
-						<div class="col-sm-1-3">
-							<div class="wrap-col">
-								<input type="text" name="phone_number" id="phone_number" placeholder="Номер телефону" required="required" />
-								<div class="help-block with-errors"></div>
-							</div>
-						</div>
-
-					</div>
-					<div class="row">
-						<div class="col-full">
-							<div class="wrap-col">
-								<textarea id="message" placeholder="Повідомлення"></textarea>
-								<div class="help-block with-errors"></div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-full">
-							<div class="wrap-col">
-								<button class="button button-skin button-subscribe" type="submit" name="Submit" >Send</button>
-								<div id="msgSubmit" class="h3 text-center hidden"></div>
-							</div>
-						</div>
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
-</div>
+<!--Red Pulse Callback button and hidden modal form-->
+<?php
+	include 'templates/callback_elements.php';
+?>
 
 <!----End of Callback modal window------------------------->
 
 <!--////////////////////////////////////Footer-->
-<footer id="footer">
-	<div class="zerogrid wrap-footer">
-		<div class="row">
-			<div class="column sm-2-4 column footer-1">
-				<div class="wrap-col">
-					<h3 class="widget-title">About</h3>
-					<p>Більшість часу ми в походах, сплавах, проводимо уроки віндсерфінгу в Києві на Дніпрі, кайтсерфінгу на Чорному морі.</p>
-					<p>Для звязку телефонуйте або пишіть на месенджери за номером +380950137282. Також залишайте повідомлення через форму зв'язку або на email: serguz@ukr.net. Кращий спосіб - це месенджери або повідомлення у фейсбук</p>
-					<ul class="quicklinks">
-						<li><a href="#">Privacy Policy</a></li>
-						<li><a href="#">Terms of Use</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="column sm-1-4 column footer-2">
-				<div class="wrap-col">
-					<h3 class="widget-title">Contact Us</h3>
-					<p>Call us:</p>
-					<strong style="font-size: 25px;">+380 95 0137282</strong>
-					<p>Address:</p>
-					<strong>03127, Ukraine, Kyiv, Sechenova, 6</strong>
-					<p>Email:</p>
-					<strong>serguz@ukr.net</strong>
-				</div>
-			</div>
-			<div class="column sm-1-4 column footer-3">
-				<div class="wrap-col">
-					<h3 class="widget-title">Socials</h3>
-					<ul class="social-buttons">
-						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="https://www.facebook.com/sergiy.shevchenko.16"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-						<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="bottom-footer">
-			<div class="copyright">
-				Copyright @ zMountain - Designed by Zerotheme | <a href="https://www.zerotheme.com" title="TravelEarth - Free Travel Idea">TravelEarth</a>
-			</div>
-		</div>
-	</div>
+<?php
+	include 'templates/footer.php';
+?>
 
-</footer>
-
+</div><
 
 	<!-- Google Map -->
 	<script src="js/google-map.js"></script>
@@ -657,27 +481,9 @@
 	  });
 	});
 	</script>
-	<script>
-	$(document).ready(function(){
-		$(window).resize(function(){
-			var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-			if (width >= '768') {
-				var footerHeight = $('#footer').outerHeight();
-				$('#container').css({'marginBottom': footerHeight + 'px'});
-			}else{
-				$('#container').css({'marginBottom': '0px'});
-			}
-		});
-		$(window).resize();
-	});
-    </script>
-
-</div>
 
 <script type="text/javascript" src="js/validator.min.js"></script>
 <script type="text/javascript" src="js/form-scripts.js"></script>
-
-<script type="text/javascript" src="js/modal.js"></script>
 <script type="text/javascript" src="js/callback.js"></script>
 
 </body></html>

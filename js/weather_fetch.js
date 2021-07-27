@@ -17,7 +17,7 @@ function drawWeatherWidget() {
     fetch('https://api.openweathermap.org/data/2.5/weather?q=' + cityName + '&lang=ua&appid=' + openWeatherMapKey)
       .then(function (resp) {return resp.json() })
         .then(function (data) {
-            console.log(data);
+            //console.log(data);
             //добавляем название города
 
             if (data.message === "city not found") {

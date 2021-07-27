@@ -25,6 +25,9 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/menu.css">
 
+	<link rel="stylesheet" href="css/pulse.css">
+	<link rel="stylesheet" href="css/modal.css">
+
 	<!-- Custom Fonts -->
 	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
@@ -49,42 +52,10 @@
 
 <!--////////////////////////////////////Header-->
 <!---Top Menu--->
-<div id="cssmenu" >
-	<ul>
-	   <li class="active"><a href="index.php"><span>TravelEarth</span></a></li>
-	   <li class="has-sub"><a href="#"><span>Activities</span></a>
-		  <ul>
-			 <li class="has-sub"><a href="windsurfing.php"><span>Віндсерфінг</span></a>
-				<ul>
-				   <li><a href="#"><span>Навчання</span></a></li>
-				   <li class="last"><a href="#"><span>Прокат</span></a></li>
-				</ul>
-			 </li>
-			 <li><a href="kiteboarding.php"><span>Кайтбординг</span></a>
-			 </li>
-			 <li><a href="#"><span>SUP дошки</span></a>
+<?php
+	include 'templates/menu.php';
+ ?>
 
-			 </li>
-			 <li><a href="hiking.php"><span>Походи</span></a>
-
-			 </li>
-		  </ul>
-	   </li>
-		 <li><a href="blog.php"><span>Блог</span></a></li>
-	   <li><a href="sandbox.php"><span>Sandbox</span></a></li>
-		 <li class="has-sub"><a href="#"><span>Партнери</span></a>
-			 	<ul>
-					<li><a href="https://travelearth.zyrosite.com"><span>TravelEarth</span></a>
-					<li><a href="https://www.facebook.com/sergiy.shevchenko.16"><span>Sergiy Shevchenko</span></a>
-
-	 			 </li>
-				</ul>
-		 </li>
-
-	   <li><a href="single.php"><span>Про нас</span></a></li>
-	   <li class="last"><a href="contact.html"><span>Контакти</span></a></li>
-	</ul>
-</div>
 <header id="header">
 	<div class="wrap-header" >
 		<!---Main Header--->
@@ -204,77 +175,25 @@
 
 </section>
 
+<!--Red Pulse Callback button and hidden modal form-->
+<?php
+	include 'templates/callback_elements.php';
+?>
 
+<!----End of Callback modal window------------------------->
 <!--////////////////////////////////////Footer-->
-<footer id="footer">
-	<div class="zerogrid wrap-footer">
-		<div class="row">
-			<div class="col-sm-2-4 col-footer-1">
-				<div class="wrap-col">
-					<h3 class="widget-title">About</h3>
-						<p>Більшість часу ми в походах, сплавах, проводимо уроки віндсерфінгу в Києві на Дніпрі, кайтсерфінгу на Чорному морі.</p>
-						<p>Для звязку телефонуйте або пишіть на месенджери за номером +380950137282. Також залишайте повідомлення через форму зв'язку або на email: serguz@ukr.net. Кращий спосіб - це месенджери або повідомлення у фейсбук</p>
-					<ul class="quicklinks">
-						<li><a href="#">Privacy Policy</a></li>
-						<li><a href="#">Terms of Use</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="col-sm-1-4 col-footer-2">
-				<div class="wrap-col">
-					<h3 class="widget-title">Contact Us</h3>
-					<p>Call us:</p>
-					<strong style="font-size: 25px;">+380 95 0137282</strong>
-					<p>Address:</p>
-					<strong>6, Sechenova street, Kyiv 03127, Ukraine</strong>
-					<p>Email:</p>
-					<strong>serguz@ukr.net</strong>
-				</div>
-			</div>
-			<div class="col-sm-1-4 col-footer-3">
-				<div class="wrap-col">
-					<h3 class="widget-title">Socials</h3>
-					<ul class="social-buttons">
-						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="https://www.facebook.com/sergiy.shevchenko.16/"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="https://www.instagram.com/s.sergiy/"><i class="fa fa-instagram"></i></a></li>
-
-						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-						<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="bottom-footer">
-			<div class="copyright">
-				Copyright @ zMountain - Designed by Zerotheme | <a href="https://www.zerotheme.com" title="TravelEarth - Free Travel Idea">TravelEarth</a>
-			</div>
-		</div>
-	</div>
-
-</footer>
+<?php
+ 	include 'templates/footer.php';
+	?>
 
 	<!-- Google Map -->
 	<script src="js/google-map.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6hLiLmxnIiaGZKY3plTi4hrsPkSnVQvY&callback=initMap" async defer></script>
 
-	<script>
-	$(document).ready(function(){
-		$(window).resize(function(){
-			var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-			if (width >= '768') {
-				var footerHeight = $('#footer').outerHeight();
-				$('#container').css({'marginBottom': footerHeight + 'px'});
-			}else{
-				$('#container').css({'marginBottom': '0px'});
-			}
-		});
-		$(window).resize();
-	});
-  </script>
-
 	<script type="text/javascript" src="js/validator.min.js"></script>
 	<script type="text/javascript" src="js/form-scripts.js"></script>
+	<script type="text/javascript" src="js/callback.js"></script>
+
 
 </div>
 </body></html>
