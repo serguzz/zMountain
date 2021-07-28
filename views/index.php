@@ -1,69 +1,72 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+    <!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Travelearth - Free Travel Idea</title>
+	<meta name="description" content="Free Travel Idea | travelearth.cu.ma">
+	<meta name="author" content="serguz">
+
+    <!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+ 	<link rel="shortcut icon" href="template/images/favicon.png" type="image/x-icon">
+
+	<!-- Owl Carousel Assets -->
+    <link rel="stylesheet" href="template/owlcarousel/assets/owl.carousel.min.css">
+    <!-- CSS
+  ================================================== -->
+	<!-- My parallax styles -->
+	<link rel="stylesheet" href="template/css/parallax.css">
+
+	<link rel="stylesheet" href="template/css/zerogrid.css">
+	<link rel="stylesheet" href="template/css/style.css">
+	<link rel="stylesheet" href="template/css/menu.css">
+	<!-- Modal windows styles -->
+	<link rel="stylesheet" href="template/css/modal.css">
+	<!-- Pulse button styles -->
+	<link rel="stylesheet" href="template/css/pulse.css">
+
+
+
+	<!-- Custom Fonts -->
+	<link href="template/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+	<script src="template/js/jquery.min.js" type="text/javascript"></script>
+	<script src="template/js/script.js"></script>
+
+	<!--[if lt IE 8]>
+       <div style=' clear: both; text-align:center; position: relative;'>
+         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+        </a>
+      </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+		<script src="js/html5.js"></script>
+		<script src="js/css3-mediaqueries.js"></script>
+	<![endif]-->
+
+</head>
+<body class="index-page">
+
 <?php
-
-define('ROOT', dirname(__FILE__));
-
-include 'header.php';
+	include 'layouts/callback_elements.php';
 ?>
 
-<!--Pulse Callback button-->
-  <button id="callback-button" class="pulse-button">
+<div class="wrap-body">
 
-      <span class="pulse-button_text">Замовити дзвінок</span>
-      <span class="pulse-button_rings"></span>
-      <span class="pulse-button_rings"></span>
-      <span class="pulse-button_rings"></span>
-  </button>
-
-
-<!---Callback contact form (inside a collback modal window)------------>
-
-<!-- Модальне вікно замовлення callback  -->
-<div class="modal" id="callback_modal">
-  <div class="modal_content">
-    <button id="callback_modal_closer" class="modal_closer"><img src="./images/close.png" width="35" alt="close"></button>
-
-    <div class="contact">
-      <h3 style="margin: 20px 0 20px 30px">Залиште заявку на дзвінок</h3>
-      <div id="callback_form">
-        <form role="form" id="callbackForm" data-toggle="validator">
-          <div class="row">
-            <div class="col-sm-1-3">
-              <div class="wrap-col">
-                <input type="text" name="name" id="name" placeholder="Ваше ім'я" required="required" />
-                <div class="help-block with-errors"></div>
-              </div>
-            </div>
-
-            <div class="col-sm-1-3">
-              <div class="wrap-col">
-                <input type="text" name="phone_number" id="phone_number" placeholder="Номер телефону" required="required" />
-                <div class="help-block with-errors"></div>
-              </div>
-            </div>
-
-          </div>
-          <div class="row">
-            <div class="col-full">
-              <div class="wrap-col">
-                <textarea id="message" placeholder="Повідомлення"></textarea>
-                <div class="help-block with-errors"></div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-full">
-              <div class="wrap-col">
-                <button class="button button-skin button-subscribe" type="submit" name="Submit" >Send</button>
-                <div id="msgSubmit" class="h3 text-center hidden"></div>
-              </div>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-
-  </div>
-</div>  <!--end of Callback order modal window------->
+<!--////////////////////////////////////Header-->
+<?php
+	include 'layouts/menu.php';
+ ?>
 
 <header id="header">
 	<div class="wrap-header" >
@@ -107,10 +110,10 @@ include 'header.php';
 					<div class="content">
 						<div id="owl-slide" class="owl-carousel">
 							<div class="item">
-								<img src="images/windsurfing/front_cut.jpg" />
+								<img src="template/images/windsurfing/front_cut.jpg" />
 								<div class="carousel-caption">
 									<div class="carousel-caption-inner">
-										<p class="carousel-caption-title"><a href="windsurfing.php">Навчання віндсерфінгу в Києві</a></p>
+										<p class="carousel-caption-title"><a href="windsurfing">Навчання віндсерфінгу в Києві</a></p>
 										<p class="carousel-caption-category"><a href="#" rel="category tag">віндсерфінг</a>,
 										<a href="#" rel="category tag">прокат</a>, <a href="#" rel="category tag">інструктор</a>
 										</p>
@@ -118,10 +121,10 @@ include 'header.php';
 								</div>
 							</div>
 							<div class="item">
-								<img src="images/kiteboarding/foil_1600.jpg" />
+								<img src="template/images/kiteboarding/foil_1600.jpg" />
 								<div class="carousel-caption">
 									<div class="carousel-caption-inner">
-										<p class="carousel-caption-title"><a href="kiteboarding.php">кайт сафарі на Чорному морі</a></p>
+										<p class="carousel-caption-title"><a href="kiteboarding">кайт сафарі на Чорному морі</a></p>
 										<p class="carousel-caption-category"><a href="#" rel="category tag">кайтсерфінгу</a>,
 										<a href="#" rel="category tag">кайт</a>, <a href="#" rel="category tag">навчання</a>
 										</p>
@@ -129,10 +132,10 @@ include 'header.php';
 								</div>
 							</div>
 							<div class="item">
-								<img src="images/mountains/carpath1_cut.jpg" />
+								<img src="template/images/mountains/carpath1_cut.jpg" />
 								<div class="carousel-caption">
 									<div class="carousel-caption-inner">
-										<p class="carousel-caption-title"><a href="hiking.php">походи в карпати</a></p>
+										<p class="carousel-caption-title"><a href="hiking">походи в карпати</a></p>
 										<p class="carousel-caption-category"><a href="#" rel="category tag">карпати</a>,
 										<a href="#" rel="category tag">гід</a>, <a href="#" rel="category tag">похід</a>
 										</p>
@@ -151,19 +154,19 @@ include 'header.php';
 				<h2>Our services</h2>
 			</div>
 			<div class="parallax-block">
-  			<img src="images/windsurfing/wind_main.jpg" data-speed="-3" class="img-parallax">
+  			<img src="template/images/windsurfing/wind_main.jpg" data-speed="-3" class="img-parallax">
   			<h2>Windsurfing</h2>
 				<h3>in Ukraine</h3>
 			</div>
 
 			<div class="parallax-block">
-				<img src="images/kiteboarding/kiteboarding.jpg" data-speed="-3" class="img-parallax">
+				<img src="template/images/kiteboarding/kiteboarding.jpg" data-speed="-3" class="img-parallax">
 				<h2>Kiteboarding</h2>
 				<h3>at Azov sea</h3>
 			</div>
 
 			<div class="parallax-block">
-				<img src="images/mountains/hiking_1.jpg" data-speed="-3" class="img-parallax">
+				<img src="template/images/mountains/hiking_1.jpg" data-speed="-3" class="img-parallax">
 				<h2>Mountaineering</h2>
 				<h3>in Carpathians</h3>
 			</div>
@@ -181,7 +184,7 @@ include 'header.php';
 					<div class="column sm-1-2">
 						<div class="wrap-col">
 							<div class="img-hover-zoom">
-								<img src="images/about.png" />
+								<img src="template/images/about.png" />
 							</div>
 						</div>
 					</div>
@@ -202,11 +205,11 @@ include 'header.php';
 				<div class="row wrap-box"><!--Start Box-->
 					<div class="row clearfix">
 						<div class="column md-1-2 sm-1-2 xs-1-2 img-hover-zoom">
-							<img style="border-radius:5px;" src="images/mountains/carpath1_cut.jpg" alt="">
+							<img style="border-radius:5px;" src="template/images/mountains/carpath1_cut.jpg" alt="">
 						</div>
 						<div class="column md-1-3 sm-1-2 xs-1-2 img-hover-zoom">
 							<a class="button button-skin button-service" href="tel:+380950137282">Подзвонити</a>
-							<img style="border-radius:5px;" src="images/windsurfing/wind_sun.jpg" alt="" class="hidden-xs" style="margin: 0 0 0 20px;">
+							<img style="border-radius:5px;" src="template/images/windsurfing/wind_sun.jpg" alt="" class="hidden-xs" style="margin: 0 0 0 20px;">
 						</div>
 					</div>
 				</div>
@@ -226,7 +229,7 @@ include 'header.php';
 							<div class="wrap-col">
 								<div class="box-entry">
 									<div class="box-entry-inner">
-										<img src="images/2.jpg" class="img-responsive"/>
+										<img src="template/images/2.jpg" class="img-responsive"/>
 										<div class="entry-details">
 											<div class="entry-des">
 												<span><a href="#">08th Apr 2017</a></span>
@@ -242,7 +245,7 @@ include 'header.php';
 							<div class="wrap-col">
 								<div class="box-entry">
 									<div class="box-entry-inner">
-										<img src="images/3.jpg" class="img-responsive"/>
+										<img src="template/images/3.jpg" class="img-responsive"/>
 										<div class="entry-details">
 											<div class="entry-des">
 												<span><a href="#">08th Apr 2017</a></span>
@@ -258,7 +261,7 @@ include 'header.php';
 							<div class="wrap-col">
 								<div class="box-entry">
 									<div class="box-entry-inner">
-										<img src="images/4.jpg" class="img-responsive"/>
+										<img src="template/images/4.jpg" class="img-responsive"/>
 										<div class="entry-details">
 											<div class="entry-des">
 												<span><a href="#">08th Apr 2017</a></span>
@@ -345,8 +348,8 @@ include 'header.php';
 				<div class="row wrap-box"><!--Start Box-->
 					<div class="">
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
-							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('images/1.jpg')"></div>
+							<a class="" href="about">
+								<div class="portfolio-image" style="background-image: url('template/images/1.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">8</div>
@@ -362,8 +365,8 @@ include 'header.php';
 							</a>
 						</div>
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
-							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('images/2.jpg')"></div>
+							<a class="" href="about">
+								<div class="portfolio-image" style="background-image: url('template/images/2.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">5</div>
@@ -379,8 +382,8 @@ include 'header.php';
 							</a>
 						</div>
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
-							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('images/3.jpg')"></div>
+							<a class="" href="about">
+								<div class="portfolio-image" style="background-image: url('template/images/3.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">13</div>
@@ -396,8 +399,8 @@ include 'header.php';
 							</a>
 						</div>
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
-							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('images/4.jpg')"></div>
+							<a class="" href="about">
+								<div class="portfolio-image" style="background-image: url('template/images/4.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">21</div>
@@ -413,8 +416,8 @@ include 'header.php';
 							</a>
 						</div>
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
-							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('images/5.jpg')"></div>
+							<a class="" href="about">
+								<div class="portfolio-image" style="background-image: url('template/images/5.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">28</div>
@@ -430,8 +433,8 @@ include 'header.php';
 							</a>
 						</div>
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
-							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('images/6.jpg')"></div>
+							<a class="" href="about">
+								<div class="portfolio-image" style="background-image: url('template/images/6.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">4</div>
@@ -447,8 +450,8 @@ include 'header.php';
 							</a>
 						</div>
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
-							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('images/7.jpg')"></div>
+							<a class="" href="about">
+								<div class="portfolio-image" style="background-image: url('template/images/7.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">30</div>
@@ -464,8 +467,8 @@ include 'header.php';
 							</a>
 						</div>
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
-							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('images/8.jpg')"></div>
+							<a class="" href="about">
+								<div class="portfolio-image" style="background-image: url('template/images/8.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">8</div>
@@ -481,8 +484,8 @@ include 'header.php';
 							</a>
 						</div>
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
-							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('images/9.jpg')"></div>
+							<a class="" href="about">
+								<div class="portfolio-image" style="background-image: url('template/images/9.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">8</div>
@@ -498,8 +501,8 @@ include 'header.php';
 							</a>
 						</div>
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
-							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('images/10.jpg')"></div>
+							<a class="" href="about">
+								<div class="portfolio-image" style="background-image: url('template/images/10.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">8</div>
@@ -519,76 +522,72 @@ include 'header.php';
 			</div>
 		</section>
 
-		<!-----------------content-box-6-------------------->
-		<section class="content-box box-6 box-style-3">
-			<div class="zerogrid">
-			<div class="row wrap-box"><!--Start Box-->
-				<div class="">
-					<div class="box-text">
-						<div class="header">
-							<h2>Contact Me</h2>
-							<p class="intro">Please, leave your message below and <br> fill in the form with your contact information. </p>
-						</div>
-						<div class="content">
-							<div class="subscribe-form">
-								<form role="form" id="contactForm" data-toggle="validator">
-									<div class="row">
-										<div class="column sm-1-3">
-											<div class="wrap-col">
-												<input type="text" name="name" id="name" placeholder="Your Name" required="required" />
-												<div class="help-block with-errors"></div>
-											</div>
-										</div>
+		<!-------content-box-6--Contact Me Section----------->
 
-										<div class="column sm-1-3">
-											<div class="wrap-col">
-												<input type="text" name="name2" id="name2" placeholder="Surname" required="required" />
-												<div class="help-block with-errors"></div>
-											</div>
-										</div>
-
-										<div class="column sm-1-3">
-											<div class="wrap-col">
-												<input type="email" name="email" id="email" placeholder="Email" required="required" />
-												<div class="help-block with-errors"></div>
-											</div>
-										</div>
-										<div class="column sm-1-3">
-											<div class="wrap-col">
-												<input type="text" name="subject" id="subject" placeholder="Message subject" />
-												<div class="help-block with-errors"></div>
-											</div>
-										</div>
-									</div>
-									<div class="row">
-										<div class="column full">
-											<div class="wrap-col">
-												<textarea id="message" placeholder="Message"></textarea>
-												<div class="help-block with-errors"></div>
-											</div>
-										</div>
-									</div>
-									<div class="row">
-										<div class="column full">
-											<div class="wrap-col">
-												<button class="button button-skin button-subscribe" type="submit" name="Submit" >Send</button>
-												<div id="msgSubmit" class="h3 text-center hidden"></div>
-											</div>
-										</div>
-									</div>
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			</div>
-		</section>
+		<?php
+ 			include 'layouts/contact-me-section.php';
+		?>
 
 	</div>
-
 </section>
 
 
+<!--////////////////////////////////////Footer-->
 <?php
-include 'footer.php';
+ 	include 'layouts/footer.php';
+?>
+
+	<!-- Google Map -->
+	<script src="template/js/google-map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6hLiLmxnIiaGZKY3plTi4hrsPkSnVQvY&callback=initMap" async defer></script>
+
+	<!-- Owl Carusel JavaScript -->
+	<script src="template/owlcarousel/owl.carousel.js"></script>
+	<script>
+	$(document).ready(function() {
+	  $("#owl-slide").owlCarousel({
+		autoplay:true,
+		autoplayTimeout:3000,
+		loop: true,
+		lazyLoad : true,
+		items: 1,
+		dots: true,
+		stagePadding: 300,
+		responsive : {
+			0 : {stagePadding: 0},
+			600 : {stagePadding: 100},
+			900 : {stagePadding: 200},
+			1199 : {}
+		},
+	  });
+	});
+	</script>
+
+	<!-- не понятно с какой целью этот скрипт на всех страницах
+
+	<script>
+	$(document).ready(function(){
+	  $(window).resize(function(){
+	    var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+	    if (width >= '768') {
+	      var footerHeight = $('#footer').outerHeight();
+	      $('#container').css({'marginBottom': footerHeight + 'px'});
+	    }else{
+	      $('#container').css({'marginBottom': '0px'});
+	    }
+	  });
+	  $(window).resize();
+	});
+	  </script>
+	-->
+
+
+	<script type="text/javascript" src="template/js/validator.min.js"></script>
+	<script type="text/javascript" src="template/js/form-scripts.js"></script>
+
+	<script type="text/javascript" src="template/js/callback.js"></script>
+	<script type="text/javascript" src="template/js/parallax.js"></script>
+
+</div>
+</body>
+</html>

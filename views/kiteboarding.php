@@ -2,7 +2,8 @@
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en"> <!--<![endif]-->
 <head>
 
     <!-- Basic Page Needs
@@ -18,25 +19,23 @@
 
 
 	<!-- Owl Carousel Assets -->
-    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="template/owlcarousel/assets/owl.carousel.min.css">
     <!-- CSS
   ================================================== -->
-  	<link rel="stylesheet" href="css/zerogrid.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/menu.css">
+  	<link rel="stylesheet" href="template/css/zerogrid.css">
+	<link rel="stylesheet" href="template/css/style.css">
+	<link rel="stylesheet" href="template/css/menu.css">
 
-	<!-- Modal windows styles -->
-	<link rel="stylesheet" href="css/modal.css">
-	<!-- Pulse button styles -->
-	<link rel="stylesheet" href="css/pulse.css">
+	<link rel="stylesheet" href="template/css/pulse.css">
+	<link rel="stylesheet" href="template/css/modal.css">
 
 
 	<!-- Custom Fonts -->
 	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 
-	<script src="js/jquery.min.js" type="text/javascript"></script>
-	<script src="js/script.js"></script>
+	<script src="template/js/jquery.min.js" type="text/javascript"></script>
+	<script src="template/js/script.js"></script>
 
 	<!--[if lt IE 8]>
        <div style=' clear: both; text-align:center; position: relative;'>
@@ -57,13 +56,12 @@
 <!--////////////////////////////////////Header-->
 <!---Top Menu--->
 <?php
-include 'templates/menu.php';
+include 'layouts/menu.php';
  ?>
-
 <header id="header">
 	<div class="wrap-header" >
 		<!---Main Header--->
-		<div class="windsurfing-header">
+		<div class="kiteboarding-header">
 			<div class="zerogrid">
 				<div class="row">
 					<div class="hero-heading">
@@ -74,7 +72,7 @@ include 'templates/menu.php';
 						<div class="bl"></div>
 					</div>
 					<div class="heading-text">
-						<h2>We do Windsurfing</h2>
+						<h2>We do Kiteboarding</h2>
 						<p>Start following winds, seas, oceans. Become wind dependent</p>
                        	 <p>  Learn how if feels</p>
 					</div>
@@ -94,50 +92,50 @@ include 'templates/menu.php';
 			<div class="">
 				<div class="row wrap-box"><!--Start Box-->
 					<div class="header">
-						<h2>Віндсерфінг на Оболоні</h2>
+						<h2>Кайт сафарі на Чорному морі</h2>
 						<p class="intro">Прокат спорядження та послуги інструктора <br>Для всіх рівнів катання - від початківців до прогресуючих </p>
 					</div>
 					<div class="content">
 						<div id="owl-slide" class="owl-carousel">
 							<div class="item">
-								<img src="images/windsurfing/windsurfing.jpg" />
+								<img src="template/images/kiteboarding/foil_1600.jpg" />
 								<div class="carousel-caption">
 									<div class="carousel-caption-inner">
-										<p class="carousel-caption-title"><a href="#">Go racing challenges</a></p>
-										<p class="carousel-caption-category"><a href="#" rel="category tag">Windsurfing</a>,
+										<p class="carousel-caption-title"><a href="#">Насолоджуйся вітром та швидкістю </a></p>
+										<p class="carousel-caption-category"><a href="#" rel="category tag">Kiteboarding</a>,
 										<a href="#" rel="category tag">Racing</a>, <a href="#" rel="category tag">Speed</a>
 										</p>
 									</div>
 								</div>
 							</div>
 							<div class="item">
-								<img src="images/windsurfing/wind-carusel-1.jpg" />
+								<img src="template/images/kiteboarding/teach_1.jpg" />
 								<div class="carousel-caption">
 									<div class="carousel-caption-inner">
-										<p class="carousel-caption-title"><a href="#">Learn speeding up and planing </a></p>
-										<p class="carousel-caption-category"><a href="#" rel="category tag">windsurfing</a>,
-										<a href="#" rel="category tag">Planing</a>, <a href="#" rel="category tag">Speed</a>
+										<p class="carousel-caption-title"><a href="#">Навчання початківців та прогресуючих</a></p>
+										<p class="carousel-caption-category"><a href="#" rel="category tag">Kiteboarding</a>,
+										<a href="#" rel="category tag">teaching</a>, <a href="#" rel="category tag">beginners</a>
 										</p>
 									</div>
 								</div>
 							</div>
 							<div class="item">
-								<img src="images/windsurfing/2019_1_cut.jpg" />
+								<img src="template/images/kiteboarding/teach_2_cut.jpg" />
 								<div class="carousel-caption">
 									<div class="carousel-caption-inner">
-										<p class="carousel-caption-title"><a href="#">Learn from complete beginner</a></p>
-										<p class="carousel-caption-category"><a href="#" rel="category tag">Windsurfing</a>,
+										<p class="carousel-caption-title"><a href="#">Перші кроки та ознайомлення</a></p>
+										<p class="carousel-caption-category"><a href="#" rel="category tag">Kiteboarding</a>,
 										<a href="#" rel="category tag">Instructor</a>, <a href="#" rel="category tag">Beginner</a>
 										</p>
 									</div>
 								</div>
 							</div>
 							<div class="item">
-								<img src="images/windsurfing/front_cut.jpg" />
+								<img src="template/images/kiteboarding/kiteboarding_cut.jpg" />
 								<div class="carousel-caption">
 									<div class="carousel-caption-inner">
-										<p class="carousel-caption-title"><a href="#">Go windsurfing safari</a></p>
-										<p class="carousel-caption-category"><a href="#" rel="category tag">Windsurfing</a>,
+										<p class="carousel-caption-title"><a href="#">Сафарі в Україні, Африці та Америці</a></p>
+										<p class="carousel-caption-category"><a href="#" rel="category tag">Kiteboarding</a>,
 										<a href="#" rel="category tag">Safari</a>, <a href="#" rel="category tag">Planing</a>
 										</p>
 									</div>
@@ -154,18 +152,20 @@ include 'templates/menu.php';
 			<div class="zerogrid">
 				<div class="row wrap-box"><!--Start Box-->
 					<div class="header">
-						<h2>Історія Віндсерфінгу</h2>
-						<p class="intro">Оригінал статті читайте <a target="_blank" href="https://windplaces.ru/blog/istoriya_vozniknoveniya_i_razvitiya_vindserfinga">тут</a></p>
+						<h2>Про Кайтсерфінг</h2>
+						<p class="intro">Матеріал з Вікіпедії</p>
 					</div>
 					<div class="column sm-1-2">
 						<div class="wrap-col img-hover-zoom">
-							<img src="images/windsurfing/history.jpg" />
+							<img src="template/images/kiteboarding/about.jpg" />
 						</div>
 					</div>
 					<div class="column sm-1-2">
 						<div class="wrap-col">
-							<p>История виндсерфинга началась в 1948 году, когда Ньюман Дарби (Newman Darby), 20-летний американец создал некую плавучую платформу, которая в те времена гораздо больше походила на катамаран, чем на доску для виндсерфинга, и установил на ней парус.</p>
-							<p>В 1964 году Дарби изобрел универсальный шарнир, который он использовал для крепления мачты к доске, плавник и парус, имеющий четырехугольную форму. Свое изобретение он назвал сеилбординг (sailboarding) после того, как в 1965 году написал статью в журнале Popular Science (Популярная наука). Однако, свое изобретение он никогда не патентовал. В то время Ньюман Дарби и его братья производили доски в их собственной компании Darby Industries, но коммерческого успеха его проект тогда так и не достиг.</p>
+							<p>Кайтбординг, кайтсерфінг (від англ. kite — «повітряний змій» і board — дошка, boarding — «катання на дошці») або кайтинг — вид спорту, основою якого є рух під дією сили тяги, що розвивається утримуваним і керованим спортсменом повітряним змієм (кайтом).</p>
+							<p>За рахунок нововведень в конструкції повітряних зміїв, поліпшення систем управління та розвитку кайт шкіл, інструкторів з кайтсерфінгу — значно підвищилася безпека спорту. Райдерам допомагає багато факторів, один з них — система відстрілу(quick release system), сучасна система відстрілу має два ступені, з'явилось відносно нещодавно, також з'явилось багато кайт шкіл, які мають IKO сертифікат, багато рятувальних постів та новітніх девайсів.</p>
+							<p>В Україні існує багато місць для кайтингу (кайт-спотів). Переважно вони знаходяться на узбережжі Чорного та Азовського моря, на озерах та водосховищах. Найбільш популярні: Коблево, Генічеськ, Скадовськ.
+							</p>
 						</div>
 					</div>
 				</div>
@@ -178,11 +178,11 @@ include 'templates/menu.php';
 				<div class="row wrap-box"><!--Start Box-->
 					<div class="row clearfix">
 						<div class="column md-1-2 sm-1-2 xs-1-2 img-hover-zoom">
-							<img src="images/windsurfing/sunset_silouette.jpg" alt="">
+							<img src="template/images/kiteboarding/foil_1600.jpg" alt="">
 						</div>
 						<div class="column md-1-3 sm-1-2 xs-1-2 img-hover-zoom">
 							<a class="button button-skin button-service" href="tel:+380950137282">Подзвонити</a>
-							<img src="images/windsurfing/wind_sun.jpg" alt="" class="hidden-xs" style="margin: 0 0 0 20px;">
+							<img src="template/images/kiteboarding/teach_1.jpg" alt="" class="hidden-xs" style="margin: 0 0 0 20px;">
 						</div>
 					</div>
 				</div>
@@ -202,7 +202,7 @@ include 'templates/menu.php';
 							<div class="wrap-col">
 								<div class="box-entry">
 									<div class="box-entry-inner">
-										<img src="images/2.jpg" class="img-responsive"/>
+										<img src="template/images/2.jpg" class="img-responsive"/>
 										<div class="entry-details">
 											<div class="entry-des">
 												<span><a href="#">08th Apr 2017</a></span>
@@ -218,7 +218,7 @@ include 'templates/menu.php';
 							<div class="wrap-col">
 								<div class="box-entry">
 									<div class="box-entry-inner">
-										<img src="images/3.jpg" class="img-responsive"/>
+										<img src="template/images/3.jpg" class="img-responsive"/>
 										<div class="entry-details">
 											<div class="entry-des">
 												<span><a href="#">08th Apr 2017</a></span>
@@ -234,7 +234,7 @@ include 'templates/menu.php';
 							<div class="wrap-col">
 								<div class="box-entry">
 									<div class="box-entry-inner">
-										<img src="images/4.jpg" class="img-responsive"/>
+										<img src="template/images/4.jpg" class="img-responsive"/>
 										<div class="entry-details">
 											<div class="entry-des">
 												<span><a href="#">08th Apr 2017</a></span>
@@ -258,7 +258,7 @@ include 'templates/menu.php';
 					<div class="">
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
 							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('images/1.jpg')"></div>
+								<div class="portfolio-image" style="background-image: url('template/images/1.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">8</div>
@@ -275,7 +275,7 @@ include 'templates/menu.php';
 						</div>
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
 							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('images/2.jpg')"></div>
+								<div class="portfolio-image" style="background-image: url('template/images/2.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">5</div>
@@ -292,7 +292,7 @@ include 'templates/menu.php';
 						</div>
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
 							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('images/3.jpg')"></div>
+								<div class="portfolio-image" style="background-image: url('template/images/3.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">13</div>
@@ -309,7 +309,7 @@ include 'templates/menu.php';
 						</div>
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
 							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('images/4.jpg')"></div>
+								<div class="portfolio-image" style="background-image: url('template/images/4.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">21</div>
@@ -326,7 +326,7 @@ include 'templates/menu.php';
 						</div>
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
 							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('images/5.jpg')"></div>
+								<div class="portfolio-image" style="background-image: url('template/images/5.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">28</div>
@@ -343,7 +343,7 @@ include 'templates/menu.php';
 						</div>
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
 							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('images/6.jpg')"></div>
+								<div class="portfolio-image" style="background-image: url('template/images/6.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">4</div>
@@ -360,7 +360,7 @@ include 'templates/menu.php';
 						</div>
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
 							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('images/7.jpg')"></div>
+								<div class="portfolio-image" style="background-image: url('template/images/7.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">30</div>
@@ -377,7 +377,7 @@ include 'templates/menu.php';
 						</div>
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
 							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('images/8.jpg')"></div>
+								<div class="portfolio-image" style="background-image: url('template/images/8.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">8</div>
@@ -394,7 +394,7 @@ include 'templates/menu.php';
 						</div>
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
 							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('images/9.jpg')"></div>
+								<div class="portfolio-image" style="background-image: url('template/images/9.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">8</div>
@@ -411,7 +411,7 @@ include 'templates/menu.php';
 						</div>
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
 							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('images/10.jpg')"></div>
+								<div class="portfolio-image" style="background-image: url('template/images/10.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">8</div>
@@ -433,35 +433,31 @@ include 'templates/menu.php';
 
 		<!-------content-box-6--Contact Me Section----------->
 		<?php
- 			include 'templates/contact-me-section.php';
+ 			include 'layouts/contact-me-section.php';
 		?>
 
-
 	</div>
-
 </section>
-
 
 <!--Red Pulse Callback button and hidden modal form-->
 <?php
-	include 'templates/callback_elements.php';
+	include 'layouts/callback_elements.php';
 ?>
 
 <!----End of Callback modal window------------------------->
 
 <!--////////////////////////////////////Footer-->
 <?php
-	include 'templates/footer.php';
-?>
+ 	include 'layouts/footer.php';
+	?>
 
-</div><
 
 	<!-- Google Map -->
-	<script src="js/google-map.js"></script>
+	<script src="template/js/google-map.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7V-mAjEzzmP6PCQda8To0ZW_o3UOCVCE&callback=initMap" async defer></script>
 
 	<!-- Owl Carusel JavaScript -->
-	<script src="owlcarousel/owl.carousel.js"></script>
+	<script src="template/owlcarousel/owl.carousel.js"></script>
 	<script>
 	$(document).ready(function() {
 	  $("#owl-slide").owlCarousel({
@@ -481,9 +477,9 @@ include 'templates/menu.php';
 	  });
 	});
 	</script>
+	<script type="text/javascript" src="template/js/validator.min.js"></script>
+	<script type="text/javascript" src="template/js/form-scripts.js"></script>
+	<script type="text/javascript" src="template/js/callback.js"></script>
 
-<script type="text/javascript" src="js/validator.min.js"></script>
-<script type="text/javascript" src="js/form-scripts.js"></script>
-<script type="text/javascript" src="js/callback.js"></script>
-
+</div>
 </body></html>

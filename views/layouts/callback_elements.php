@@ -13,7 +13,7 @@
 <!-- Модальне вікно замовлення callback  -->
 <div class="modal" id="callback_modal">
   <div class="modal_content">
-    <button id="callback_modal_closer" class="modal_closer"><img src="./images/close.png" width="35" alt="close"></button>
+    <button id="callback_modal_closer" class="modal_closer"><img src="<?php echo SUBDOMAIN;?>/template/images/close.png" width="35" alt="close"></button>
 
     <div class="contact">
       <h3 style="margin: 20px 0 20px 30px">Залиште заявку на дзвінок</h3>

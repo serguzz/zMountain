@@ -8,7 +8,7 @@
     <!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8">
-	<title>Travelearth - Free Travel Idea</title>
+	<title>Sergiy Brovchenko - My Portfolio</title>
 	<meta name="description" content="Free Travel Idea | travelearth.cu.ma">
 	<meta name="author" content="serguz">
 
@@ -16,26 +16,21 @@
   ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+
 	<!-- Owl Carousel Assets -->
-    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="template/owlcarousel/assets/owl.carousel.min.css">
     <!-- CSS
   ================================================== -->
-  <link rel="stylesheet" href="css/zerogrid.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/menu.css">
-	<!-- Modal windows styles -->
-	<link rel="stylesheet" href="css/modal.css">
-	<!-- Pulse button styles -->
-	<link rel="stylesheet" href="css/pulse.css">
-	<!-- Blog  styles -->
-	<link rel="stylesheet" href="css/blog.css">
+  	<link rel="stylesheet" href="template/css/zerogrid.css">
+	<link rel="stylesheet" href="template/css/style.css">
+	<link rel="stylesheet" href="template/css/menu.css">
 
 	<!-- Custom Fonts -->
 	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 
-	<script src="js/jquery.min.js" type="text/javascript"></script>
-	<script src="js/script.js"></script>
+	<script src="template/js/jquery.min.js" type="text/javascript"></script>
+	<script src="template/js/script.js"></script>
 
 	<!--[if lt IE 8]>
        <div style=' clear: both; text-align:center; position: relative;'>
@@ -51,33 +46,33 @@
 
 </head>
 <body class="index-page">
-
-	<!--Pulse Callback button-and form (hidden)-->
-	<?php
-		include 'templates/callback_elements.php';
-	?>
-
 <div class="wrap-body">
+
 <!--////////////////////////////////////Header-->
+<!---Top Menu--->
 <?php
-	include 'templates/menu.php';
+include 'layouts/menu.php';
  ?>
+
 <header id="header">
 	<div class="wrap-header" >
 		<!---Main Header--->
-		<div class="blog-header">
+		<div class="main-header">
 			<div class="zerogrid">
 				<div class="row">
+
 					<div class="hero-heading">
-						<span>TravelEarth</span>
+						<span>Sergiy Brovchenko</span>
 						<div class="tl"></div>
 						<div class="tr"></div>
 						<div class="br"></div>
 						<div class="bl"></div>
 					</div>
 					<div class="heading-text">
-						<h2>Stories & Tips</h2>
+						<h2>My Portfolio</h2>
 					</div>
+
+
 				</div>
 			</div>
 		</div>
@@ -87,52 +82,210 @@
 
 <!--////////////////////////////////////Container-->
 <section id="container">
+
 	<div class="wrap-container">
 		<!------------content-box-1-------------------->
+		<section class="content-box box-1">
+			<div class="">
+				<div class="row wrap-box"><!--Start Box-->
 
-		<!------------content-box-BLog-------------------->
-		<div class="blog-container" id="blog_container">
-			<div class="blogpost-container">
-				<div class="blogpost-header">
-					<div class="blogpost-cover">
-						<img src="images/blog/tenerife.jpg">
+					<div class="header">
+						<h2>Моє портфоліо</h2>
+						<p class="intro">деякі проекти на ванільному JS, HTML та CSS <br>сюди не ввійшли кілька проектів на PHP</p>
+					</div>
+					<div class="content">
+						<div id="owl-slide" class="owl-carousel">
+							<div class="item">
+								<img src="template/images/portfolio/calculator.jpg" />
+								<div class="carousel-caption">
+									<div class="carousel-caption-inner">
+										<p class="carousel-caption-title"><a href="calculator/">Калькулятор на JavaScript</a></p>
+										<p class="carousel-caption-category"><a href="#" rel="category tag">#calculator</a>,
+										<a href="#" rel="category tag">#JS</a>, <a href="#" rel="category tag">#JavaScript</a>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<img src="template/images/portfolio/google_maps.jpg" />
+								<div class="carousel-caption">
+									<div class="carousel-caption-inner">
+										<p class="carousel-caption-title"><a href="google_maps_api/">Google Maps OpenWeather APIs</a></p>
+										<p class="carousel-caption-category"><a href="#" rel="category tag">#API</a>,
+										<a href="#" rel="category tag">#GoogleMap</a>, <a href="#" rel="category tag">#OpenWeather</a>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<img src="template/images/portfolio/conference.jpg" />
+								<div class="carousel-caption">
+									<div class="carousel-caption-inner">
+										<p class="carousel-caption-title"><a href="conference">Conference Web site</a></p>
+										<p class="carousel-caption-category"><a href="#" rel="category tag">#css</a>,
+										<a href="#" rel="category tag">#styles</a>, <a href="#" rel="category tag">#conference</a>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<img src="template/images/windsurfing/front_cut.jpg" />
+								<div class="carousel-caption">
+									<div class="carousel-caption-inner">
+										<p class="carousel-caption-title"><a href="https://travelearth.zyrosite.com">TravelEarth на Zyro.com</a></p>
+										<p class="carousel-caption-category"><a href="#" rel="category tag">#windsurfing</a>,
+										<a href="#" rel="category tag">#kiteboarding</a>, <a href="#" rel="category tag">#hiking</a>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="blogpost-body">
-					<div class="blogpost-title">
-						<h1><a href="#">Lorem ipsum dolor sit amet, consectetur </a></h1>
+			</div>
+		</section>
+
+		<!-----------------content-box-2-------------------->
+		<section class="content-box box-2">
+			<div class="zerogrid">
+				<div class="row wrap-box"><!--Start Box-->
+
+					<div class="header">
+						<h2>Погода</h2>
 					</div>
-					<div class="blogpost-text">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-						</p>
+
+					<div class="column sm-1-2">
+						<div class="wrap-col">
+							<div class="weather_wrapper">
+									<h2 class="weather_title">
+										<div class="margin-auto">At Your Location</div>
+
+									</h2>
+									<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+									<div id="elfsight_widget" class="elfsight-app-65aa9c05-6bd0-46c5-b9c0-3355c598eda3 margin-auto"></div>
+							</div>
+						</div>
 					</div>
-					<div class="blogpost-tags">
-							<li><a href="#">Lorem</a></li>
-							<li><a href="#">dfgfg</a></li>
-							<li><a href="#">nbnnn nnn</a></li>
-							<li><a href="#">dfgfg</a></li>
-							<li><a href="#">dfgfg</a></li>
+
+					<div class="column sm-1-2">
+						<div class="wrap-col">
+							<div class="weather_wrapper">
+								<div class="open_weather_map">
+										<h2 class="weather_title">
+											<div class="margin-auto">Any Location</div>
+
+										</h2>
+										<div class="weather_top">
+											<div class="row">
+												<div class="margin-auto">Введіть назву міста (en, ru):</div>
+												<div class="enter_city_block">
+
+													<input type="text" name="city_name" id="city_name" value="Kyiv">
+													<input type="button" onclick="drawWeatherWidget()" value="Дізнатись погоду" class="weather_button">
+
+
+													<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6hLiLmxnIiaGZKY3plTi4hrsPkSnVQvY&libraries=places&callback=initMap"></script>
+													<script>
+
+															var options = {
+																	types: ['(cities)'],
+																};
+							                var autocomplete = new google.maps.places.Autocomplete($("#city_name")[0], options);
+
+							                google.maps.event.addListener(autocomplete, 'place_changed', function() {
+							                    // var place = autocomplete.getPlace();
+							                    // console.log(place.address_components);
+							                });
+
+									        </script>
+
+
+												</div>
+											</div>
+
+											<div class="row">
+												<h3 class="weather_title">
+													<div class="weather_city">Kiev-test</div>
+
+												</h3>
+
+												<div class="weather_summary">
+													<div class="weather_desc margin-auto"></div>
+													<div class="weather_icon col-2"></div>
+
+												</div>
+											</div>
+										</div>
+
+										<div class="weather_grid">
+
+
+											<div class="col-1">temp:</div>
+											<div class="avg_temp col-2"></div>
+											<div class="col-1">min:</div>
+											<div class="min_temp col-2"></div>
+											<div class="col-1">max:</div>
+											<div class="max_temp col-2"></div>
+											<div class="col-1">Вологість:</div>
+											<div class="weather_humidity col-2"></div>
+											<div class="col-1">Вітер:</div>
+											<div class="weather_wind col-2"></div>
+
+
+
+										</div>
+
+										<div class="weather_time">
+												<p class="weather_time"></p>
+												<p class="weather_date"></p>
+												<p class="weather_status"></p>
+										</div>
+
+										<div class="weather_forecast margin-auto">
+												<span class="weather_avg"></span>
+
+												<span class="weather_min"></span>
+												<span class="weather_max"></span>
+										</div>
+										<span class="margin-auto"></span>
+
+								</div>
+								<!-- End of openweathermap div -->
+							</div> <!-- End of weather_wrapper -->
+						</div>
+					</div>
+
+					<!-- INSTAGRAM  feed from elfsight widgets -->
+					<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+					<div class="elfsight-app-3472638e-c62d-4da0-8663-eac93088a768"></div>
+
+					<div class="column sm-1-2">
+						<div class="wrap-col img-hover-zoom">
+							<img src="template/images/about.png" />
+						</div>
+					</div>
+					<div class="column sm-1-2">
+						<div class="wrap-col">
+							<p>Матеріал з Вікіпедії — вільної енциклопедії.</p>
+							<p>Матергорн (нім. Matterhorn, італ. Cervino) — гора у Пеннінських Альпах на кордоні Італії та Швейцарії. Ця сьома за висотою гірська вершина Альп розташована між швейцарським населеленим пунктом Цермат (кантон Вале) та італійським населеним пунктом Червінія (область Валле-д'Аоста). Матергорн має чотири стіни: північна височіє над долиною Цмут, південна дивиться на Червінію, східна та західна — відповідно на хребет Горне та гору Дент Дерен. Стіни розділяють чотири хребти: Гернлі (північно-східний), Ліон (південно-західний), Цмут (північно-західний) та Фург (південно-західний).</p>
+							<p>Стіни Матергорна круті, і з цієї причини на них мало снігу і льоду. Сніг, що випадає на схили Матергорна, регулярно обрушується лавиною і накопичується біля підніжжя стін у верхніх частинах льодовиків, які стікають з вершини з усіх боків. Найбільш великими льодовиками Матергорна є льодовик Тіфматен біля основи західної стіни, що є притокою льодовика Цмутт, і льодовик Матергорн[en] біля підніжжя північної стіни. Менші льодовики лежать біля підніжжя південної (нижній льодовик Матергорна - італ. Ghiacciaio Inferiore del Cervino, фр. Glacier inférieur du Cervin) і східної стін (безіменний льодовик).</p>
+						</div>
 					</div>
 				</div>
-
-				<div class="blogpost-footer">
-					<ul>
-						<li class="published-date">4 days ago</li>
-
-					</ul>
-				</div>
-			</div> <!-- blogpost-container-->
-		</div> <!--blog-container -->
+			</div>
+		</section>
 
 		<!-----------------content-box-3-------------------->
 		<section class="content-box box-3 boxstyle-2">
 			<div class="zerogrid">
 				<div class="row wrap-box"><!--Start Box-->
 					<div class="row clearfix">
-						<div class="column md-1-2 sm-1-2 xs-1-2"><img src="images/11.jpg" alt=""></div>
-						<div class="column md-1-3 sm-1-2 xs-1-2">
+						<div class="column md-1-2 sm-1-2 xs-1-2 img-hover-zoom">
+							<img style="border-radius:5px;" src="template/images/mountains/carpath1_cut.jpg" alt="">
+						</div>
+						<div class="column md-1-3 sm-1-2 xs-1-2 img-hover-zoom">
 							<a class="button button-skin button-service" href="tel:+380950137282">Подзвонити</a>
-							<img src="images/12.jpg" alt="" class="hidden-xs" style="margin: 0 0 0 -80px;">
+							<img style="border-radius:5px;" src="template/images/windsurfing/wind_sun.jpg" alt="" class="hidden-xs" style="margin: 0 0 0 -80px;">
 						</div>
 					</div>
 				</div>
@@ -152,7 +305,7 @@
 							<div class="wrap-col">
 								<div class="box-entry">
 									<div class="box-entry-inner">
-										<img src="images/2.jpg" class="img-responsive"/>
+										<img src="template/images/2.jpg" class="img-responsive"/>
 										<div class="entry-details">
 											<div class="entry-des">
 												<span><a href="#">08th Apr 2017</a></span>
@@ -168,7 +321,7 @@
 							<div class="wrap-col">
 								<div class="box-entry">
 									<div class="box-entry-inner">
-										<img src="images/3.jpg" class="img-responsive"/>
+										<img src="template/images/3.jpg" class="img-responsive"/>
 										<div class="entry-details">
 											<div class="entry-des">
 												<span><a href="#">08th Apr 2017</a></span>
@@ -184,7 +337,7 @@
 							<div class="wrap-col">
 								<div class="box-entry">
 									<div class="box-entry-inner">
-										<img src="images/4.jpg" class="img-responsive"/>
+										<img src="template/images/4.jpg" class="img-responsive"/>
 										<div class="entry-details">
 											<div class="entry-des">
 												<span><a href="#">08th Apr 2017</a></span>
@@ -256,7 +409,7 @@
 					<div class="">
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
 							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('images/1.jpg')"></div>
+								<div class="portfolio-image" style="background-image: url('template/images/1.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">8</div>
@@ -273,7 +426,7 @@
 						</div>
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
 							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('images/2.jpg')"></div>
+								<div class="portfolio-image" style="background-image: url('template/images/2.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">5</div>
@@ -290,7 +443,7 @@
 						</div>
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
 							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('images/3.jpg')"></div>
+								<div class="portfolio-image" style="background-image: url('template/images/3.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">13</div>
@@ -307,7 +460,7 @@
 						</div>
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
 							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('images/4.jpg')"></div>
+								<div class="portfolio-image" style="background-image: url('template/images/4.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">21</div>
@@ -324,7 +477,7 @@
 						</div>
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
 							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('images/5.jpg')"></div>
+								<div class="portfolio-image" style="background-image: url('template/images/5.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">28</div>
@@ -341,7 +494,7 @@
 						</div>
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
 							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('images/6.jpg')"></div>
+								<div class="portfolio-image" style="background-image: url('template/images/6.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">4</div>
@@ -358,7 +511,7 @@
 						</div>
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
 							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('images/7.jpg')"></div>
+								<div class="portfolio-image" style="background-image: url('template/images/7.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">30</div>
@@ -375,7 +528,7 @@
 						</div>
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
 							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('images/8.jpg')"></div>
+								<div class="portfolio-image" style="background-image: url('template/images/8.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">8</div>
@@ -392,7 +545,7 @@
 						</div>
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
 							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('images/9.jpg')"></div>
+								<div class="portfolio-image" style="background-image: url('template/images/9.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">8</div>
@@ -409,7 +562,7 @@
 						</div>
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
 							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('images/10.jpg')"></div>
+								<div class="portfolio-image" style="background-image: url('template/images/10.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">8</div>
@@ -431,7 +584,7 @@
 
 		<!-------content-box-6--Contact Me Section----------->
 		<?php
- 			include 'templates/contact-me-section.php';
+ 			include 'layouts/contact-me-section.php';
 		?>
 
 	</div>
@@ -440,16 +593,17 @@
 
 <!--////////////////////////////////////Footer-->
 <?php
- 	include 'templates/footer.php';
-	?>
+ 	include 'layouts/footer.php';
+?>
 
 
-	<!-- Google Map -->
+	<!-- Google Map
 	<script src="js/google-map.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6hLiLmxnIiaGZKY3plTi4hrsPkSnVQvY&callback=initMap" async defer></script>
+-->
 
 	<!-- Owl Carusel JavaScript -->
-	<script src="owlcarousel/owl.carousel.js"></script>
+	<script src="template/owlcarousel/owl.carousel.js"></script>
 	<script>
 	$(document).ready(function() {
 	  $("#owl-slide").owlCarousel({
@@ -469,11 +623,11 @@
 	  });
 	});
 	</script>
+	<script type="text/javascript" src="template/js/validator.min.js"></script>
+	<script type="text/javascript" src="template/js/form-scripts.js"></script>
 
-	<script type="text/javascript" src="js/validator.min.js"></script>
-	<script type="text/javascript" src="js/form-scripts.js"></script>
-	<script type="text/javascript" src="js/callback.js"></script>
-	<script type="text/javascript" src="js/blog.js"></script>
 
 </div>
-</body></html>
+	<script type="text/javascript" src="template/js/weather_fetch.js"></script>
+</body>
+</html>

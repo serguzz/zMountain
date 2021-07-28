@@ -1,3 +1,19 @@
+<?php
+
+
+		$db = Db::getConnection();
+
+		$result = $db->query("SELECT count(*) AS count FROM blogposts");
+		$rows = $result->fetch(PDO::FETCH_ASSOC);
+		// print_r( $rows);  // - rows in blogposts table
+
+		const SHOW_BY_DEFAULT = 5;
+
+		$pages_count = ceil($rows['count'] / SHOW_BY_DEFAULT); // кол-во страниц
+		// echo $pages_count;
+
+
+ ?>
 <!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -17,25 +33,24 @@
   ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-
-	<!-- Owl Carousel Assets -->
-    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
     <!-- CSS
   ================================================== -->
-  	<link rel="stylesheet" href="css/zerogrid.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/menu.css">
-
-	<link rel="stylesheet" href="css/pulse.css">
-	<link rel="stylesheet" href="css/modal.css">
-
+  <link rel="stylesheet" href="template/css/zerogrid.css">
+	<link rel="stylesheet" href="template/css/style.css">
+	<link rel="stylesheet" href="template/css/menu.css">
+	<!-- Modal windows styles -->
+	<link rel="stylesheet" href="template/css/modal.css">
+	<!-- Pulse button styles -->
+	<link rel="stylesheet" href="template/css/pulse.css">
+	<!-- Blog  styles -->
+	<link rel="stylesheet" href="template/css/blog.css">
 
 	<!-- Custom Fonts -->
 	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 
-	<script src="js/jquery.min.js" type="text/javascript"></script>
-	<script src="js/script.js"></script>
+	<script src="template/js/jquery.min.js" type="text/javascript"></script>
+	<script src="template/js/script.js"></script>
 
 	<!--[if lt IE 8]>
        <div style=' clear: both; text-align:center; position: relative;'>
@@ -45,23 +60,27 @@
       </div>
     <![endif]-->
     <!--[if lt IE 9]>
-		<script src="js/html5.js"></script>
-		<script src="js/css3-mediaqueries.js"></script>
+		<script src="template/js/html5.js"></script>
+		<script src="template/js/css3-mediaqueries.js"></script>
 	<![endif]-->
 
 </head>
 <body class="index-page">
-<div class="wrap-body">
 
+	<!--Pulse Callback button-and form (hidden)-->
+	<?php
+		include 'layouts/callback_elements.php';
+	?>
+
+<div class="wrap-body">
 <!--////////////////////////////////////Header-->
-<!---Top Menu--->
 <?php
-include 'templates/menu.php';
+	include 'layouts/menu.php';
  ?>
 <header id="header">
 	<div class="wrap-header" >
 		<!---Main Header--->
-		<div class="kiteboarding-header">
+		<div class="blog-header">
 			<div class="zerogrid">
 				<div class="row">
 					<div class="hero-heading">
@@ -72,9 +91,7 @@ include 'templates/menu.php';
 						<div class="bl"></div>
 					</div>
 					<div class="heading-text">
-						<h2>We do Kiteboarding</h2>
-						<p>Start following winds, seas, oceans. Become wind dependent</p>
-                       	 <p>  Learn how if feels</p>
+						<h2>Stories & Tips</h2>
 					</div>
 				</div>
 			</div>
@@ -85,124 +102,68 @@ include 'templates/menu.php';
 
 <!--////////////////////////////////////Container-->
 <section id="container">
-
 	<div class="wrap-container">
 		<!------------content-box-1-------------------->
-		<section class="content-box box-1">
-			<div class="">
-				<div class="row wrap-box"><!--Start Box-->
-					<div class="header">
-						<h2>Кайт сафарі на Чорному морі</h2>
-						<p class="intro">Прокат спорядження та послуги інструктора <br>Для всіх рівнів катання - від початківців до прогресуючих </p>
-					</div>
-					<div class="content">
-						<div id="owl-slide" class="owl-carousel">
-							<div class="item">
-								<img src="images/kiteboarding/foil_1600.jpg" />
-								<div class="carousel-caption">
-									<div class="carousel-caption-inner">
-										<p class="carousel-caption-title"><a href="#">Насолоджуйся вітром та швидкістю </a></p>
-										<p class="carousel-caption-category"><a href="#" rel="category tag">Kiteboarding</a>,
-										<a href="#" rel="category tag">Racing</a>, <a href="#" rel="category tag">Speed</a>
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<img src="images/kiteboarding/teach_1.jpg" />
-								<div class="carousel-caption">
-									<div class="carousel-caption-inner">
-										<p class="carousel-caption-title"><a href="#">Навчання початківців та прогресуючих</a></p>
-										<p class="carousel-caption-category"><a href="#" rel="category tag">Kiteboarding</a>,
-										<a href="#" rel="category tag">teaching</a>, <a href="#" rel="category tag">beginners</a>
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<img src="images/kiteboarding/teach_2_cut.jpg" />
-								<div class="carousel-caption">
-									<div class="carousel-caption-inner">
-										<p class="carousel-caption-title"><a href="#">Перші кроки та ознайомлення</a></p>
-										<p class="carousel-caption-category"><a href="#" rel="category tag">Kiteboarding</a>,
-										<a href="#" rel="category tag">Instructor</a>, <a href="#" rel="category tag">Beginner</a>
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<img src="images/kiteboarding/kiteboarding_cut.jpg" />
-								<div class="carousel-caption">
-									<div class="carousel-caption-inner">
-										<p class="carousel-caption-title"><a href="#">Сафарі в Україні, Африці та Америці</a></p>
-										<p class="carousel-caption-category"><a href="#" rel="category tag">Kiteboarding</a>,
-										<a href="#" rel="category tag">Safari</a>, <a href="#" rel="category tag">Planing</a>
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
 
-		<!-----------------content-box-2-------------------->
-		<section class="content-box box-2">
-			<div class="zerogrid">
-				<div class="row wrap-box"><!--Start Box-->
-					<div class="header">
-						<h2>Про Кайтсерфінг</h2>
-						<p class="intro">Матеріал з Вікіпедії</p>
-					</div>
-					<div class="column sm-1-2">
-						<div class="wrap-col img-hover-zoom">
-							<img src="images/kiteboarding/about.jpg" />
-						</div>
-					</div>
-					<div class="column sm-1-2">
-						<div class="wrap-col">
-							<p>Кайтбординг, кайтсерфінг (від англ. kite — «повітряний змій» і board — дошка, boarding — «катання на дошці») або кайтинг — вид спорту, основою якого є рух під дією сили тяги, що розвивається утримуваним і керованим спортсменом повітряним змієм (кайтом).</p>
-							<p>За рахунок нововведень в конструкції повітряних зміїв, поліпшення систем управління та розвитку кайт шкіл, інструкторів з кайтсерфінгу — значно підвищилася безпека спорту. Райдерам допомагає багато факторів, один з них — система відстрілу(quick release system), сучасна система відстрілу має два ступені, з'явилось відносно нещодавно, також з'явилось багато кайт шкіл, які мають IKO сертифікат, багато рятувальних постів та новітніх девайсів.</p>
-							<p>В Україні існує багато місць для кайтингу (кайт-спотів). Переважно вони знаходяться на узбережжі Чорного та Азовського моря, на озерах та водосховищах. Найбільш популярні: Коблево, Генічеськ, Скадовськ.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+		<!------------content-box-BLog-------------------->
+		<div class="blog-container" id="blog_container">
 
-		<!-----------------content-box-3-------------------->
-		<section class="content-box box-3 boxstyle-2">
-			<div class="zerogrid">
-				<div class="row wrap-box"><!--Start Box-->
-					<div class="row clearfix">
-						<div class="column md-1-2 sm-1-2 xs-1-2 img-hover-zoom">
-							<img src="images/kiteboarding/foil_1600.jpg" alt="">
+			<?php foreach ($blogposts as $blogpost): ?>
+
+					<div class="blogpost-container">
+						<div class="blogpost-header">
+							<div class="blogpost-cover">
+								<img src="template/images/blog/<?php echo $blogpost["image"];?>">
+							</div>
 						</div>
-						<div class="column md-1-3 sm-1-2 xs-1-2 img-hover-zoom">
-							<a class="button button-skin button-service" href="tel:+380950137282">Подзвонити</a>
-							<img src="images/kiteboarding/teach_1.jpg" alt="" class="hidden-xs" style="margin: 0 0 0 20px;">
+						<div class="blogpost-body">
+							<div class="blogpost-title">
+								<h1><a href="blogpost/<?php echo $blogpost["id"];?>"><?php echo $blogpost["title"];?></a></h1>
+							</div>
+							<div class="blogpost-author">
+								<p>by <a href="#"><?php echo $blogpost["author"]; ?> </a></p>
+							</div>
+							<div class="blogpost-text">
+								<p><?php echo $blogpost["short_content"];?>
+								</p>
+							</div>
+							<div class="blogpost-tags">
+									<li><a href="#">Lorem</a></li>
+									<li><a href="#">dfgfg</a></li>
+									<li><a href="#">nbnnn nnn</a></li>
+									<li><a href="#">dfgfg</a></li>
+									<li><a href="#">dfgfg</a></li>
+							</div>
 						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+
+						<div class="blogpost-footer">
+							<ul>
+								<li class="published-date">4 days ago</li>
+
+							</ul>
+						</div>
+					</div> <!-- blogpost-container-->
+				<?php endforeach; ?>
+
+		</div> <!--blog-container -->
+
+		<div id="pagination">
+		</div>
 
 		<!-----------------content-box-4-------------------->
 		<section class="content-box box-4">
 			<div class="zerogrid">
 				<div class="row wrap-box"><!--Start Box-->
 					<div class="header">
-						<h2>Latest News</h2>
-						<p class="intro">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor <br>invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+						<h2>Новини</h2>
+						<p class="intro">Що нового за останній тиждень, місяць, рік в світі туризму та водних видів спорту <br>Звіти про походи та поїздки, тренування та сплави.</p>
 					</div>
 					<div class="content">
 						<div class="column sm-1-3">
 							<div class="wrap-col">
 								<div class="box-entry">
 									<div class="box-entry-inner">
-										<img src="images/2.jpg" class="img-responsive"/>
+										<img src="template/images/2.jpg" class="img-responsive"/>
 										<div class="entry-details">
 											<div class="entry-des">
 												<span><a href="#">08th Apr 2017</a></span>
@@ -218,7 +179,7 @@ include 'templates/menu.php';
 							<div class="wrap-col">
 								<div class="box-entry">
 									<div class="box-entry-inner">
-										<img src="images/3.jpg" class="img-responsive"/>
+										<img src="template/images/3.jpg" class="img-responsive"/>
 										<div class="entry-details">
 											<div class="entry-des">
 												<span><a href="#">08th Apr 2017</a></span>
@@ -234,7 +195,7 @@ include 'templates/menu.php';
 							<div class="wrap-col">
 								<div class="box-entry">
 									<div class="box-entry-inner">
-										<img src="images/4.jpg" class="img-responsive"/>
+										<img src="template/images/4.jpg" class="img-responsive"/>
 										<div class="entry-details">
 											<div class="entry-des">
 												<span><a href="#">08th Apr 2017</a></span>
@@ -250,6 +211,54 @@ include 'templates/menu.php';
 				</div>
 			</div>
 		</section>
+
+		<!-----------------content-box-4.2 - NEW!! made by Serguz-------------------->
+		<section class="content-box box-4">
+			<div class="zerogrid">
+				<div class="row wrap-box"><!--Start Box-->
+					<div class="header">
+						<h2>Latest Videos</h2>
+						<p class="intro">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor <br>invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+					</div>
+					<div class="content">
+						<div class="column sm-1-2">
+							<div class="wrap-col">
+								<div class="box-entry">
+									<div class="box-entry-inner video-container">
+										<iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube.com/embed/nYbzMupFrnA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+										<div class="entry-details">
+											<div class="entry-des">
+												<span><a href="#">08th Apr 2017</a></span>
+												<h3><a href="#">Great Caprise by Paganini</a></h3>
+												<p>Listen to magic ...</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="column sm-1-2">
+							<div class="wrap-col">
+								<div class="box-entry">
+									<div class="box-entry-inner video-container">
+										<iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube.com/embed/nBCClFb7YoI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+										<div class="entry-details">
+											<div class="entry-des">
+												<span><a href="#">08th Apr 2017</a></span>
+												<h3><a href="#">Мистическая непокоренная вершина Кайлас</a></h3>
+												<p>Сага о неприступных 6666 метрах</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
 
 		<!-----------------content-box-5-------------------->
 		<section class="content-box box-5 boxstyle-1">
@@ -258,7 +267,7 @@ include 'templates/menu.php';
 					<div class="">
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
 							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('images/1.jpg')"></div>
+								<div class="portfolio-image" style="background-image: url('template/images/1.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">8</div>
@@ -275,7 +284,7 @@ include 'templates/menu.php';
 						</div>
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
 							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('images/2.jpg')"></div>
+								<div class="portfolio-image" style="background-image: url('template/images/2.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">5</div>
@@ -292,7 +301,7 @@ include 'templates/menu.php';
 						</div>
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
 							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('images/3.jpg')"></div>
+								<div class="portfolio-image" style="background-image: url('template/images/3.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">13</div>
@@ -309,7 +318,7 @@ include 'templates/menu.php';
 						</div>
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
 							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('images/4.jpg')"></div>
+								<div class="portfolio-image" style="background-image: url('template/images/4.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">21</div>
@@ -326,7 +335,7 @@ include 'templates/menu.php';
 						</div>
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
 							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('images/5.jpg')"></div>
+								<div class="portfolio-image" style="background-image: url('template/images/5.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">28</div>
@@ -343,7 +352,7 @@ include 'templates/menu.php';
 						</div>
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
 							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('images/6.jpg')"></div>
+								<div class="portfolio-image" style="background-image: url('template/images/6.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">4</div>
@@ -360,7 +369,7 @@ include 'templates/menu.php';
 						</div>
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
 							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('images/7.jpg')"></div>
+								<div class="portfolio-image" style="background-image: url('template/images/7.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">30</div>
@@ -377,7 +386,7 @@ include 'templates/menu.php';
 						</div>
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
 							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('images/8.jpg')"></div>
+								<div class="portfolio-image" style="background-image: url('template/images/8.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">8</div>
@@ -394,7 +403,7 @@ include 'templates/menu.php';
 						</div>
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
 							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('images/9.jpg')"></div>
+								<div class="portfolio-image" style="background-image: url('template/images/9.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">8</div>
@@ -411,7 +420,7 @@ include 'templates/menu.php';
 						</div>
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
 							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('images/10.jpg')"></div>
+								<div class="portfolio-image" style="background-image: url('template/images/10.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">8</div>
@@ -433,31 +442,25 @@ include 'templates/menu.php';
 
 		<!-------content-box-6--Contact Me Section----------->
 		<?php
- 			include 'templates/contact-me-section.php';
+ 			include 'layouts/contact-me-section.php';
 		?>
 
 	</div>
 </section>
 
-<!--Red Pulse Callback button and hidden modal form-->
-<?php
-	include 'templates/callback_elements.php';
-?>
-
-<!----End of Callback modal window------------------------->
 
 <!--////////////////////////////////////Footer-->
 <?php
- 	include 'templates/footer.php';
+ 	include 'layouts/footer.php';
 	?>
 
 
 	<!-- Google Map -->
-	<script src="js/google-map.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7V-mAjEzzmP6PCQda8To0ZW_o3UOCVCE&callback=initMap" async defer></script>
+	<script src="template/js/google-map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6hLiLmxnIiaGZKY3plTi4hrsPkSnVQvY&callback=initMap" async defer></script>
 
 	<!-- Owl Carusel JavaScript -->
-	<script src="owlcarousel/owl.carousel.js"></script>
+	<script src="template/owlcarousel/owl.carousel.js"></script>
 	<script>
 	$(document).ready(function() {
 	  $("#owl-slide").owlCarousel({
@@ -477,9 +480,11 @@ include 'templates/menu.php';
 	  });
 	});
 	</script>
-	<script type="text/javascript" src="js/validator.min.js"></script>
-	<script type="text/javascript" src="js/form-scripts.js"></script>
-	<script type="text/javascript" src="js/callback.js"></script>
+
+	<script type="text/javascript" src="template/js/validator.min.js"></script>
+	<script type="text/javascript" src="template/js/form-scripts.js"></script>
+	<script type="text/javascript" src="template/js/callback.js"></script>
+	<script type="text/javascript" src="template/js/blog.js"></script>
 
 </div>
 </body></html>

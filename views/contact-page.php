@@ -2,7 +2,8 @@
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en"> <!--<![endif]-->
 <head>
 
     <!-- Basic Page Needs
@@ -18,21 +19,21 @@
 
 
 	<!-- Owl Carousel Assets -->
-    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="template/owlcarousel/assets/owl.carousel.min.css">
     <!-- CSS
   ================================================== -->
-  	<link rel="stylesheet" href="css/zerogrid.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/menu.css">
+  	<link rel="stylesheet" href="template/css/zerogrid.css">
+	<link rel="stylesheet" href="template/css/style.css">
+	<link rel="stylesheet" href="template/css/menu.css">
 
-	<link rel="stylesheet" href="css/pulse.css">
-	<link rel="stylesheet" href="css/modal.css">
+	<link rel="stylesheet" href="template/css/pulse.css">
+	<link rel="stylesheet" href="template/css/modal.css">
 
 	<!-- Custom Fonts -->
 	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-	<script src="js/jquery.min.js"></script>
-	<script src="js/script.js"></script>
+	<script src="template/js/jquery.min.js"></script>
+	<script src="template/js/script.js"></script>
 
 	<!--[if lt IE 8]>
        <div style=' clear: both; text-align:center; position: relative;'>
@@ -53,7 +54,7 @@
 <!--////////////////////////////////////Header-->
 <!---Top Menu--->
 <?php
-	include 'templates/menu.php';
+	include 'layouts/menu.php';
  ?>
 
 <header id="header">
@@ -177,22 +178,22 @@
 
 <!--Red Pulse Callback button and hidden modal form-->
 <?php
-	include 'templates/callback_elements.php';
+	include 'layouts/callback_elements.php';
 ?>
 
 <!----End of Callback modal window------------------------->
 <!--////////////////////////////////////Footer-->
 <?php
- 	include 'templates/footer.php';
+ 	include 'layouts/footer.php';
 	?>
 
 	<!-- Google Map -->
-	<script src="js/google-map.js"></script>
+	<script src="template/js/google-map.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6hLiLmxnIiaGZKY3plTi4hrsPkSnVQvY&callback=initMap" async defer></script>
 
-	<script type="text/javascript" src="js/validator.min.js"></script>
-	<script type="text/javascript" src="js/form-scripts.js"></script>
-	<script type="text/javascript" src="js/callback.js"></script>
+	<script type="text/javascript" src="template/js/validator.min.js"></script>
+	<script type="text/javascript" src="template/js/form-scripts.js"></script>
+	<script type="text/javascript" src="template/js/callback.js"></script>
 
 
 </div>

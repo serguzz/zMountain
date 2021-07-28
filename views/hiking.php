@@ -18,18 +18,18 @@
   ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
- 	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+ 	<link rel="shortcut icon" href="template/images/favicon.png" type="image/x-icon">
 	<!-- Modal windows styles -->
-	<link rel="stylesheet" href="css/modal.css">
+	<link rel="stylesheet" href="template/css/modal.css">
 
 	<!-- Owl Carousel Assets -->
-  <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="template/owlcarousel/assets/owl.carousel.min.css">
   <!-- CSS
   ================================================== -->
-  <link rel="stylesheet" href="css/zerogrid.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/menu.css">
-	<link rel="stylesheet" href="css/pulse.css">
+  <link rel="stylesheet" href="template/css/zerogrid.css">
+	<link rel="stylesheet" href="template/css/style.css">
+	<link rel="stylesheet" href="template/css/menu.css">
+	<link rel="stylesheet" href="template/css/pulse.css">
 
 
 
@@ -37,8 +37,8 @@
 	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 
-	<script src="js/jquery.min.js" type="text/javascript"></script>
-	<script src="js/script.js"></script>
+	<script src="template/js/jquery.min.js" type="text/javascript"></script>
+	<script src="template/js/script.js"></script>
 
 	<!--[if lt IE 8]>
        <div style=' clear: both; text-align:center; position: relative;'>
@@ -70,7 +70,7 @@
 <!-- Модальне вікно замовлення callback  -->
 <div class="modal" id="callback_modal">
 	<div class="modal_content">
-		<button id="callback_modal_closer" class="modal_closer"><img src="./images/close.png" width="35" alt="close"></button>
+		<button id="callback_modal_closer" class="modal_closer"><img src="template/images/close.png" width="35" alt="close"></button>
 
 		<div class="contact">
 			<h3 style="margin: 20px 0 20px 30px">Залиште заявку на дзвінок</h3>
@@ -122,7 +122,7 @@
 
 <!--////////////////////////////////////Header-->
 <?php
-include 'templates/menu.php';
+include 'layouts/menu.php';
  ?>
 <header id="header">
 	<div class="wrap-header" >
@@ -164,7 +164,7 @@ include 'templates/menu.php';
 					<div class="content">
 						<div id="owl-slide" class="owl-carousel">
 							<div class="item">
-								<img src="images/mountains/6.jpg" />
+								<img src="template/images/mountains/6.jpg" />
 								<div class="carousel-caption">
 									<div class="carousel-caption-inner">
 										<p class="carousel-caption-title"><a href="#">Альпи - снігова шапка Європи</a></p>
@@ -175,7 +175,7 @@ include 'templates/menu.php';
 								</div>
 							</div>
 							<div class="item">
-								<img src="images/mountains/4.jpg" />
+								<img src="template/images/mountains/4.jpg" />
 								<div class="carousel-caption">
 									<div class="carousel-caption-inner">
 										<p class="carousel-caption-title"><a href="#">легко в бою</a></p>
@@ -186,7 +186,7 @@ include 'templates/menu.php';
 								</div>
 							</div>
 							<div class="item">
-								<img src="images/mountains/13.jpg" />
+								<img src="template/images/mountains/13.jpg" />
 								<div class="carousel-caption">
 									<div class="carousel-caption-inner">
 										<p class="carousel-caption-title"><a href="#">Одноденні походи</a></p>
@@ -197,7 +197,7 @@ include 'templates/menu.php';
 								</div>
 							</div>
 							<div class="item">
-								<img src="images/mountains/12.jpg" />
+								<img src="template/images/mountains/12.jpg" />
 								<div class="carousel-caption">
 									<div class="carousel-caption-inner">
 										<p class="carousel-caption-title"><a href="#">Карпатські полонини</a></p>
@@ -219,7 +219,7 @@ include 'templates/menu.php';
 		<!-- Модальне вікно загальне  -->
 		<div class="modal" id="hiking_modal">
 			<div class="modal_content">
-				<button id="hiking_modal_closer" class="modal_closer"><img src="./images/close.png" width="35" alt="close"></button>
+				<button id="hiking_modal_closer" class="modal_closer"><img src="template/images/close.png" width="35" alt="close"></button>
 				<!-- Контент модального окна -->
 				<img id="hiking_modal_img" class="hiking_modal_img" src="" alt="Говерла">
 				<h1 id="hiking_modal_title" class="modal_title">Тестовий похід</h1>
@@ -242,7 +242,7 @@ include 'templates/menu.php';
 								<div class="box-entry">
 
 									<div class="box-entry-inner hiking_modal_opener" data-name="hoverla">
-									<img src="images/mountains/hoverla_cut.jpg" class="img-responsive"/>
+									<img src="template/images/mountains/hoverla_cut.jpg" class="img-responsive"/>
 									<div class="entry-details">
 											<div class="entry-des">
 												<span><a href="#">08th Apr 2017</a></span>
@@ -262,7 +262,7 @@ include 'templates/menu.php';
 							<div class="wrap-col">
 								<div class="box-entry">
 									<div class="box-entry-inner hiking_modal_opener" data-name="pipivan">
-										<img src="images/mountains/pipivan.jpg" class="img-responsive"/>
+										<img src="template/images/mountains/pipivan.jpg" class="img-responsive"/>
 										<div class="entry-details">
 											<div class="entry-des">
 												<span><a href="#">08th Apr 2017</a></span>
@@ -279,7 +279,7 @@ include 'templates/menu.php';
 							<div class="wrap-col">
 								<div class="box-entry">
 									<div class="box-entry-inner hiking_modal_opener" data-name="homyak">
-										<img src="images/mountains/homyak_cut.jpg" class="img-responsive"/>
+										<img src="template/images/mountains/homyak_cut.jpg" class="img-responsive"/>
 										<div class="entry-details">
 											<div class="entry-des">
 												<span><a href="#">08th Apr 2017</a></span>
@@ -309,7 +309,7 @@ include 'templates/menu.php';
 					<div class="column sm-1-2">
 						<div class="wrap-col">
 							<div class="img-hover-zoom">
-								<img src="images/mountains/hiking_about_cut.jpg" />
+								<img src="template/images/mountains/hiking_about_cut.jpg" />
 							</div>
 						</div>
 					</div>
@@ -332,13 +332,13 @@ include 'templates/menu.php';
 					<div class="row clearfix">
 						<div class="column md-1-2 sm-1-2 xs-1-2">
 							<div class="img-hover-zoom">
-								<img src="images/mountains/homyak2.png" alt="">
+								<img src="template/images/mountains/homyak2.png" alt="">
 							</div>
 						</div>
 						<div class="column md-1-3 sm-1-2 xs-1-2">
 							<a class="button button-skin button-service" href="tel:+380950137282">Подзвонити</a>
 							<div class="img-hover-zoom">
-								<img src="images/12.jpg" alt="" class="hidden-xs" style="margin: 0 0 0 20px;">
+								<img src="template/images/12.jpg" alt="" class="hidden-xs" style="margin: 0 0 0 20px;">
 							</div>
 						</div>
 					</div>
@@ -359,7 +359,7 @@ include 'templates/menu.php';
 							<div class="wrap-col">
 								<div class="box-entry">
 									<div class="box-entry-inner">
-										<img src="images/2.jpg" class="img-responsive"/>
+										<img src="template/images/2.jpg" class="img-responsive"/>
 										<div class="entry-details">
 											<div class="entry-des">
 												<span><a href="#">08th Apr 2017</a></span>
@@ -375,7 +375,7 @@ include 'templates/menu.php';
 							<div class="wrap-col">
 								<div class="box-entry">
 									<div class="box-entry-inner">
-										<img src="images/3.jpg" class="img-responsive"/>
+										<img src="template/images/3.jpg" class="img-responsive"/>
 										<div class="entry-details">
 											<div class="entry-des">
 												<span><a href="#">08th Apr 2017</a></span>
@@ -391,7 +391,7 @@ include 'templates/menu.php';
 							<div class="wrap-col">
 								<div class="box-entry">
 									<div class="box-entry-inner">
-										<img src="images/4.jpg" class="img-responsive"/>
+										<img src="template/images/4.jpg" class="img-responsive"/>
 										<div class="entry-details">
 											<div class="entry-des">
 												<span><a href="#">08th Apr 2017</a></span>
@@ -415,7 +415,7 @@ include 'templates/menu.php';
 					<div class="">
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
 							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('images/1.jpg')"></div>
+								<div class="portfolio-image" style="background-image: url('template/images/1.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">8</div>
@@ -432,7 +432,7 @@ include 'templates/menu.php';
 						</div>
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
 							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('images/2.jpg')"></div>
+								<div class="portfolio-image" style="background-image: url('template/images/2.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">5</div>
@@ -449,7 +449,7 @@ include 'templates/menu.php';
 						</div>
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
 							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('images/3.jpg')"></div>
+								<div class="portfolio-image" style="background-image: url('template/images/3.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">13</div>
@@ -466,7 +466,7 @@ include 'templates/menu.php';
 						</div>
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
 							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('images/4.jpg')"></div>
+								<div class="portfolio-image" style="background-image: url('template/images/4.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">21</div>
@@ -483,7 +483,7 @@ include 'templates/menu.php';
 						</div>
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
 							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('images/5.jpg')"></div>
+								<div class="portfolio-image" style="background-image: url('template/images/5.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">28</div>
@@ -500,7 +500,7 @@ include 'templates/menu.php';
 						</div>
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
 							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('images/6.jpg')"></div>
+								<div class="portfolio-image" style="background-image: url('template/images/6.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">4</div>
@@ -517,7 +517,7 @@ include 'templates/menu.php';
 						</div>
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
 							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('images/7.jpg')"></div>
+								<div class="portfolio-image" style="background-image: url('template/images/7.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">30</div>
@@ -534,7 +534,7 @@ include 'templates/menu.php';
 						</div>
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
 							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('images/8.jpg')"></div>
+								<div class="portfolio-image" style="background-image: url('template/images/8.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">8</div>
@@ -551,7 +551,7 @@ include 'templates/menu.php';
 						</div>
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
 							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('images/9.jpg')"></div>
+								<div class="portfolio-image" style="background-image: url('template/images/9.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">8</div>
@@ -568,7 +568,7 @@ include 'templates/menu.php';
 						</div>
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
 							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('images/10.jpg')"></div>
+								<div class="portfolio-image" style="background-image: url('template/images/10.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">8</div>
@@ -590,7 +590,7 @@ include 'templates/menu.php';
 
 		<!-------content-box-6--Contact Me Section----------->
 		<?php
- 			include 'templates/contact-me-section.php';
+ 			include 'layouts/contact-me-section.php';
 		?>
 
 	</div>
@@ -599,15 +599,15 @@ include 'templates/menu.php';
 
 <!--////////////////////////////////////Footer-->
 <?php
- 	include 'templates/footer.php';
+ 	include 'layouts/footer.php';
 	?>
 
 	<!-- Google Map -->
-	<script src="js/google-map.js"></script>
+	<script src="template/js/google-map.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7V-mAjEzzmP6PCQda8To0ZW_o3UOCVCE&callback=initMap" async defer></script>
 
 	<!-- Owl Carusel JavaScript -->
-	<script src="owlcarousel/owl.carousel.js"></script>
+	<script src="template/owlcarousel/owl.carousel.js"></script>
 	<script>
 	$(document).ready(function() {
 	  $("#owl-slide").owlCarousel({
@@ -628,11 +628,11 @@ include 'templates/menu.php';
 	});
 	</script>
 
-	<script type="text/javascript" src="js/validator.min.js"></script>
-	<script type="text/javascript" src="js/form-scripts.js"></script>
+	<script type="text/javascript" src="template/js/validator.min.js"></script>
+	<script type="text/javascript" src="template/js/form-scripts.js"></script>
 
-	<script type="text/javascript" src="js/modal.js"></script>
-	<script type="text/javascript" src="js/callback.js"></script>
+	<script type="text/javascript" src="template/js/modal.js"></script>
+	<script type="text/javascript" src="template/js/callback.js"></script>
 
 </div>
 </body>

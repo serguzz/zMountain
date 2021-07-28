@@ -26,7 +26,7 @@ define('ROOT', '..');
      $db = new PDO($dsn, $params['user'], $params['password']);
 
      // Задаем кодировку
-     //$db->exec("set names utf8");
+     $db->exec("set names utf8");
       return $db;
    }
  }
@@ -45,12 +45,16 @@ class Blogpost {
     }
 
     // returns blogposts list of "quantity" from the table "blogposts" starting from "number"
-    public static function blogpostsList($from_number = 0, $quantity = self::SHOW_BY_DEFAULT) {
+    public static function blogpostsList($page = 1, $quantity = self::SHOW_BY_DEFAULT) {
               $quantity = intval($quantity);
+              $page = $_GET["page"];
+              $offset = ($page-1)*$quantity;
+
               $db = Db::getConnection();
               $blogpostsList = array();
               $result = $db->query('SELECT * FROM blogposts '
-                        . 'LIMIT '.$quantity);
+                        . 'LIMIT '.$quantity
+                        . ' OFFSET '.$offset);
               $i = 0;
               while ($row = $result->fetch()) {
                 $blogpostsList[$i]['id'] = $row['id'];
@@ -82,15 +86,6 @@ class Blogpost {
 
       }
 }
-
-
-
-
-$data = [
-  "data" => 1,
-  "blogpost_title" => "Hello I am FIRST title!!",
-  "blogpost_text" => "Hello I am FIRST text!"
-];
 
 $data = Blogpost::blogpostsList();
 

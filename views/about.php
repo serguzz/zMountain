@@ -18,22 +18,22 @@
 
 
 	<!-- Owl Carousel Assets -->
-    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="template/owlcarousel/assets/owl.carousel.min.css">
     <!-- CSS
   ================================================== -->
-  	<link rel="stylesheet" href="css/zerogrid.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/menu.css">
+  	<link rel="stylesheet" href="template/css/zerogrid.css">
+	<link rel="stylesheet" href="template/css/style.css">
+	<link rel="stylesheet" href="template/css/menu.css">
 
-	<link rel="stylesheet" href="css/pulse.css">
-	<link rel="stylesheet" href="css/modal.css">
+	<link rel="stylesheet" href="template/css/pulse.css">
+	<link rel="stylesheet" href="template/css/modal.css">
 
 	<!-- Custom Fonts -->
 	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 
-	<script src="js/jquery.min.js"></script>
-	<script src="js/script.js"></script>
+	<script src="template/js/jquery.min.js"></script>
+	<script src="template/js/script.js"></script>
 
 	<!--[if lt IE 8]>
        <div style=' clear: both; text-align:center; position: relative;'>
@@ -43,8 +43,8 @@
       </div>
     <![endif]-->
     <!--[if lt IE 9]>
-		<script src="js/html5.js"></script>
-		<script src="js/css3-mediaqueries.js"></script>
+		<script src="template/js/html5.js"></script>
+		<script src="template/js/css3-mediaqueries.js"></script>
 	<![endif]-->
 
 </head>
@@ -54,7 +54,7 @@
 <!--////////////////////////////////////Header-->
 <!---Top Menu--->
 <?php
-include 'templates/menu.php';
+include 'layouts/menu.php';
  ?>
 
 <header id="header">
@@ -102,7 +102,7 @@ include 'templates/menu.php';
 								<div class="info">By <a href="#">Danny</a> on April 14, 2017</div>
 							</div>
 							<div class="art-content">
-								<img src="images/single.jpg" />
+								<img src="template/images/single.jpg" />
 								<div class="excerpt"><p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum exercitation ullamco laboris nisi ut aliquip.</p></div>
 								<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
 								<blockquote><p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet vultatup duista.</p></blockquote>
@@ -134,16 +134,16 @@ include 'templates/menu.php';
 
 <!--Red Pulse Callback button and hidden modal form-->
 <?php
-	include 'templates/callback_elements.php';
+	include 'layouts/callback_elements.php';
 ?>
 
 <!----End of Callback modal window------------------------->
 
 <!--////////////////////////////////////Footer-->
-<?php include 'templates/footer.php';
+<?php include 'layouts/footer.php';
 ?>
 
 </div>
 
-	<script type="text/javascript" src="js/callback.js"></script>
+	<script type="text/javascript" src="template/js/callback.js"></script>
 </body></html>
