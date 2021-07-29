@@ -1,9 +1,12 @@
 User-agent: *
 Allow: /
-Disallow: /db
+Disallow: /models
 Disallow: /config
+Disallow: /controllers
+Disallow: /components
+Disallow: /db-api
 Disallow: /db.php
 Allow: /*.css
 Allow: /*.js
-Host: https://travelearth.cu.ma
-Sitemap: https://travelearth.cu.ma/sitemap.xml
+Host: http://travelearth.pp.ua
+Sitemap: https://travelearth.pp.ua/sitemap.xml

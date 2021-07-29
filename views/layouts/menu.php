@@ -2,7 +2,7 @@
 
 <div id="cssmenu" >
 	<ul>
-	   <li class="active"><a href="<?php echo SUBDOMAIN; ?>"><span>TravelEarth</span></a></li>
+	   <li class="active"><a href="<?php echo SUBDOMAIN; ?>/"><span>TravelEarth</span></a></li>
 	   <li class="has-sub"><a href="#"><span>Activities</span></a>
 		  <ul>
 			 <li class="has-sub"><a href="<?php echo SUBDOMAIN; ?>/windsurfing"><span>Віндсерфінг</span></a>

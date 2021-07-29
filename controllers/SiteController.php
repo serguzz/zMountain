@@ -44,5 +44,18 @@ class SiteController {
         return true;
     }
 
+    public function actionConference() {
+        require_once (ROOT.'/portfolio/conference/index.html');
+        return true;
+    }
+    public function actionCalculator() {
+        require_once (ROOT.'/portfolio/calculator/index.html');
+        return true;
+    }
+    public function actionGoogle_maps_api() {
+        require_once (ROOT.'/portfolio/google_maps_api/index.html');
+        return true;
+    }
+
 
 }

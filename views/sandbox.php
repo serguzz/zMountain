@@ -99,7 +99,7 @@ include 'layouts/menu.php';
 								<img src="template/images/portfolio/calculator.jpg" />
 								<div class="carousel-caption">
 									<div class="carousel-caption-inner">
-										<p class="carousel-caption-title"><a href="calculator/">Калькулятор на JavaScript</a></p>
+										<p class="carousel-caption-title"><a href="calculator" target="_blank">Калькулятор на JavaScript</a></p>
 										<p class="carousel-caption-category"><a href="#" rel="category tag">#calculator</a>,
 										<a href="#" rel="category tag">#JS</a>, <a href="#" rel="category tag">#JavaScript</a>
 										</p>
@@ -110,7 +110,7 @@ include 'layouts/menu.php';
 								<img src="template/images/portfolio/google_maps.jpg" />
 								<div class="carousel-caption">
 									<div class="carousel-caption-inner">
-										<p class="carousel-caption-title"><a href="google_maps_api/">Google Maps OpenWeather APIs</a></p>
+										<p class="carousel-caption-title"><a href="google_maps_api" target="_blank">Google Maps OpenWeather APIs</a></p>
 										<p class="carousel-caption-category"><a href="#" rel="category tag">#API</a>,
 										<a href="#" rel="category tag">#GoogleMap</a>, <a href="#" rel="category tag">#OpenWeather</a>
 										</p>
@@ -121,7 +121,7 @@ include 'layouts/menu.php';
 								<img src="template/images/portfolio/conference.jpg" />
 								<div class="carousel-caption">
 									<div class="carousel-caption-inner">
-										<p class="carousel-caption-title"><a href="conference">Conference Web site</a></p>
+										<p class="carousel-caption-title"><a href="conference" target="_blank">Conference Web site</a></p>
 										<p class="carousel-caption-category"><a href="#" rel="category tag">#css</a>,
 										<a href="#" rel="category tag">#styles</a>, <a href="#" rel="category tag">#conference</a>
 										</p>
@@ -132,7 +132,7 @@ include 'layouts/menu.php';
 								<img src="template/images/windsurfing/front_cut.jpg" />
 								<div class="carousel-caption">
 									<div class="carousel-caption-inner">
-										<p class="carousel-caption-title"><a href="https://travelearth.zyrosite.com">TravelEarth на Zyro.com</a></p>
+										<p class="carousel-caption-title"><a href="https://travelearth.zyrosite.com" target="_blank">TravelEarth на Zyro.com</a></p>
 										<p class="carousel-caption-category"><a href="#" rel="category tag">#windsurfing</a>,
 										<a href="#" rel="category tag">#kiteboarding</a>, <a href="#" rel="category tag">#hiking</a>
 										</p>

@@ -2,7 +2,19 @@
 
 class Blog {
 
-    const SHOW_BY_DEFAULT = 10;
+    const SHOW_BY_DEFAULT = 2;
+
+    // returns total products in all procduct table
+    public static function getBlogpostsCount()  {
+        // code...
+        $db = Db::getConnection();
+        $result = $db->query("SELECT count(id) AS count FROM blogposts");
+        $result->setFetchMode(PDO::FETCH_ASSOC);
+        $row = $result->fetch();
+
+        return $row['count'];
+
+    }
 
     public static function getBlogpostById($id) {
         $id = intval($id);
@@ -29,6 +41,7 @@ class Blog {
             $blogposts[$i]['short_content'] = $row['short_content'];
             $blogposts[$i]['content'] = $row['content'];
             $blogposts[$i]['image'] = $row['image'];
+            $blogposts[$i]['created_at'] = $row['created_at'];
             $i++;
         }
 
@@ -36,7 +49,7 @@ class Blog {
     }
 
     // returns blogposts list of "quantity" from the table "blogposts" starting from "number"
-    public static function blogpostsList($page = 1, $quantity = self::SHOW_BY_DEFAULT) {
+    public static function getBlogpostsOnPage($page = 1, $quantity = self::SHOW_BY_DEFAULT) {
 
               $quantity = intval($quantity);
               $offset = ($page-1)*$quantity;
@@ -54,6 +67,7 @@ class Blog {
                 $blogpostsList[$i]['short_content'] = $row['short_content'];
                 $blogpostsList[$i]['content'] = $row['content'];
                 $blogpostsList[$i]['image'] = $row['image'];
+                $blogpostsList[$i]['created_at'] = $row['created_at'];
                 $i++;
               }
               return $blogpostsList;

@@ -1,19 +1,3 @@
-<?php
-
-
-		$db = Db::getConnection();
-
-		$result = $db->query("SELECT count(*) AS count FROM blogposts");
-		$rows = $result->fetch(PDO::FETCH_ASSOC);
-		// print_r( $rows);  // - rows in blogposts table
-
-		const SHOW_BY_DEFAULT = 5;
-
-		$pages_count = ceil($rows['count'] / SHOW_BY_DEFAULT); // кол-во страниц
-		// echo $pages_count;
-
-
- ?>
 <!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -35,22 +19,24 @@
 
     <!-- CSS
   ================================================== -->
-  <link rel="stylesheet" href="template/css/zerogrid.css">
-	<link rel="stylesheet" href="template/css/style.css">
-	<link rel="stylesheet" href="template/css/menu.css">
+  <link rel="stylesheet" href="<?php echo SUBDOMAIN;?>/template/css/zerogrid.css">
+	<link rel="stylesheet" href="<?php echo SUBDOMAIN;?>/template/css/style.css">
+	<link rel="stylesheet" href="<?php echo SUBDOMAIN;?>/template/css/menu.css">
 	<!-- Modal windows styles -->
-	<link rel="stylesheet" href="template/css/modal.css">
+	<link rel="stylesheet" href="<?php echo SUBDOMAIN;?>/template/css/modal.css">
 	<!-- Pulse button styles -->
-	<link rel="stylesheet" href="template/css/pulse.css">
+	<link rel="stylesheet" href="<?php echo SUBDOMAIN;?>/template/css/pulse.css">
 	<!-- Blog  styles -->
-	<link rel="stylesheet" href="template/css/blog.css">
+	<link rel="stylesheet" href="<?php echo SUBDOMAIN;?>/template/css/blog.css">
+
+	<link rel="stylesheet" href="<?php echo SUBDOMAIN;?>/template/css/pagination.css">
 
 	<!-- Custom Fonts -->
-	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo SUBDOMAIN;?>/template/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 
-	<script src="template/js/jquery.min.js" type="text/javascript"></script>
-	<script src="template/js/script.js"></script>
+	<script src="<?php echo SUBDOMAIN;?>/template/js/jquery.min.js" type="text/javascript"></script>
+	<script src="<?php echo SUBDOMAIN;?>/template/js/script.js"></script>
 
 	<!--[if lt IE 8]>
        <div style=' clear: both; text-align:center; position: relative;'>
@@ -113,12 +99,12 @@
 					<div class="blogpost-container">
 						<div class="blogpost-header">
 							<div class="blogpost-cover">
-								<img src="template/images/blog/<?php echo $blogpost["image"];?>">
+								<img src="<?php echo SUBDOMAIN;?>/template/images/blog/<?php echo $blogpost["image"];?>">
 							</div>
 						</div>
 						<div class="blogpost-body">
 							<div class="blogpost-title">
-								<h1><a href="blogpost/<?php echo $blogpost["id"];?>"><?php echo $blogpost["title"];?></a></h1>
+								<h1><a href="<?php echo SUBDOMAIN;?>/blogpost/<?php echo $blogpost["id"];?>"><?php echo $blogpost["title"];?></a></h1>
 							</div>
 							<div class="blogpost-author">
 								<p>by <a href="#"><?php echo $blogpost["author"]; ?> </a></p>
@@ -138,17 +124,20 @@
 
 						<div class="blogpost-footer">
 							<ul>
-								<li class="published-date">4 days ago</li>
+								<li class="published-date"><?php echo $blogpost['created_at'];?></li>
 
 							</ul>
 						</div>
 					</div> <!-- blogpost-container-->
 				<?php endforeach; ?>
 
-		</div> <!--blog-container -->
+				<div class="pagination-container">
+					<?php	echo $pagination->get(); ?>
+				</div>
 
-		<div id="pagination">
-		</div>
+		</div> <!--blog-container -->
+		<!-- Постраничная навигация -->
+
 
 		<!-----------------content-box-4-------------------->
 		<section class="content-box box-4">
@@ -163,7 +152,7 @@
 							<div class="wrap-col">
 								<div class="box-entry">
 									<div class="box-entry-inner">
-										<img src="template/images/2.jpg" class="img-responsive"/>
+										<img src="<?php echo SUBDOMAIN;?>/template/images/2.jpg" class="img-responsive"/>
 										<div class="entry-details">
 											<div class="entry-des">
 												<span><a href="#">08th Apr 2017</a></span>
@@ -179,7 +168,7 @@
 							<div class="wrap-col">
 								<div class="box-entry">
 									<div class="box-entry-inner">
-										<img src="template/images/3.jpg" class="img-responsive"/>
+										<img src="<?php echo SUBDOMAIN;?>/template/images/3.jpg" class="img-responsive"/>
 										<div class="entry-details">
 											<div class="entry-des">
 												<span><a href="#">08th Apr 2017</a></span>
@@ -195,7 +184,7 @@
 							<div class="wrap-col">
 								<div class="box-entry">
 									<div class="box-entry-inner">
-										<img src="template/images/4.jpg" class="img-responsive"/>
+										<img src="<?php echo SUBDOMAIN;?>/template/images/4.jpg" class="img-responsive"/>
 										<div class="entry-details">
 											<div class="entry-des">
 												<span><a href="#">08th Apr 2017</a></span>
@@ -267,7 +256,7 @@
 					<div class="">
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
 							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('template/images/1.jpg')"></div>
+								<div class="portfolio-image" style="background-image: url('<?php echo SUBDOMAIN;?>/template/images/1.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">8</div>
@@ -284,7 +273,7 @@
 						</div>
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
 							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('template/images/2.jpg')"></div>
+								<div class="portfolio-image" style="background-image: url('<?php echo SUBDOMAIN;?>/template/images/2.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">5</div>
@@ -301,7 +290,7 @@
 						</div>
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
 							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('template/images/3.jpg')"></div>
+								<div class="portfolio-image" style="background-image: url('<?php echo SUBDOMAIN;?>/template/images/3.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">13</div>
@@ -318,7 +307,7 @@
 						</div>
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
 							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('template/images/4.jpg')"></div>
+								<div class="portfolio-image" style="background-image: url('<?php echo SUBDOMAIN;?>/template/images/4.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">21</div>
@@ -335,7 +324,7 @@
 						</div>
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
 							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('template/images/5.jpg')"></div>
+								<div class="portfolio-image" style="background-image: url('<?php echo SUBDOMAIN;?>/template/images/5.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">28</div>
@@ -352,7 +341,7 @@
 						</div>
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
 							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('template/images/6.jpg')"></div>
+								<div class="portfolio-image" style="background-image: url('<?php echo SUBDOMAIN;?>/template/images/6.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">4</div>
@@ -369,7 +358,7 @@
 						</div>
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
 							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('template/images/7.jpg')"></div>
+								<div class="portfolio-image" style="background-image: url('<?php echo SUBDOMAIN;?>/template/images/7.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">30</div>
@@ -386,7 +375,7 @@
 						</div>
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
 							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('template/images/8.jpg')"></div>
+								<div class="portfolio-image" style="background-image: url('<?php echo SUBDOMAIN;?>/template/images/8.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">8</div>
@@ -403,7 +392,7 @@
 						</div>
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
 							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('template/images/9.jpg')"></div>
+								<div class="portfolio-image" style="background-image: url('<?php echo SUBDOMAIN;?>/template/images/9.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">8</div>
@@ -420,7 +409,7 @@
 						</div>
 						<div class="column lg-1-5 sm-1-3 xs-1-2 portfolio-box">
 							<a class="" href="single.php">
-								<div class="portfolio-image" style="background-image: url('template/images/10.jpg')"></div>
+								<div class="portfolio-image" style="background-image: url('<?php echo SUBDOMAIN;?>/template/images/10.jpg')"></div>
 								<div class="portfolio-caption">
 									<div class="portfolio-time">
 										<div class="portfolio-day">8</div>
@@ -456,11 +445,11 @@
 
 
 	<!-- Google Map -->
-	<script src="template/js/google-map.js"></script>
+	<script src="<?php echo SUBDOMAIN;?>/template/js/google-map.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6hLiLmxnIiaGZKY3plTi4hrsPkSnVQvY&callback=initMap" async defer></script>
 
 	<!-- Owl Carusel JavaScript -->
-	<script src="template/owlcarousel/owl.carousel.js"></script>
+	<script src="<?php echo SUBDOMAIN;?>/template/owlcarousel/owl.carousel.js"></script>
 	<script>
 	$(document).ready(function() {
 	  $("#owl-slide").owlCarousel({
@@ -481,10 +470,10 @@
 	});
 	</script>
 
-	<script type="text/javascript" src="template/js/validator.min.js"></script>
-	<script type="text/javascript" src="template/js/form-scripts.js"></script>
-	<script type="text/javascript" src="template/js/callback.js"></script>
-	<script type="text/javascript" src="template/js/blog.js"></script>
+	<script type="text/javascript" src="<?php echo SUBDOMAIN;?>/template/js/validator.min.js"></script>
+	<script type="text/javascript" src="<?php echo SUBDOMAIN;?>/template/js/form-scripts.js"></script>
+	<script type="text/javascript" src="<?php echo SUBDOMAIN;?>/template/js/callback.js"></script>
+
 
 </div>
 </body></html>

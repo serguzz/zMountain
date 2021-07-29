@@ -43,7 +43,7 @@ $Body .= "\n";
 
 // send email
 if ($errorMSG == "") {
-  $success = mail($EmailTo, $Subject, $Body, "From: admin@travelearth.cu.ma");
+  $success = mail($EmailTo, $Subject, $Body, "From: office@travelearth.pp.ua");
   if ($success){
      echo "success";
   } else echo "Something went wrong :(";

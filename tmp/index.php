@@ -10,8 +10,8 @@ session_start();
 
 // 2. Подключение файлов системы
 define('ROOT', dirname(__FILE__));
-define('PREFIX','templates/Travelearth_MVC');
-define("SUBDOMAIN", "/templates/Travelearth_MVC");
+define('PREFIX','');
+define("SUBDOMAIN", "http://travelearth.pp.ua");
 require_once(ROOT.'/components/Autoload.php');
 
 // 4. Вызов роутера

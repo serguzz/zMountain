@@ -13,14 +13,15 @@
 	position: absolute;
 	content: '';
 	bottom: 0;
-	left: 0; 
+	left: 0;
 	width: 100%;
 	height: 40px;
 	background: url(../images/sketch-header.png) repeat center bottom;
-	background-size: auto 100%; 
+	background-size: auto 100%;
 	margin-bottom: -20px;
 	visibility: visible;
 }
+
 #cssmenu ul {
   list-style: none;
   margin: 0;
@@ -41,7 +42,15 @@
   padding: 0;
   display: block;
   position: relative;
+  margin-left: 2px;
+  margin-top: 2px;
+  border-radius: 5px;
 }
+
+#cssmenu ul li :hover {
+  border-radius: 5px;
+}
+
 #cssmenu ul li a {
   text-decoration: none;
   display: block;
@@ -55,6 +64,7 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 #cssmenu ul li ul {
   position: absolute;
   left: -9999px;

@@ -51,7 +51,7 @@ function submitForm(){
 
     $.ajax({
         type: "POST",
-        url: "callback.php",
+        url: "\callback.php",
         data: "name=" + name + "&phone_number=" + phone_number + "&message=" + message,
         success : function(text){
             if (text == "success"){

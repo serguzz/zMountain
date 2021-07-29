@@ -88,8 +88,8 @@
 			<div class="row"><!--Start Box-->
 				<div class="crumbs">
 					<ul>
-						<li><a href="index.php">Home</a></li>
-						<li><a href="contact.html">Contact</a></li>
+						<li><a href="<?php echo SUBDOMAIN; ?>">Home</a></li>
+						<li><a href="#">Contact</a></li>
 					</ul>
 				</div>
 				<div id="main-content">

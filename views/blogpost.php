@@ -94,11 +94,14 @@
 				</div>
 				<div class="blogpost-body">
 					<div class="blogpost-title">
-						<h1><a href="#">
-                  <?php echo $blogpost["title"];?>
+						<h1><a href="#"><?php echo $blogpost["title"];?>
                 </a>
             </h1>
 					</div>
+					<div class="blogpost-author">
+						<p>by <a href="#"><?php echo $blogpost["author"]; ?> </a></p>
+					</div>
+
 					<div class="blogpost-text">
 						<p>
               <?php echo $blogpost["content"];?>
@@ -115,7 +118,7 @@
 
 				<div class="blogpost-footer">
 					<ul>
-						<li class="published-date">4 days ago</li>
+						<li class="published-date"><?php echo $blogpost["created_at"];?></li>
 
 					</ul>
 				</div>

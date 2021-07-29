@@ -2,10 +2,15 @@
 
 class BlogController {
 
-    public function actionIndex() {
+    public function actionIndex($page = 1) {
 
-        $blogposts = Blog::getAllBlogposts();
-        
+        $blogposts = array();
+        $blogposts = Blog::getBlogpostsOnPage($page);
+
+        $total = Blog::getBlogpostsCount();
+
+        // Создаем объект Pagination - постраничная навигация
+        $pagination = new Pagination($total, $page, Blog::SHOW_BY_DEFAULT, 'page-');
 
         require_once (ROOT.'/views/blog.php');
         return true;
