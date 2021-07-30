@@ -143,7 +143,7 @@
 		<?php
 		 	include "layouts/newsfeed-section.php"?>
 		?>
-		
+
 		<!-----------------content-box-4.2 - NEW!! made by Serguz-------------------->
 		<section class="content-box box-4">
 			<div class="zerogrid">
@@ -416,7 +416,7 @@
 	<script type="text/javascript" src="<?php echo SUBDOMAIN;?>/template/js/validator.min.js"></script>
 	<script type="text/javascript" src="<?php echo SUBDOMAIN;?>/template/js/form-scripts.js"></script>
 	<script type="text/javascript" src="<?php echo SUBDOMAIN;?>/template/js/callback.js"></script>
-
+	<script type="text/javascript" src="<?php echo SUBDOMAIN;?>/template/js/lang.js"></script>
 
 </div>
 </body></html>

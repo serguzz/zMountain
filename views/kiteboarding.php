@@ -193,7 +193,7 @@ include 'layouts/menu.php';
 		<?php
 		 	include "layouts/newsfeed-section.php"?>
 		?>
-	
+
 
 		<!-----------------content-box-5-------------------->
 		<section class="content-box box-5 boxstyle-1">
@@ -424,6 +424,7 @@ include 'layouts/menu.php';
 	<script type="text/javascript" src="template/js/validator.min.js"></script>
 	<script type="text/javascript" src="template/js/form-scripts.js"></script>
 	<script type="text/javascript" src="template/js/callback.js"></script>
-
+	<script type="text/javascript" src="template/js/lang.js"></script>
+	
 </div>
 </body></html>

@@ -194,7 +194,7 @@
 	<script type="text/javascript" src="template/js/validator.min.js"></script>
 	<script type="text/javascript" src="template/js/form-scripts.js"></script>
 	<script type="text/javascript" src="template/js/callback.js"></script>
-
+	<script type="text/javascript" src="template/js/lang.js"></script>
 
 </div>
 </body></html>

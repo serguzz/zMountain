@@ -263,6 +263,13 @@
   width: 170px;
   display: block;
 }
+
+#lang-menu {
+  align-self: flex-end ;
+  display: inline;
+}
+
+
 @media all and (max-width: 800px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
   #cssmenu > ul {
     max-height: 0;
@@ -394,3 +401,10 @@
     top: 26px;
   }
 }
+
+.select-language-box { display:inline-block; width:50px; height:30px; overflow:visible; border:1px solid white; background:#fff; line-height:30px; position:relative; z-index:1000; margin-top: 7px; margin-left: 50px;}
+.select-language { font-weight: 600;display:inline-block; width:50px; text-align:center;  }
+.select-language-values { border-radius: 4px; visibility: hidden; display:inline-block; width:50px; vertical-align: top; position:absolute; background:rgba(255, 255, 255, 0.70); left:0px; }
+.select-language-values:hover .select-language-val{ position:relative; }
+.select-language-val { width:50px; display:block; margin:0px; padding: 0px 0px; vertical-align:top; cursor:pointer; margin-left:0px; text-align:center; }
+.select-language-val:hover {border-radius: 4px; background:#ed6427;}

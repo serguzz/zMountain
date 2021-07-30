@@ -68,10 +68,6 @@
 	include 'layouts/menu.php';
  ?>
 
-<div id="lang-menu">
-	test
-</div>
-
 <header id="header">
 	<div class="wrap-header" >
 		<!---Main Header--->
@@ -534,6 +530,8 @@
 
 	<script type="text/javascript" src="template/js/callback.js"></script>
 	<script type="text/javascript" src="template/js/parallax.js"></script>
+	<script type="text/javascript" src="template/js/lang.js"></script>
+
 
 </div>
 </body>

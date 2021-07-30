@@ -173,6 +173,6 @@
 	<script type="text/javascript" src="<?php echo SUBDOMAIN;?>/template/js/validator.min.js"></script>
 	<script type="text/javascript" src="<?php echo SUBDOMAIN;?>/template/js/form-scripts.js"></script>
 	<script type="text/javascript" src="<?php echo SUBDOMAIN;?>/template/js/callback.js"></script>
-
+	<script type="text/javascript" src="<?php echo SUBDOMAIN;?>/template/js/lang.js"></script>
 </div>
 </body></html>

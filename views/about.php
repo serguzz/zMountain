@@ -146,4 +146,6 @@ include 'layouts/menu.php';
 </div>
 
 	<script type="text/javascript" src="template/js/callback.js"></script>
+	<script type="text/javascript" src="template/js/lang.js"></script>
+
 </body></html>

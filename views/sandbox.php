@@ -296,7 +296,7 @@ include 'layouts/menu.php';
 		<?php
 		 	include "layouts/newsfeed-section.php"?>
 		?>
-	
+
 		<!-----------------content-box-4.2 - NEW!! made by Serguz-------------------->
 		<section class="content-box box-4">
 			<div class="zerogrid">
@@ -571,6 +571,7 @@ include 'layouts/menu.php';
 
 
 </div>
+	<script type="text/javascript" src="template/js/lang.js"></script>
 	<script type="text/javascript" src="template/js/weather_fetch.js"></script>
 </body>
 </html>
