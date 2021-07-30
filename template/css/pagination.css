@@ -5,13 +5,12 @@
   margin: 60px auto;
   height: 100px;
 }
-.pagination {
 
+.pagination {
   display: block;
   width: auto;
   margin-bottom: 25px;
   margin-top: 0;
-
   padding-left: 15px;
 }
 
@@ -48,7 +47,17 @@
   color:#000;
   border-radius: 3px;
 }
+@media all and (max-width: 500px){
+  .pagination-container {
+    margin: 30px auto;
+    width: 80%;
+  }
+  .pagination  li  a, .pagination  li  span {
+    line-height: 1;
+    padding: 4px 6px;
 
+  }
+}
 .pagination  li  a:hover{
 	background:#ed6427;
 	color:#fff;

@@ -198,7 +198,10 @@ header #logo{}
   .content-box .open_weather_map {padding-bottom: 10px;}
 }
 
-
+@media all and (max-width: 500px){
+  .content-box .header {margin: 4px 0 0px; margin-bottom: 10px;}
+  .content-box .header h2 {font-size: 23px; letter-spacing: 3px;
+  line-height: 33px;margin-bottom: 15px;}
 }
 
 @media all and (max-width: 767px){
