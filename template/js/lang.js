@@ -1,16 +1,14 @@
 
-
    let selectLanguage = document.getElementById('select-language');
    let selectLanguageBox = document.getElementById('select-language-box');
    let selectLanguageValues = document.getElementById('select-language-values');
 
-
    selectLanguageBox.addEventListener("mouseenter", function(event) {
-
-     selectLanguageValues.style.visibility = "visible";
+      selectLanguageValues.style.visibility = "visible";
    });
+
    selectLanguageBox.addEventListener("mouseleave", function(event) {
-     selectLanguageValues.style.visibility = "hidden";
+      selectLanguageValues.style.visibility = "hidden";
    });
 
    selectLanguage.innerText = "UA";

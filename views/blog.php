@@ -94,47 +94,9 @@
 		<!------------content-box-BLog-------------------->
 		<div class="blog-container" id="blog_container">
 
-			<?php foreach ($blogposts as $blogpost): ?>
-
-					<div class="blogpost-container">
-						<div class="blogpost-header">
-							<div class="blogpost-cover">
-								<img src="<?php echo SUBDOMAIN;?>/template/images/blog/<?php echo $blogpost["image"];?>">
-							</div>
-						</div>
-						<div class="blogpost-body">
-							<div class="blogpost-title">
-								<h1><a href="<?php echo SUBDOMAIN;?>/blogpost/<?php echo $blogpost["id"];?>"><?php echo $blogpost["title"];?></a></h1>
-							</div>
-							<div class="blogpost-author">
-								<p>by <a href="#"><?php echo $blogpost["author"]; ?> </a></p>
-							</div>
-							<div class="blogpost-text">
-								<p><?php echo $blogpost["short_content"];?>
-								</p>
-							</div>
-							<div class="blogpost-tags">
-									<li><a href="#">Lorem</a></li>
-									<li><a href="#">dfgfg</a></li>
-									<li><a href="#">nbnnn nnn</a></li>
-									<li><a href="#">dfgfg</a></li>
-									<li><a href="#">dfgfg</a></li>
-							</div>
-						</div>
-
-						<div class="blogpost-footer">
-							<ul>
-								<li class="published-date"><?php echo $blogpost['created_at'];?></li>
-
-							</ul>
-						</div>
-					</div> <!-- blogpost-container-->
-				<?php endforeach; ?>
-
-				<div class="pagination-container">
-					<?php	echo $pagination->get(); ?>
-				</div>
-
+			<?php
+				include "blog-content.php"; //the inner content of the blog feed
+			?>
 		</div> <!--blog-container -->
 		<!-- Постраничная навигация -->
 
@@ -393,24 +355,30 @@
 
 	<!-- Owl Carusel JavaScript -->
 	<script src="<?php echo SUBDOMAIN;?>/template/owlcarousel/owl.carousel.js"></script>
+
 	<script>
-	$(document).ready(function() {
-	  $("#owl-slide").owlCarousel({
-		autoplay:true,
-		autoplayTimeout:3000,
-		loop: true,
-		lazyLoad : true,
-		items: 1,
-		dots: true,
-		stagePadding: 300,
-		responsive : {
-			0 : {stagePadding: 0},
-			600 : {stagePadding: 100},
-			900 : {stagePadding: 200},
-			1199 : {}
-		},
-	  });
-	});
+		$(document).ready(function() {
+
+			//Pagination code
+			$(document).on("click", ".pagination li a", function(e) {
+					e.preventDefault();
+					//console.log($(this)[0].dataset.page);
+					//console.log($(this)[0].href);
+
+					$.ajax({
+						url: $(this)[0].href + "/content",
+						type: "GET",
+						data: {
+
+						},
+						success: (data) => {
+							history.pushState({}, '', $(this)[0].href);
+							$("#blog_container").html(data);
+
+						},
+					});
+			});
+		});
 	</script>
 
 	<script type="text/javascript" src="<?php echo SUBDOMAIN;?>/template/js/validator.min.js"></script>

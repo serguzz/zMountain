@@ -82,9 +82,9 @@ include 'layouts/menu.php';
 						<div class="bl"></div>
 					</div>
 					<div class="heading-text">
-						<h2>Походи в гори</h2>
-						<p>When you go beyond the boundary</p>
-                       	 <p>  Mountains will support you</p>
+						<h2>Mountaineering</h2>
+						<!--p>When you go beyond the boundary</p>
+                       	 <p>  Mountains will support you</p-->
 					</div>
 				</div>
 			</div>

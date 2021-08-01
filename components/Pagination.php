@@ -125,6 +125,7 @@ class Pagination
             $text = $page;
 
         $currentURI = rtrim($_SERVER['REQUEST_URI'], '/') . '/';
+        $currentURI = preg_replace('~/page-[0-9]+/content~', '', $currentURI);
         $currentURI = preg_replace('~/page-[0-9]+~', '', $currentURI);
         # Формируем HTML код ссылки и возвращаем
         return

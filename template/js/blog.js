@@ -42,10 +42,6 @@ blogContainer = document.getElementById("blog_container");
                 //blogpostCover.style.background = 'url(images/blog/' + blogItem['image'] + ')';
 
               }
-
-
-
-
           })
         .catch((error) => {
               console.error('Error222:', error);

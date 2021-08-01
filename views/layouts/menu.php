@@ -38,9 +38,9 @@
 			 	<span class="select-language-box" id="select-language-box">
 	 			 	<span class="select-language" id="select-language"></span>
 	 		 		<span class="select-language-values" id="select-language-values">
-		 		 		<span class="select-language-val" data-language="ru">RU</span>
+		 		 		<span class="select-language-val" data-language="ua">UA</span>
 		 				<span class="select-language-val" data-language="en">EN</span>
-						<span class="select-language-val" data-language="ua">UA</span>
+						<span class="select-language-val" data-language="ru">RU</span>
 
 	 				</span>
  				</span>

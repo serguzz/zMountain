@@ -104,13 +104,13 @@ hr.line03:after {color: #fff;background-color: #303231;}
 /* ---------------------------------------------------------------------------- */
 html, body {height: 100%;width:100%; padding:0; margin:0;}
 body {background: #fff;color: #3F3F3F;font: 15px/25px Arial;font-family: "Roboto",serif; font-weight: 400;}
-body.index-page .main-header{height: calc(100vh - 50px);}
+/* body.index-page .main-header{height: calc(100vh - 50px);}
 @media screen and (max-width:767px){
 	body.index-page .main-header{height: calc(80vh - 50px);}
 }
 @media screen and (max-width:500px){
-	body.index-page .main-header{height: calc(70vh - 50px);}
-}
+	body.index-page .main-header{height: 50vh;}
+}     */
 body .wrap-body{position: relative;}
 
 /* ---------------------------------------------------------------------------- */
@@ -118,28 +118,32 @@ body .wrap-body{position: relative;}
 /* ---------------------------------------------------------------------------- */
 header#header{text-align: center;width: 100%;z-index: 2;position: relative;overflow: hidden;backface-visibility: hidden;display: block;}
 
-header#header .main-header{background: url(../images/hero.jpg);background-size: cover;overflow: hidden;padding: 120px 0;position: relative}
-header#header .windsurfing-header{background: url(../images/windsurfing/wind_main.jpg);background-size: cover;overflow: hidden;padding: 120px 0;position: relative}
-header#header .kiteboarding-header{background: url(../images/kiteboarding/marmari_kite.jpg);background-size: cover;overflow: hidden;padding: 120px 0;position: relative}
+header#header .main-header{background-position: center;background: url(../images/hero.jpg);background-size: cover;overflow: hidden;padding: 120px 0;position: relative;}
+header#header .windsurfing-header{background-position: top;background: url(../images/windsurfing/wind_main.jpg);background-size: cover;overflow: hidden;padding: 120px 0;position: relative;}
+header#header .kiteboarding-header{background-position:right;background: url(../images/kiteboarding/marmari_kite.jpg);background-size: cover;overflow: hidden;padding: 120px 0;position: relative}
 header#header .hiking-header{background: url(../images/hero.jpg);background-size: cover;overflow: hidden;padding: 120px 0;position: relative}
 header#header .blog-header{background: url(../images/mountains/machu_picchu_wide.jpg);background-size: cover;overflow: hidden;padding: 120px 0;position: relative}
 
 
-header .main-header:before{position: absolute;content: ""; height: 100%; width: 100%;background: rgba(0, 0, 0, .55);top: 0;left: 0;right: 0;bottom: 0;}
+header .main-header:before{position: absolute;content: ""; height: 100%; width: 100%;background: rgba(0, 0, 0, .3);top: 0;left: 0;right: 0;bottom: 0;}
 header .hiking-header:before{position: absolute;content: ""; height: 100%; width: 100%;background: rgba(0, 0, 0, .25);top: 0;left: 0;right: 0;bottom: 0;}
 
-header .heading-text h2{font-family: 'Lobster', cursive;font-size: 55px;color: #fff; font-weight: 400;letter-spacing: 5px;margin: 10px 0 20px;}
+header .heading-text h2{font-family: 'Lobster';font-size: 60px;color: #fff; font-weight: 400;letter-spacing: 5px;margin: 10px 0 20px;}
 header .heading-text p{color: #fff; font-size: 25px;font-family: 'Poppins', sans-serif;line-height: 35px;}
 
 header #logo{}
 @media screen and (max-width:767px){
 	header .main-header{padding-top: 50px;}
 	header #logo{margin: 20px 0;}
-	header .heading-text h2{font-size: 55px;letter-spacing: 4px;margin: 20px 0 20px;}
+  header .hero-heading {margin-bottom: 25px;}
+	header .heading-text h2{font-size: 45px;letter-spacing: 4px;margin: 20px 0 20px;}
 	header .heading-text p{font-size: 18px;line-height: 30px;}
 }
 @media screen and (max-width:500px){
-	header .heading-text h2{font-size: 40px;letter-spacing: 3px;margin: 10px 0;}
+  header#header .main-header{padding-top: 110px;}
+  header .hero-heading {margin-bottom: 20px;}
+
+	header .heading-text h2{font-size: 33px;letter-spacing: 3px;margin: 10px 0;}
 	header .heading-text p{font-size: 15px;line-height: 23px;}
 }
 
@@ -208,7 +212,7 @@ header #logo{}
 	.content-box.box-3 .button-service {margin: 50px 0 50px 15px;}
 }
 @media all and (max-width: 500px){
-	.content-box.box-3 .button-service {margin: 15px 0 15px 15px;}
+	.content-box.box-3 .button-service {width: 120px;margin: 15px 0 15px 5px;}
 }
 
 .content-box.box-4 .box-entry {color: #4d4d4d; margin-bottom: 30px;background: #fff;box-shadow: 0 1px 21px rgba(0, 0, 0, 0.19);transition: all 300ms ease 0s;}
@@ -443,17 +447,17 @@ textarea {display:block;width:100%;height:200px;color:#111;border:1px solid #999
 .hero-heading .br,
 .hero-heading .bl {display: block;height: 30px;position: absolute;width: 0;}
 
-.hero-heading .tl {border-right: 2px solid transparent;left: 0;top: -29px;}
-.hero-heading .tr {border-left: 2px solid transparent;right: 0;top: -29px;}
-.hero-heading .br {border-left: 2px solid transparent;bottom: -31px;right: 0;z-index: 100;}
-.hero-heading .bl {border-right: 2px solid transparent;bottom: -31px;left: 0;z-index: 100;}
+.hero-heading .tl {border-right: 5px solid transparent;left: 0;top: -29px;}
+.hero-heading .tr {border-left: 5px solid transparent;right: 0;top: -29px;}
+.hero-heading .br {border-left: 5px solid transparent;bottom: -31px;right: 0;z-index: 100;}
+.hero-heading .bl {border-right: 5px solid transparent;bottom: -31px;left: 0;z-index: 100;}
 .hero-heading::before, .hero-heading::after, .hero-heading .tl, .hero-heading .tr, .hero-heading .br, .hero-heading .bl {border-color: #ed6427;}
 
 
 header .hero-heading{color: #fff;}
 header .hero-heading::before{top: -40px;}
 header .hero-heading::after{bottom: -40px;}
-header .hero-heading > span {font-size: 76px;margin: 10px -17px 0;font-family: 'Poppins', sans-serif; font-weight: 500;transform: scale(1.1, 1.4);}
+header .hero-heading > span {font-size: 90px;margin: 10px -17px 0;font-family: 'Poppins', sans-serif; font-weight: 500;transform: scale(1.1, 1.4);}
 header .hero-heading .tl {top: -40px;height: 25px;}
 header .hero-heading .tr {top: -40px;height: 25px;}
 header .hero-heading .br {bottom: -40px;height: 25px;}
@@ -462,7 +466,7 @@ header .hero-heading .bl {bottom: -40px;height: 25px;}
 @media(max-width:767px) {
     header .hero-heading::before{top: -30px;}
 	header .hero-heading::after{bottom: -25px;}
-	header .hero-heading > span {font-size: 56px;margin: 0 -17px 0;}
+	header .hero-heading > span {font-size: 60px;margin: 0 -17px 0;}
 	header .hero-heading .tl {top: -30px;height: 20px;}
 	header .hero-heading .tr {top: -30px;height: 20px;}
 	header .hero-heading .br {bottom: -25px;height: 20px;}
@@ -472,7 +476,7 @@ header .hero-heading .bl {bottom: -40px;height: 25px;}
 @media(max-width:500px) {
     header .hero-heading::before{top: -20px;}
 	header .hero-heading::after{bottom: -15px;}
-	header .hero-heading > span {font-size: 30px;margin: 0px -15px 0;}
+	header .hero-heading > span {font-size: 45px;margin: 0px -15px 0;}
 	header .hero-heading .tl {top: -20px;height: 15px;}
 	header .hero-heading .tr {top: -20px;height: 15px;}
 	header .hero-heading .br {bottom: -15px;height: 15px;}

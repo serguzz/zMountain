@@ -83,10 +83,10 @@
 					</div>
 					<div class="heading-text">
 						<h2>Inspired by nature</h2>
-						<p>Wherever we travel that brings us telling you stories of onset of wind.</p>
-                       	 <p>  It comes from the sun</p>
-						<a class="button button-skin button-service" href="tel:+380950137282">Подзвонити</a><br>
-					<!--	<button class="call-us-button" href="tel:+380950137282">Call us</button>  -->
+						<!--p><Wherever we travel that brings us telling you stories of onset of wind.</p>
+                       	 <p>  It comes from the sun-></p-->
+					<!--	<a class="button button-skin button-service" href="tel:+380950137282">Подзвонити</a><br>
+						<button class="call-us-button" href="tel:+380950137282">Call us</button>  -->
 					</div>
 				</div>
 			</div>
@@ -218,7 +218,7 @@
 
 		<!-----------------content-box-4-------------------->
 		<?php
-		 	include "layouts/newsfeed-section.php"?>
+		 	include "layouts/newsfeed-section.php";
 		?>
 
 		<!-----------------content-box-4.2 - NEW!! made by Serguz-------------------->

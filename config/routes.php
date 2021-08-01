@@ -8,6 +8,7 @@ return array (
   PREFIX.'/conference' => 'site/conference', //actionConference in SiteController
   PREFIX.'/blogpost/([0-9]+)' => 'blog/showPost/$1', // actionShowPost в BlogController
 
+  PREFIX.'/blog/page-([0-9]+)/content' => 'blog/pageContent/$1', //actionPageContent in BlogController
   PREFIX.'/blog/page-([0-9]+)' => 'blog/index/$1', // actionIndex in BlogController
   PREFIX.'/blog' => 'blog/index', //actionIndex in BlogController
 

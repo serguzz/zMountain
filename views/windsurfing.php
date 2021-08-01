@@ -74,9 +74,8 @@ include 'layouts/menu.php';
 						<div class="bl"></div>
 					</div>
 					<div class="heading-text">
-						<h2>We do Windsurfing</h2>
-						<p>Start following winds, seas, oceans. Become wind dependent</p>
-                       	 <p>  Learn how if feels</p>
+						<h2>Windsurfing</h2>
+						<!--p></p-->
 					</div>
 				</div>
 			</div>
@@ -430,5 +429,5 @@ include 'layouts/menu.php';
 <script type="text/javascript" src="template/js/form-scripts.js"></script>
 <script type="text/javascript" src="template/js/callback.js"></script>
 	<script type="text/javascript" src="template/js/lang.js"></script>
-	
+
 </body></html>
