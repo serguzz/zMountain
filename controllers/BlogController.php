@@ -31,8 +31,23 @@ class BlogController {
     public function actionShowPost($blogpostId) {
 
         $blogpost = Blog::getBlogpostById($blogpostId);
+        $total = Blog::getBlogpostsCount();
+
+        // Создаем объект Pagination - постраничная навигация
+        $pagination = new Pagination($total, $blogpostId, 1, '');
+
         require_once (ROOT.'/views/blogpost.php');
         return true;
     }
 
+    public function actionBlogpostContent($blogpostId) {
+        $blogpost = Blog::getBlogpostById($blogpostId);
+        $total = Blog::getBlogpostsCount();
+
+        // Создаем объект Pagination - постраничная навигация
+        $pagination = new Pagination($total, $blogpostId, 1, '');
+
+        require_once (ROOT.'/views/blogpost-content.php');
+        return true;
+    }
 }

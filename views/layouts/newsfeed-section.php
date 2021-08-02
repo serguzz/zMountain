@@ -54,6 +54,30 @@
             </div>
           </div>
         </div>
+        <?php
+          for ($i=0; $i<3; $i++) {
+        ?>
+          <div class="column sm-1-3">
+            <div class="wrap-col">
+              <div class="box-entry">
+                <div class="box-entry-inner">
+                  <img src="<?php echo SUBDOMAIN;?>/template/images/4.jpg" class="img-responsive"/>
+                  <div class="entry-details">
+                    <div class="entry-des">
+                      <span><a href="#">08th Apr 2017</a></span>
+                      <h3><a href="#">Make Ahead Super Green Vegan Quinoa Sandwich.</a></h3>
+                      <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        <?php
+          }
+        ?>
+
       </div>
     </div>
   </div>

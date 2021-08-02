@@ -294,7 +294,7 @@ include 'layouts/menu.php';
 
 		<!-----------------content-box-4-------------------->
 		<?php
-		 	include "layouts/newsfeed-section.php"?>
+		 	include "layouts/newsfeed-section.php";
 		?>
 
 		<!-----------------content-box-4.2 - NEW!! made by Serguz-------------------->

@@ -6,6 +6,8 @@ return array (
   PREFIX.'/google_maps_api' => 'site/google_maps_api', //actionGoogle_maps_api in SiteController
   PREFIX.'/calculator' => 'site/calculator', //actionCalculator in SiteController
   PREFIX.'/conference' => 'site/conference', //actionConference in SiteController
+
+  PREFIX.'/blogpost/([0-9]+/content)' => 'blog/blogpostContent/$1', // actionBlogpostContent в BlogController
   PREFIX.'/blogpost/([0-9]+)' => 'blog/showPost/$1', // actionShowPost в BlogController
 
   PREFIX.'/blog/page-([0-9]+)/content' => 'blog/pageContent/$1', //actionPageContent in BlogController

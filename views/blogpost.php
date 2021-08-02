@@ -28,6 +28,7 @@
 	<link rel="stylesheet" href="<?php echo SUBDOMAIN;?>/template/css/pulse.css">
 	<!-- Blog  styles -->
 	<link rel="stylesheet" href="<?php echo SUBDOMAIN;?>/template/css/blog.css">
+	<link rel="stylesheet" href="<?php echo SUBDOMAIN;?>/template/css/pagination.css">
 
 	<!-- Custom Fonts -->
 	<link href="<?php echo SUBDOMAIN;?>/template/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -86,44 +87,11 @@
 
 		<!------------content-box-BLog-------------------->
 		<div class="blog-container" id="blog_container">
-			<div class="blogpost-container">
-				<div class="blogpost-header">
-					<div class="blogpost-cover">
-						<img src="<?php echo SUBDOMAIN;?>/template/images/blog/<?php echo $blogpost["image"];?>">
-					</div>
-				</div>
-				<div class="blogpost-body">
-					<div class="blogpost-title">
-						<h1><a href="#"><?php echo $blogpost["title"];?>
-                </a>
-            </h1>
-					</div>
-					<div class="blogpost-author">
-						<p>by <a href="#"><?php echo $blogpost["author"]; ?> </a></p>
-					</div>
-
-					<div class="blogpost-text">
-						<p>
-              <?php echo $blogpost["content"];?>
-            </p>
-					</div>
-					<div class="blogpost-tags">
-							<li><a href="#">Lorem</a></li>
-							<li><a href="#">dfgfg</a></li>
-							<li><a href="#">nbnnn nnn</a></li>
-							<li><a href="#">dfgfg</a></li>
-							<li><a href="#">dfgfg</a></li>
-					</div>
-				</div>
-
-				<div class="blogpost-footer">
-					<ul>
-						<li class="published-date"><?php echo $blogpost["created_at"];?></li>
-
-					</ul>
-				</div>
-			</div> <!-- blogpost-container-->
+			<?php
+			 	include "blogpost-content.php";//content of the blogpost + pagination of blogposts
+			?>
 		</div> <!--blog-container -->
+
 
     <!--Pulse Callback button-and form (hidden)-->
   	<?php
@@ -150,24 +118,30 @@
 
 	<!-- Owl Carusel JavaScript -->
 	<script src="<?php echo SUBDOMAIN;?>/template/owlcarousel/owl.carousel.js"></script>
+
 	<script>
-	$(document).ready(function() {
-	  $("#owl-slide").owlCarousel({
-		autoplay:true,
-		autoplayTimeout:3000,
-		loop: true,
-		lazyLoad : true,
-		items: 1,
-		dots: true,
-		stagePadding: 300,
-		responsive : {
-			0 : {stagePadding: 0},
-			600 : {stagePadding: 100},
-			900 : {stagePadding: 200},
-			1199 : {}
-		},
-	  });
-	});
+		$(document).ready(function() {
+
+			//Pagination code
+			$(document).on("click", ".pagination li a", function(e) {
+					e.preventDefault();
+					//console.log($(this)[0].dataset.page);
+					//console.log($(this)[0].href);
+
+					$.ajax({
+						url: $(this)[0].href + "/content",
+						type: "GET",
+						data: {
+
+						},
+						success: (data) => {
+							history.pushState({}, '', $(this)[0].href);
+							$("#blog_container").html(data);
+
+						},
+					});
+			});
+		});
 	</script>
 
 	<script type="text/javascript" src="<?php echo SUBDOMAIN;?>/template/js/validator.min.js"></script>

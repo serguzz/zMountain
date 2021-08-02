@@ -293,7 +293,7 @@ include 'layouts/menu.php';
 
 		<!-----------------content-box-4-------------------->
 		<?php
-		 	include "layouts/newsfeed-section.php"?>
+		 	include "layouts/newsfeed-section.php";
 		?>
 
 
