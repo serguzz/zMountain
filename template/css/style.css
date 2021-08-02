@@ -120,7 +120,12 @@ header#header{text-align: center;width: 100%;z-index: 2;position: relative;overf
 
 header#header .main-header{background-position: center;background: url(../images/hero.jpg);background-size: cover;overflow: hidden;padding: 120px 0;position: relative;}
 header#header .windsurfing-header{background-position: top;background: url(../images/windsurfing/wind_main.jpg);background-size: cover;overflow: hidden;padding: 120px 0;position: relative;}
-header#header .kiteboarding-header{background-position:right;background: url(../images/kiteboarding/marmari_kite.jpg);background-size: cover;overflow: hidden;padding: 120px 0;position: relative}
+header#header .kiteboarding-header{background-position:left;background: url(../images/kiteboarding/marmari_kite.jpg);background-size: cover;overflow: hidden;padding: 120px 0;position: relative}
+@media screen and (max-width:900px){
+  header#header .kiteboarding-header{background-position:center;background: url(../images/kiteboarding/marmari_kite_cut.jpg);background-size: cover;overflow: hidden;padding: 120px 0;position: relative}
+
+}
+
 header#header .hiking-header{background: url(../images/hero.jpg);background-size: cover;overflow: hidden;padding: 120px 0;position: relative}
 header#header .blog-header{background: url(../images/mountains/machu_picchu_wide.jpg);background-size: cover;overflow: hidden;padding: 120px 0;position: relative}
 

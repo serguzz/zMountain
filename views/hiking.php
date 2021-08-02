@@ -17,7 +17,7 @@
   ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
- 	<link rel="shortcut icon" href="template/images/favicon.png" type="image/x-icon">
+ 	<link rel="shortcut icon" href="template/images/icons/mountain_logo.png" type="image/x-icon">
 	<!-- Modal windows styles -->
 	<link rel="stylesheet" href="template/css/modal.css">
 
@@ -186,7 +186,7 @@ include 'layouts/menu.php';
 									<img src="template/images/mountains/hoverla_cut.jpg" class="img-responsive"/>
 									<div class="entry-details">
 											<div class="entry-des">
-												<span><a href="#">08th Apr 2017</a></span>
+												<span><a href="#">15th Apr 2020</a></span>
 												<h3><a href="#">Похід на Говерлу</a></h3>
 
 													<p>Гове́рла — найвища вершина Українських Карпат і найвища точка України, її висота становить 2 061 м над рівнем моря</p>
@@ -206,7 +206,7 @@ include 'layouts/menu.php';
 										<img src="template/images/mountains/pipivan.jpg" class="img-responsive"/>
 										<div class="entry-details">
 											<div class="entry-des">
-												<span><a href="#">08th Apr 2017</a></span>
+												<span><a href="#">08th May 2021</a></span>
 												<h3><a href="#">Обсерваторія на Піп Іван</a></h3>
 												<p>Піп Іван Чорногірський (2028 м) – третя за висотою вершина Українських Карпат, одна з основних вершин Чорногірського хребта...</p>
 											</div>
@@ -223,7 +223,7 @@ include 'layouts/menu.php';
 										<img src="template/images/mountains/homyak_cut.jpg" class="img-responsive"/>
 										<div class="entry-details">
 											<div class="entry-des">
-												<span><a href="#">08th Apr 2017</a></span>
+												<span><a href="#">25th Jul 2019</a></span>
 												<h3><a href="#">гора Хом'як</a></h3>
 												<p>Гора Хом'як є популярним пунктом у пішохідних маршрутах вихідного дня. З вершини видно сусідні гори і хребти... </p>
 											</div>
@@ -235,6 +235,60 @@ include 'layouts/menu.php';
 
 					</div>
 				</div>
+
+				<div class="row wrap-box"><!--one more row of tours-->
+					<div class="column sm-1-3">
+						<div class="wrap-col">
+							<div class="box-entry">
+								<div class="box-entry-inner hiking_modal_opener" data-name="shpytsi">
+									<img src="template/images/mountains/shpytsi.jpg" class="img-responsive"/>
+									<div class="entry-details">
+										<div class="entry-des">
+											<span><a href="#">25th Jul 2019</a></span>
+											<h3><a href="#">Шпиці</a></h3>
+											<p>Шпи́ці — одна з вершин гірського масиву Чорногора (Українські Карпати). Розташована у Верховинському районі Івано-Франківської області, в межах Карпатського національного природного парку.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="column sm-1-3">
+						<div class="wrap-col">
+							<div class="box-entry">
+								<div class="box-entry-inner hiking_modal_opener" data-name="marmaros">
+									<img src="template/images/mountains/marmaros.jpg" class="img-responsive"/>
+									<div class="entry-details">
+										<div class="entry-des">
+											<span><a href="#">25th Jul 2019</a></span>
+											<h3><a href="#">Піп Іван Мармароський</a></h3>
+											<p>Мармароси - це дивовижне місце, не схоже на жодне інше  в Українських Карпатах. Скелясті стрімкі схили та запаморичливі краєвиди відкриваються під час нашого маршруту...</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="column sm-1-3">
+						<div class="wrap-col">
+							<div class="box-entry">
+								<div class="box-entry-inner hiking_modal_opener" data-name="blyznytsya">
+									<img src="template/images/mountains/blyznytsya_cut.jpg" class="img-responsive"/>
+									<div class="entry-details">
+										<div class="entry-des">
+											<span><a href="#">25th Jul 2019</a></span>
+											<h3><a href="#">Близниці</a></h3>
+											<p>Бли́зниці (Ближниця) — дві гори у східній частині масиву Свидовець (Українські Карпати). Розташовані в межах Рахівського району Закарпатської області, між річками Чорною Тисою і Косівською.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
 			</div>
 		</section>
 
