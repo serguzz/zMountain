@@ -8,15 +8,15 @@
     <!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8">
-	<title>Travelearth - Free Travel Idea</title>
-	<meta name="description" content="Free Travel Idea | travelearth.cu.ma">
+	<title>Travelearth - Free Windsurfing</title>
+	<meta name="description" content="Free Travel Idea | travelearth.pp.ua">
 	<meta name="author" content="serguz">
 
     <!-- Mobile Specific Metas
   ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-
+	<link rel="shortcut icon" href="template/images/favicon.png" type="image/x-icon">
 	<!-- Owl Carousel Assets -->
     <link rel="stylesheet" href="template/owlcarousel/assets/owl.carousel.min.css">
     <!-- CSS

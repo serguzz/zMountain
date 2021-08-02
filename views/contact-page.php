@@ -10,19 +10,17 @@
   ================================================== -->
 	<meta charset="utf-8">
 	<title>Travelearth - Free Travel Idea</title>
-	<meta name="author" content="www.zerotheme.com">
-	<meta name="description" content="Free Travel Idea | TravelEarth.cu.ma">
+	<meta name="author" content="Serguz@ukr.net">
+	<meta name="description" content="Free Travel Idea | TravelEarth.pp.ua">
 
     <!-- Mobile Specific Metas
   ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-
-	<!-- Owl Carousel Assets -->
-    <link rel="stylesheet" href="template/owlcarousel/assets/owl.carousel.min.css">
+	<link rel="shortcut icon" href="template/images/favicon.png" type="image/x-icon">
     <!-- CSS
   ================================================== -->
-  	<link rel="stylesheet" href="template/css/zerogrid.css">
+	<link rel="stylesheet" href="template/css/zerogrid.css">
 	<link rel="stylesheet" href="template/css/style.css">
 	<link rel="stylesheet" href="template/css/menu.css">
 

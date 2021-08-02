@@ -157,7 +157,7 @@ header #logo{}
 
 /* ---content-box--- */
 .content-box {}
-.content-box .wrap-box {padding:50px 10px; position: relative;}
+.content-box .wrap-box {padding:20px 10px; position: relative;}
 
 @media all and (max-width: 767px){
   .content-box .wrap-box {padding:20px 10px; position: relative;}

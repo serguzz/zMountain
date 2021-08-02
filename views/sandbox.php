@@ -16,7 +16,7 @@
   ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-
+	<link rel="shortcut icon" href="template/images/favicon.png" type="image/x-icon">
 	<!-- Owl Carousel Assets -->
     <link rel="stylesheet" href="template/owlcarousel/assets/owl.carousel.min.css">
     <!-- CSS
@@ -99,7 +99,7 @@ include 'layouts/menu.php';
 								<img src="template/images/portfolio/calculator.jpg" />
 								<div class="carousel-caption">
 									<div class="carousel-caption-inner">
-										<p class="carousel-caption-title"><a href="calculator" target="_blank">Калькулятор на JavaScript</a></p>
+										<p class="carousel-caption-title"><a href="portfolio/calculator" target="_blank">Калькулятор на JavaScript</a></p>
 										<p class="carousel-caption-category"><a href="#" rel="category tag">#calculator</a>,
 										<a href="#" rel="category tag">#JS</a>, <a href="#" rel="category tag">#JavaScript</a>
 										</p>
@@ -110,7 +110,7 @@ include 'layouts/menu.php';
 								<img src="template/images/portfolio/google_maps.jpg" />
 								<div class="carousel-caption">
 									<div class="carousel-caption-inner">
-										<p class="carousel-caption-title"><a href="google_maps_api" target="_blank">Google Maps OpenWeather APIs</a></p>
+										<p class="carousel-caption-title"><a href="portfolio/google_maps_api" target="_blank">Google Maps OpenWeather APIs</a></p>
 										<p class="carousel-caption-category"><a href="#" rel="category tag">#API</a>,
 										<a href="#" rel="category tag">#GoogleMap</a>, <a href="#" rel="category tag">#OpenWeather</a>
 										</p>
@@ -121,7 +121,7 @@ include 'layouts/menu.php';
 								<img src="template/images/portfolio/conference.jpg" />
 								<div class="carousel-caption">
 									<div class="carousel-caption-inner">
-										<p class="carousel-caption-title"><a href="conference" target="_blank">Conference Web site</a></p>
+										<p class="carousel-caption-title"><a href="portfolio/conference" target="_blank">Conference Web site</a></p>
 										<p class="carousel-caption-category"><a href="#" rel="category tag">#css</a>,
 										<a href="#" rel="category tag">#styles</a>, <a href="#" rel="category tag">#conference</a>
 										</p>

@@ -16,12 +16,10 @@
   ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-
-	<!-- Owl Carousel Assets -->
-    <link rel="stylesheet" href="template/owlcarousel/assets/owl.carousel.min.css">
-    <!-- CSS
+	<link rel="shortcut icon" href="template/images/favicon.png" type="image/x-icon">
+	<!-- CSS
   ================================================== -->
-  	<link rel="stylesheet" href="template/css/zerogrid.css">
+	<link rel="stylesheet" href="template/css/zerogrid.css">
 	<link rel="stylesheet" href="template/css/style.css">
 	<link rel="stylesheet" href="template/css/menu.css">
 

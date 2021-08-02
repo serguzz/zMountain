@@ -10,13 +10,14 @@
   ================================================== -->
 	<meta charset="utf-8">
 	<title>Travelearth - Free Travel Blog</title>
-	<meta name="description" content="Free Travel Idea | travelearth.cu.ma">
+	<meta name="description" content="Free Travel Idea | travelearth.pp.ua">
 	<meta name="author" content="serguz">
 
     <!-- Mobile Specific Metas
   ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+	<link rel="shortcut icon" href="<?php echo SUBDOMAIN;?>/template/images/favicon.png" type="image/x-icon">
     <!-- CSS
   ================================================== -->
   <link rel="stylesheet" href="<?php echo SUBDOMAIN;?>/template/css/zerogrid.css">
@@ -110,16 +111,9 @@
 <?php
  	include 'layouts/footer.php';
 	?>
+</div>
 
-
-	<!-- Google Map -->
-	<script src="<?php echo SUBDOMAIN;?>/template/js/google-map.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6hLiLmxnIiaGZKY3plTi4hrsPkSnVQvY&callback=initMap" async defer></script>
-
-	<!-- Owl Carusel JavaScript -->
-	<script src="<?php echo SUBDOMAIN;?>/template/owlcarousel/owl.carousel.js"></script>
-
-	<script>
+	<script> //pagination of blogposts with jQuery
 		$(document).ready(function() {
 
 			//Pagination code
@@ -148,5 +142,6 @@
 	<script type="text/javascript" src="<?php echo SUBDOMAIN;?>/template/js/form-scripts.js"></script>
 	<script type="text/javascript" src="<?php echo SUBDOMAIN;?>/template/js/callback.js"></script>
 	<script type="text/javascript" src="<?php echo SUBDOMAIN;?>/template/js/lang.js"></script>
-</div>
-</body></html>
+
+</body>
+</html>

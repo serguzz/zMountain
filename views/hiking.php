@@ -2,17 +2,16 @@
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
-
-
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en"> <!--<![endif]-->
 <head>
 
     <!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8">
-	<title>Travelearth - Free Travel Idea</title>
-	<meta name="description" content="Free Travel Idea | travelearth.cu.ma">
-	<meta name="author" content="serguz">
+	<title>Travelearth - Free Hiking</title>
+	<meta name="description" content="Free Travel Idea | travelearth.pp.ua">
+	<meta name="author" content="serguz@ukr.net">
 
     <!-- Mobile Specific Metas
   ================================================== -->
@@ -31,11 +30,8 @@
 	<link rel="stylesheet" href="template/css/menu.css">
 	<link rel="stylesheet" href="template/css/pulse.css">
 
-
-
 	<!-- Custom Fonts -->
 	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
 
 	<script src="template/js/jquery.min.js" type="text/javascript"></script>
 	<script src="template/js/script.js"></script>
@@ -490,10 +486,7 @@ include 'layouts/menu.php';
 <?php
  	include 'layouts/footer.php';
 	?>
-
-	<!-- Google Map -->
-	<script src="template/js/google-map.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7V-mAjEzzmP6PCQda8To0ZW_o3UOCVCE&callback=initMap" async defer></script>
+</div>
 
 	<!-- Owl Carusel JavaScript -->
 	<script src="template/owlcarousel/owl.carousel.js"></script>
@@ -522,8 +515,7 @@ include 'layouts/menu.php';
 
 	<script type="text/javascript" src="template/js/modal.js"></script>
 	<script type="text/javascript" src="template/js/callback.js"></script>
-
-</div>
 	<script type="text/javascript" src="template/js/lang.js"></script>
+
 </body>
 </html>

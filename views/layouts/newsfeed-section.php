@@ -54,6 +54,12 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+    <!-- one more row -->
+    <?php for ($j=0; $j<1; $j++) {
+    ?>
+      <div class="row wrap-box">
         <?php
           for ($i=0; $i<3; $i++) {
         ?>
@@ -73,12 +79,11 @@
               </div>
             </div>
           </div>
-          
+
         <?php
           }
         ?>
-
-      </div>
-    </div>
+      </div>  <!-- end of a row -->
+    <?php } ?>
   </div>
 </section>

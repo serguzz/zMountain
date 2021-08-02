@@ -480,9 +480,7 @@
  	include 'layouts/footer.php';
 ?>
 
-	<!-- Google Map -->
-	<script src="template/js/google-map.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6hLiLmxnIiaGZKY3plTi4hrsPkSnVQvY&callback=initMap" async defer></script>
+</div>
 
 	<!-- Owl Carusel JavaScript -->
 	<script src="template/owlcarousel/owl.carousel.js"></script>
@@ -532,7 +530,5 @@
 	<script type="text/javascript" src="template/js/parallax.js"></script>
 	<script type="text/javascript" src="template/js/lang.js"></script>
 
-
-</div>
 </body>
 </html>
