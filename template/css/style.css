@@ -128,7 +128,7 @@ header#header .kiteboarding-header{background-position:left;background: url(../i
 
 header#header .hiking-header{background: url(../images/hero.jpg);background-size: cover;overflow: hidden;padding: 120px 0;position: relative}
 header#header .blog-header{background: url(../images/mountains/machu_picchu_wide.jpg);background-size: cover;overflow: hidden;padding: 120px 0;position: relative}
-
+header#header .news-header{background: url(../images/news/header.jpg);background-size: cover;overflow: hidden;padding: 120px 0;position: relative}
 
 header .main-header:before{position: absolute;content: ""; height: 100%; width: 100%;background: rgba(0, 0, 0, .3);top: 0;left: 0;right: 0;bottom: 0;}
 header .hiking-header:before{position: absolute;content: ""; height: 100%; width: 100%;background: rgba(0, 0, 0, .25);top: 0;left: 0;right: 0;bottom: 0;}
@@ -221,7 +221,7 @@ header #logo{}
 }
 
 .content-box.box-4 .box-entry {color: #4d4d4d; margin-bottom: 30px;background: #fff;box-shadow: 0 1px 21px rgba(0, 0, 0, 0.19);transition: all 300ms ease 0s;}
-.content-box.box-4 .box-entry .box-entry-inner{position: relative;z-index: 1;}
+.content-box.box-4 .box-entry .box-entry-inner{cursor: pointer; position: relative;z-index: 1;}
 .content-box.box-4 .box-entry img{border: none; width: 100%;}
 .content-box.box-4 .box-entry .entry-details{}
 .content-box.box-4 .box-entry .entry-des {padding: 0 20px 20px;}

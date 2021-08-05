@@ -9,7 +9,7 @@ class BlogController {
         $total = Blog::getBlogpostsCount();
 
         // Создаем объект Pagination - постраничная навигация
-        $pagination = new Pagination($total, $page, Blog::SHOW_BY_DEFAULT, 'page-');
+        $blogPagination = new Pagination($total, $page, Blog::SHOW_BY_DEFAULT, 'page-');
 
         $newsPage = 1;
         $newsposts = array();
@@ -26,7 +26,7 @@ class BlogController {
       $total = Blog::getBlogpostsCount();
 
       // Создаем объект Pagination - постраничная навигация
-      $pagination = new Pagination($total, $page, Blog::SHOW_BY_DEFAULT, 'page-');
+      $blogPagination = new Pagination($total, $page, Blog::SHOW_BY_DEFAULT, 'page-');
 
       require_once (ROOT.'/views/blog-content.php');
       return true;
@@ -39,7 +39,7 @@ class BlogController {
         $total = Blog::getBlogpostsCount();
 
         // Создаем объект Pagination - постраничная навигация
-        $pagination = new Pagination($total, $blogpostId, 1, '');
+        $blogpostPagination = new Pagination($total, $blogpostId, 1, '');
 
         require_once (ROOT.'/views/blogpost.php');
         return true;
@@ -50,7 +50,7 @@ class BlogController {
         $total = Blog::getBlogpostsCount();
 
         // Создаем объект Pagination - постраничная навигация
-        $pagination = new Pagination($total, $blogpostId, 1, '');
+        $blogpostPagination = new Pagination($total, $blogpostId, 1, '');
 
         require_once (ROOT.'/views/blogpost-content.php');
         return true;

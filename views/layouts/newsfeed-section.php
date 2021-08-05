@@ -66,12 +66,12 @@
             <div class="column sm-1-3">
               <div class="wrap-col">
                 <div class="box-entry">
-                  <div class="box-entry-inner">
+                  <div onclick="location.href='<?php echo SUBDOMAIN;?>/newspost/<?php echo $newspost["id"];?>';" class="box-entry-inner">
                     <img src="<?php echo SUBDOMAIN;?>/template/images/<?php echo ($newspost["image"]) ? "news/".$newspost["image"] : "icons/no_image.png" ;?>" class="img-responsive"/>
                     <div class="entry-details">
                       <div class="entry-des">
                         <span><a href="#"><?php echo date("j F Y", strtotime($newspost["created_at"]));?></a></span>
-                        <h3><a href="#"><?php echo $newspost["title"];?></a></h3>
+                        <h3><a href="<?php echo SUBDOMAIN;?>/newspost/<?php echo $newspost["id"];?>"><?php echo $newspost["title"];?></a></h3>
                         <p><?php echo $newspost["short_content"];?></p>
                       </div>
                     </div>

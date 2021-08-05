@@ -36,5 +36,5 @@
   <?php endforeach; ?>
 
   <div class="pagination-container">
-    <?php	echo $pagination->get(); ?>
+    <?php	echo $blogPagination->get(); ?>
   </div>

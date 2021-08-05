@@ -5,7 +5,7 @@ class News {
     const SHOW_BY_DEFAULT = 6;
 
     // returns total count of news in news table
-    public static function getNewsCount()  {
+    public static function getNewspostsCount()  {
         // code...
         $db = Db::getConnection();
         $result = $db->query("SELECT count(id) AS count FROM news");
