@@ -57,7 +57,7 @@
 }
 .blogpost-title h1 {
   color #333;
-  font-weight: 200;
+  font-weight: 450;
 }
 .blogpost-author a {
   color: #4d4d4d;
@@ -114,9 +114,10 @@
   white-space: nowrap;
 }
 .published-date {
+  font-weight: bold;
   border: 1px solid #999999;
   border-radius: 3px;
-  padding: 0 5px;
+  padding: 0 10px;
   margin-top: 6px;
   margin-bottom: 8px;
 }

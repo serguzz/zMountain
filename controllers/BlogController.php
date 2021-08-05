@@ -11,6 +11,11 @@ class BlogController {
         // Создаем объект Pagination - постраничная навигация
         $pagination = new Pagination($total, $page, Blog::SHOW_BY_DEFAULT, 'page-');
 
+        $newsPage = 1;
+        $newsposts = array();
+        $newsposts = News::getNewspostsOnPage($newsPage);
+        $newspostsCount = count($newsposts);
+
         require_once (ROOT.'/views/blog.php');
         return true;
     }

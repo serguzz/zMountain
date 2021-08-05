@@ -30,7 +30,7 @@
 
   <div class="blogpost-footer">
     <ul>
-      <li class="published-date"><?php echo $blogpost["created_at"];?></li>
+      <li class="published-date"><?php echo date("j F Y", strtotime($blogpost["created_at"])); ?></li>
 
     </ul>
   </div>

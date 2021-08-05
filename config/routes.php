@@ -3,9 +3,12 @@
 // returns array of routes like   urlPath/parameters => controller/method/parameters
 return array (
 
-  PREFIX.'/google_maps_api' => 'site/google_maps_api', //actionGoogle_maps_api in SiteController
+  // These routes are not nesessary as portfolio section likns to
+  // files and the routes are not needed.
+/*  PREFIX.'/google_maps_api' => 'site/google_maps_api', //actionGoogle_maps_api in SiteController
   PREFIX.'/calculator' => 'site/calculator', //actionCalculator in SiteController
   PREFIX.'/conference' => 'site/conference', //actionConference in SiteController
+*/
 
   PREFIX.'/blogpost/([0-9]+/content)' => 'blog/blogpostContent/$1', // actionBlogpostContent в BlogController
   PREFIX.'/blogpost/([0-9]+)' => 'blog/showPost/$1', // actionShowPost в BlogController
