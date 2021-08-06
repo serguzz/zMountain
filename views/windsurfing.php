@@ -26,6 +26,7 @@
 	<link rel="stylesheet" href="template/css/menu.css">
 
 	<!-- Modal windows styles -->
+
 	<link rel="stylesheet" href="template/css/modal.css">
 	<!-- Pulse button styles -->
 	<link rel="stylesheet" href="template/css/pulse.css">
@@ -145,6 +146,25 @@ include 'layouts/menu.php';
 						</div>
 					</div>
 				</div>
+			</div>
+		</section> <!-- End of Carousel section -->
+
+		<!-----------------Services descriptions box. With modal windows.
+		Styled like original content-box-4 (repeated below)------------>
+
+		<section class="content-box box-4">
+			<div class="zerogrid">
+				<div class="row wrap-box"><!--Start Box-->
+					<div class="header">
+						<h2>Віндсерфінг послуги</h2>
+						<p class="intro">Навчання початківців та прогресуючих <br>прокат спорядження для будь-якого рівня підготовки.</p>
+					</div>
+				</div>
+
+					<?php
+						include "layouts/services-content.php";
+					?>
+
 			</div>
 		</section>
 
@@ -428,6 +448,6 @@ include 'layouts/menu.php';
 <script type="text/javascript" src="template/js/validator.min.js"></script>
 <script type="text/javascript" src="template/js/form-scripts.js"></script>
 <script type="text/javascript" src="template/js/callback.js"></script>
-	<script type="text/javascript" src="template/js/lang.js"></script>
+<script type="text/javascript" src="template/js/lang.js"></script>
 
 </body></html>

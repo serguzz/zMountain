@@ -281,7 +281,7 @@ include 'layouts/menu.php';
 				<div class="row wrap-box"><!--Start Box-->
 					<div class="row clearfix">
 						<div class="column md-1-2 sm-1-2 xs-1-2 img-hover-zoom">
-							<img style="border-radius:5px;" src="template/images/mountains/carpath1_cut.jpg" alt="">
+							<img style="border-radius:5px;" src="template/images/hiking/carpath1_cut.jpg" alt="">
 						</div>
 						<div class="column md-1-3 sm-1-2 xs-1-2 img-hover-zoom">
 							<a class="button button-skin button-service" href="tel:+380950137282">Подзвонити</a>
@@ -293,9 +293,7 @@ include 'layouts/menu.php';
 		</section>
 
 		<!-----------------content-box-4-------------------->
-		<?php
-		 	include "layouts/newsfeed-section.php";
-		?>
+
 
 		<!-----------------content-box-4.2 - NEW!! made by Serguz-------------------->
 		<section class="content-box box-4">

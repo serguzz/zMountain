@@ -132,7 +132,7 @@
 								</div>
 							</div>
 							<div class="item">
-								<img src="template/images/mountains/carpath1_cut.jpg" />
+								<img src="template/images/hiking/carpath1_cut.jpg" />
 								<div class="carousel-caption">
 									<div class="carousel-caption-inner">
 										<p class="carousel-caption-title"><a href="hiking">походи в карпати</a></p>
@@ -166,7 +166,7 @@
 			</div>
 
 			<div class="parallax-block">
-				<img src="template/images/mountains/hiking_1.jpg" data-speed="-3" class="img-parallax">
+				<img src="template/images/hiking/hiking_1.jpg" data-speed="-3" class="img-parallax">
 				<h2>Mountaineering</h2>
 				<h3>in Carpathians</h3>
 			</div>
@@ -205,7 +205,7 @@
 				<div class="row wrap-box"><!--Start Box-->
 					<div class="row clearfix">
 						<div class="column md-1-2 sm-1-2 xs-1-2 img-hover-zoom">
-							<img style="border-radius:5px;" src="template/images/mountains/carpath1_cut.jpg" alt="">
+							<img style="border-radius:5px;" src="template/images/hiking/carpath1_cut.jpg" alt="">
 						</div>
 						<div class="column md-1-3 sm-1-2 xs-1-2 img-hover-zoom">
 							<a class="button button-skin button-service" href="tel:+380950137282">Подзвонити</a>

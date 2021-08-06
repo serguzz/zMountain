@@ -10,6 +10,9 @@ return array (
   PREFIX.'/conference' => 'site/conference', //actionConference in SiteController
 */
 
+  PREFIX.'/db-api/services/([0-9]+)' => 'api/getService/$1', // actionGetService в ApiController
+  PREFIX.'/db-api/services' => 'api/getServicesList', // actionGetServicesList в ApiController
+
   PREFIX.'/newspost/([0-9]+/content)' => 'news/newspostContent/$1', // actionNewspostContent в NewsController
   PREFIX.'/newspost/([0-9]+)' => 'news/showPost/$1', // actionShowPost в NewsController
 

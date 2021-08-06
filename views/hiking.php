@@ -104,7 +104,7 @@ include 'layouts/menu.php';
 					<div class="content">
 						<div id="owl-slide" class="owl-carousel">
 							<div class="item">
-								<img src="template/images/mountains/6.jpg" />
+								<img src="template/images/hiking/6.jpg" />
 								<div class="carousel-caption">
 									<div class="carousel-caption-inner">
 										<p class="carousel-caption-title"><a href="#">Альпи - снігова шапка Європи</a></p>
@@ -115,7 +115,7 @@ include 'layouts/menu.php';
 								</div>
 							</div>
 							<div class="item">
-								<img src="template/images/mountains/4.jpg" />
+								<img src="template/images/hiking/4.jpg" />
 								<div class="carousel-caption">
 									<div class="carousel-caption-inner">
 										<p class="carousel-caption-title"><a href="#">легко в бою</a></p>
@@ -126,7 +126,7 @@ include 'layouts/menu.php';
 								</div>
 							</div>
 							<div class="item">
-								<img src="template/images/mountains/13.jpg" />
+								<img src="template/images/hiking/13.jpg" />
 								<div class="carousel-caption">
 									<div class="carousel-caption-inner">
 										<p class="carousel-caption-title"><a href="#">Одноденні походи</a></p>
@@ -137,7 +137,7 @@ include 'layouts/menu.php';
 								</div>
 							</div>
 							<div class="item">
-								<img src="template/images/mountains/12.jpg" />
+								<img src="template/images/hiking/12.jpg" />
 								<div class="carousel-caption">
 									<div class="carousel-caption-inner">
 										<p class="carousel-caption-title"><a href="#">Карпатські полонини</a></p>
@@ -153,21 +153,8 @@ include 'layouts/menu.php';
 
 		</section>
 
-		<!-----------------Tours descriptions box. With modal windows.
+		<!-----------------Services descriptions box. With modal windows.
 		Styled like original content-box-4 (repeated below)------------>
-
-		<!-- Модальне вікно загальне  -->
-		<div class="modal" id="hiking_modal">
-			<div class="modal_content">
-				<button id="hiking_modal_closer" class="modal_closer"><img src="<?php echo SUBDOMAIN;?>/template/images/close.png" width="35" alt="close"></button>
-				<!-- Контент модального окна -->
-				<img id="hiking_modal_img" class="hiking_modal_img" src="" alt="Говерла">
-				<h1 id="hiking_modal_title" class="modal_title">Тестовий похід</h1>
-				<p id="hiking_modal_description" class="modal_description">Тестове описання</p>
-				<a class="button button-skin button-service" href="tel:+380950137282">Хочу в похід</a>
-			</div>
-		</div>
-		<!-- End of Hiking modal window -->
 
 		<section class="content-box box-4">
 			<div class="zerogrid">
@@ -176,122 +163,14 @@ include 'layouts/menu.php';
 						<h2>Маршрути</h2>
 						<p class="intro">На вибір варіанти маршрутів різної складності <br>для будь-якого рівня підготовки.</p>
 					</div>
-
-					<div class="content">
-						<div class="column sm-1-3">
-							<div class="wrap-col">
-								<div class="box-entry">
-
-									<div class="box-entry-inner hiking_modal_opener" data-name="hoverla">
-									<img src="template/images/mountains/hoverla_cut.jpg" class="img-responsive"/>
-									<div class="entry-details">
-											<div class="entry-des">
-												<span><a href="#">15th Apr 2020</a></span>
-												<h3><a href="#">Похід на Говерлу</a></h3>
-
-													<p>Гове́рла — найвища вершина Українських Карпат і найвища точка України, її висота становить 2 061 м над рівнем моря</p>
-
-											</div>
-										</div>
-									</div>
-
-								</div>
-							</div>
-						</div>
-
-						<div class="column sm-1-3">
-							<div class="wrap-col">
-								<div class="box-entry">
-									<div class="box-entry-inner hiking_modal_opener" data-name="pipivan">
-										<img src="template/images/mountains/pipivan.jpg" class="img-responsive"/>
-										<div class="entry-details">
-											<div class="entry-des">
-												<span><a href="#">08th May 2021</a></span>
-												<h3><a href="#">Обсерваторія на Піп Іван</a></h3>
-												<p>Піп Іван Чорногірський (2028 м) – третя за висотою вершина Українських Карпат, одна з основних вершин Чорногірського хребта...</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="column sm-1-3">
-							<div class="wrap-col">
-								<div class="box-entry">
-									<div class="box-entry-inner hiking_modal_opener" data-name="homyak">
-										<img src="template/images/mountains/homyak_cut.jpg" class="img-responsive"/>
-										<div class="entry-details">
-											<div class="entry-des">
-												<span><a href="#">25th Jul 2019</a></span>
-												<h3><a href="#">гора Хом'як</a></h3>
-												<p>Гора Хом'як є популярним пунктом у пішохідних маршрутах вихідного дня. З вершини видно сусідні гори і хребти... </p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-					</div>
 				</div>
 
-				<div class="row wrap-box"><!--one more row of tours-->
-					<div class="column sm-1-3">
-						<div class="wrap-col">
-							<div class="box-entry">
-								<div class="box-entry-inner hiking_modal_opener" data-name="shpytsi">
-									<img src="template/images/mountains/shpytsi.jpg" class="img-responsive"/>
-									<div class="entry-details">
-										<div class="entry-des">
-											<span><a href="#">25th Jul 2019</a></span>
-											<h3><a href="#">Шпиці</a></h3>
-											<p>Шпи́ці — одна з вершин гірського масиву Чорногора (Українські Карпати). Розташована у Верховинському районі Івано-Франківської області, в межах Карпатського національного природного парку.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="column sm-1-3">
-						<div class="wrap-col">
-							<div class="box-entry">
-								<div class="box-entry-inner hiking_modal_opener" data-name="marmaros">
-									<img src="template/images/mountains/marmaros.jpg" class="img-responsive"/>
-									<div class="entry-details">
-										<div class="entry-des">
-											<span><a href="#">25th Jul 2019</a></span>
-											<h3><a href="#">Піп Іван Мармароський</a></h3>
-											<p>Мармароси - це дивовижне місце, не схоже на жодне інше  в Українських Карпатах. Скелясті стрімкі схили та запаморичливі краєвиди відкриваються під час нашого маршруту...</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="column sm-1-3">
-						<div class="wrap-col">
-							<div class="box-entry">
-								<div class="box-entry-inner hiking_modal_opener" data-name="blyznytsya">
-									<img src="template/images/mountains/blyznytsya_cut.jpg" class="img-responsive"/>
-									<div class="entry-details">
-										<div class="entry-des">
-											<span><a href="#">25th Jul 2019</a></span>
-											<h3><a href="#">Близниці</a></h3>
-											<p>Бли́зниці (Ближниця) — дві гори у східній частині масиву Свидовець (Українські Карпати). Розташовані в межах Рахівського району Закарпатської області, між річками Чорною Тисою і Косівською.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+					<?php
+						include "layouts/services-content.php";
+					?>
 
 			</div>
 		</section>
-
 
 		<!-----------------content-box-2-------------------->
 		<section class="content-box box-2">
@@ -304,7 +183,7 @@ include 'layouts/menu.php';
 					<div class="column sm-1-2">
 						<div class="wrap-col">
 							<div class="img-hover-zoom">
-								<img src="template/images/mountains/hiking_about_cut.jpg" />
+								<img src="template/images/hiking/hiking_about_cut.jpg" />
 							</div>
 						</div>
 					</div>
@@ -327,7 +206,7 @@ include 'layouts/menu.php';
 					<div class="row clearfix">
 						<div class="column md-1-2 sm-1-2 xs-1-2">
 							<div class="img-hover-zoom">
-								<img src="template/images/mountains/homyak2.png" alt="">
+								<img src="template/images/hiking/homyak2.png" alt="">
 							</div>
 						</div>
 						<div class="column md-1-3 sm-1-2 xs-1-2">
@@ -567,7 +446,6 @@ include 'layouts/menu.php';
 	<script type="text/javascript" src="template/js/validator.min.js"></script>
 	<script type="text/javascript" src="template/js/form-scripts.js"></script>
 
-	<script type="text/javascript" src="template/js/modal.js"></script>
 	<script type="text/javascript" src="template/js/callback.js"></script>
 	<script type="text/javascript" src="template/js/lang.js"></script>
 

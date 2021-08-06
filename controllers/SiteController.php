@@ -15,17 +15,23 @@ class SiteController {
 
     public function actionWindsurfing() {
 
+        // First we load news from "news" DB table, related to windsurfing
         $page = 1;
         $newsposts = array();
         $newsposts = News::getNewspostsOnPageByTag("windsurfing", $page);
         $newspostsCount = count($newsposts);
 
+        // Second we load services from "services" DB table, related to windsurfing
+        $services = Service::getServicesByTag("windsurfing");
+        $servicesCount = count($services);
+        $servicesRowsCount = ceil($servicesCount/3);
         require_once (ROOT.'/views/windsurfing.php');
         return true;
     }
 
     public function actionKiteboarding() {
 
+      // First we load news from "news" DB table, related to kiteboarding
         $page = 1;
         $newsposts = array();
         $newsposts = News::getNewspostsOnPageByTag("kiteboarding", $page);
@@ -37,10 +43,16 @@ class SiteController {
 
     public function actionHiking() {
 
+        // First we load news from "news" DB table, related to hiking
         $page = 1;
         $newsposts = array();
         $newsposts = News::getNewspostsOnPageByTag("hiking", $page);
         $newspostsCount = count($newsposts);
+
+        // Second we load services from "services" DB table, related to hiking
+        $services = Service::getServicesByTag("hiking");
+        $servicesCount = count($services);
+        $servicesRowsCount = ceil($servicesCount/3);
 
         require_once (ROOT.'/views/hiking.php');
         return true;
