@@ -57,21 +57,20 @@
 </head>
 <body class="index-page">
 
-<?php
-	include 'layouts/callback_elements.php';
-?>
-
 <div class="wrap-body">
 
 <!--////////////////////////////////////Header-->
-<?php
-	include 'layouts/menu.php';
- ?>
+
 
 <header id="header">
+
 	<div class="wrap-header" >
+
 		<!---Main Header--->
 		<div class="main-header">
+			<?php
+				include 'layouts/menu.php';
+			 ?>
 			<div class="zerogrid">
 				<div class="row">
 					<div class="hero-heading">
@@ -293,6 +292,10 @@
 
 		<?php
  			include 'layouts/contact-me-section.php';
+		?>
+
+		<?php
+			include 'layouts/callback_elements.php';
 		?>
 
 	</div>

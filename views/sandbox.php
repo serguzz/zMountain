@@ -28,7 +28,6 @@
 	<!-- Custom Fonts -->
 	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-
 	<script src="template/js/jquery.min.js" type="text/javascript"></script>
 	<script src="template/js/script.js"></script>
 
@@ -49,15 +48,15 @@
 <div class="wrap-body">
 
 <!--////////////////////////////////////Header-->
-<!---Top Menu--->
-<?php
-include 'layouts/menu.php';
- ?>
 
 <header id="header">
 	<div class="wrap-header" >
 		<!---Main Header--->
 		<div class="main-header">
+			<!---Top Menu--->
+			<?php
+			include 'layouts/menu.php';
+			 ?>
 			<div class="zerogrid">
 				<div class="row">
 

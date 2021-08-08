@@ -9,7 +9,7 @@
         <div class="column sm-1-3">
           <div class="wrap-col">
             <div class="box-entry">
-              <div class="box-entry-inner">
+              <div class="box-entry-inner" style="">
                 <img src="<?php echo SUBDOMAIN;?>/template/images/2.jpg" class="img-responsive"/>
                 <div class="entry-details">
                   <div class="entry-des">

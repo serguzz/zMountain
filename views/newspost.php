@@ -62,13 +62,14 @@
 <div class="wrap-body">
 
 <!--////////////////////////////////////Header-->
-<?php
-	include 'layouts/menu.php';
- ?>
 <header id="header">
 	<div class="wrap-header" >
 		<!---Main Header--->
 		<div class="news-header">
+			<!---Top Menu--->
+			<?php
+				include 'layouts/menu.php';
+			 ?>
 			<div class="zerogrid">
 				<div class="row">
 					<div class="hero-heading">

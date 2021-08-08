@@ -57,6 +57,7 @@ class Blog {
               $db = Db::getConnection();
               $blogpostsList = array();
               $result = $db->query('SELECT * FROM blogposts '
+                        . 'ORDER BY id DESC '
                         . 'LIMIT '.$quantity
                         . ' OFFSET '.$offset);
               $i = 0;
