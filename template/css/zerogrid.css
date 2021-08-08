@@ -6,7 +6,7 @@ Version : 3.0
 Author URI: http://www.zerotheme.com/
 */
 /* -------------------------------------------- */
-/* ------------------Grid System--------------- */ 
+/* ------------------Grid System--------------- */
 .zerogrid{position: relative; margin: 0 auto; padding: 0px;}
 .zerogrid:after{ content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
 
@@ -72,7 +72,7 @@ Author URI: http://www.zerotheme.com/
 .offset-xs-5-6{margin-left: 83.33%;}
 
 @media only screen and (min-width: 768px) {
-	
+
     .sm-1-2{width:50%;}
 	.offset-sm-1-2{margin-left: 50%;}
 
@@ -109,7 +109,7 @@ Author URI: http://www.zerotheme.com/
 	.offset-sm-5-6{margin-left: 83.33%;}
 }
 @media only screen and (min-width: 992px) {
-	
+
     .md-1-2{width:50%;}
 	.offset-md-1-2{margin-left: 50%;}
 
@@ -146,7 +146,7 @@ Author URI: http://www.zerotheme.com/
 	.offset-md-5-6{margin-left: 83.33%;}
 }
 @media only screen and (min-width: 1200px) {
-	
+
     .lg-1-2{width:50%;}
 	.offset-lg-1-2{margin-left: 50%;}
 
@@ -182,5 +182,3 @@ Author URI: http://www.zerotheme.com/
 	.offset-lg-4-6{margin-left: 66.66%;}
 	.offset-lg-5-6{margin-left: 83.33%;}
 }
-
-

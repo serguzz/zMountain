@@ -26,7 +26,7 @@
         <div class="column sm-1-3">
           <div class="wrap-col">
             <div class="box-entry">
-              <div class="box-entry-inner services_modal_opener" data-id="<?php echo $service["id"];?>">
+              <div style="border-radius: 10px;" class="box-entry-inner services_modal_opener" data-id="<?php echo $service["id"];?>">
               <img src="template/images/<?php echo $service["tag"];?>/<?php echo $service["front_image"];?>" class="img-responsive"/>
               <div class="entry-details">
                   <div class="entry-des">
