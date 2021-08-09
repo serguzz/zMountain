@@ -5,11 +5,13 @@
 		   <li class="active"><a href="<?php echo SUBDOMAIN; ?>/"><span>TravelEarth</span></a></li>
 		   <li class="has-sub"><a href="#"><span>Activities</span></a>
 			  <ul>
-				 <li class="has-sub"><a href="<?php echo SUBDOMAIN; ?>/windsurfing"><span>Віндсерфінг</span></a>
-					<ul>
+<!-- Temporary hide windsurfing submenu -->
+<!--class="has-sub"--> <li><a href="<?php echo SUBDOMAIN; ?>/windsurfing"><span>Віндсерфінг</span></a>
+<!--			<ul>
 					   <li><a href="#"><span>Навчання</span></a></li>
 					   <li class="last"><a href="#"><span>Прокат</span></a></li>
 					</ul>
+-->
 				 </li>
 				 <li><a href="<?php echo SUBDOMAIN; ?>/kiteboarding"><span>Кайтбординг</span></a>
 				 </li>

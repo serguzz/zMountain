@@ -22,11 +22,12 @@
 	width: 100%;
 	height: 70px;
 	background: url(../images/sketch-header.png) repeat center bottom;
-  opacity: 40%;
+  opacity: 60%;
 	background-size: auto 100%;
 	margin-bottom: 0;
 	visibility: visible;
 }
+
 
 #cssmenu ul {
 
@@ -66,6 +67,7 @@
   text-decoration: none;
   display: block;
   margin: 0;
+  text-align: left;
   -webkit-transition: color .2s ease;
   -moz-transition: color .2s ease;
   -ms-transition: color .2s ease;
@@ -84,15 +86,15 @@
 #cssmenu ul li ul li {
   max-height: 0;
   position: absolute;
+
   -webkit-transition: max-height 0.4s ease-out;
   -moz-transition: max-height 0.4s ease-out;
   -ms-transition: max-height 0.4s ease-out;
   -o-transition: max-height 0.4s ease-out;
-  transition: max-height 0.4s ease-out;
+  transition: max-height .4s ease-out;
 
   background:  rgb(		199,	215,	223, 0.5);
-  border: 1px solid;
-  border-color: rgb(255,255,255,0.5);
+  border: 1px solid rgb(255,255,255,0.5);
 
 }
 #cssmenu ul li ul li.has-sub:after {
@@ -135,21 +137,29 @@
   text-transform: none;
   color: #fff;
   letter-spacing: 0;
-  display: block;
+  display: block
   width: 170px;
-
+  text-align: left;
   padding: 15px 10px 15px 20px;
 }
 #cssmenu ul li ul li:hover > a,
 #cssmenu ul li ul li.active > a {
   color: #111;
+  font-weight: 500;
   background: var(--custom-color);
   border-radius: 5px;
+  transition: background-color 0.3s;
+  transition: color 0.4s;
 
+}
+#cssmenu ul li ul li:after{
+  max-height: 0px;
 }
 #cssmenu ul li ul li:hover:after,
 #cssmenu ul li ul li.active:after {
   background: #1A1C1E;
+  max-height: 200px;
+  transition: max-height 2s;
 }
 #cssmenu ul li ul li:hover > ul {
   left: 100%;
@@ -196,7 +206,7 @@
   z-index: 0;
   background: var(--custom-color);
   border-radius: 5px;
-  -webkit-transition: height .2s;
+  -webkit-transition: height 0.2s;
   -moz-transition: height .2s;
   -ms-transition: height .2s;
   -o-transition: height .2s;
@@ -287,15 +297,22 @@
 
 @media all and (max-width: 750px) {
       #cssmenu {margin-bottom: 70px;}
+      #cssmenu:before{
+        height: 60px;
+      }
 }
 @media all and (max-width: 500px) {
       #cssmenu {margin-bottom: 50px;}
+      #cssmenu:before{
+        height: 50px;
+      }
 }
 
 @media all and (max-width: 800px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
   #cssmenu > ul {
     max-height: 0;
     overflow: hidden;
+    width: 90%;
     -webkit-transition: max-height 0.35s ease-out;
     -moz-transition: max-height 0.35s ease-out;
     -ms-transition: max-height 0.35s ease-out;
@@ -314,18 +331,18 @@
     text-align: left;
   }
   #cssmenu > ul > li > ul > li {
-    width: 100%;
+    width: 98%;
     display: block;
   }
   #cssmenu.align-right ul ul li a {
     text-align: left;
   }
   #cssmenu > ul > li > ul > li > a {
-    width: 100%;
+    width: 90%;
     display: block;
   }
   #cssmenu ul li ul li a {
-    width: 100%;
+    width: 90%;
   }
   #cssmenu.align-center > ul {
     text-align: left;
@@ -336,13 +353,15 @@
   #cssmenu > ul.open {
     max-height: 1000px;
     border-top: 1px solid rgba(110, 110, 110, 0.25);
+
+    transition: max-width 2s;
   }
   #cssmenu ul {
-    width: 100%;
+    width: 70%;
   }
   #cssmenu ul > li {
     float: none;
-    width: 100%;
+    width: 98%;
   }
   #cssmenu ul li a {
     -webkit-box-sizing: border-box;
@@ -393,23 +412,24 @@
     box-sizing: border-box;
     width: 100%;
     padding: 15px 20px;
-    text-transform: uppercase;
+  /*  text-transform: uppercase;*/
     font-weight: 700;
-    font-size: 14px;
+    font-size: 18px;
     letter-spacing: 1px;
     color: #111111;
     cursor: pointer;
-	position: relative
+	  position: relative;
+
   }
   #cssmenu #menu-button:after {
     display: block;
     content: '';
     position: absolute;
-    height: 3px;
-    width: 22px;
+    height: 4px;
+    width: 24px;
     border-top: 2px solid #111111;
     border-bottom: 2px solid #111111;
-    right: 20px;
+    left: 18px;
     top: 16px;
   }
   #cssmenu #menu-button:before {
@@ -417,20 +437,42 @@
     content: '';
     position: absolute;
     height: 3px;
-    width: 22px;
+    width: 24px;
     border-top: 2px solid #111111;
-    right: 20px;
-    top: 26px;
+    left: 18px;
+    top: 28px;
   }
 }
 
 .select-language-box { display:inline-block; width:50px; height:30px; overflow:visible; background:transparent; line-height:30px; position:relative; z-index:1000; margin-top: 7px; margin-left: 50px;}
+.select-language-box:hover .select-language-values .select-language-val{
+  max-height: 100px;
+}
 .select-language { font-weight: 600;display:inline-block; width:50px; text-align:center;  }
 .select-language-values {
+  max-height: 0px;
   border-radius: 4px; visibility: hidden;
   display:inline-block; width:50px; vertical-align: top; top:30px;
-  position:absolute; background:rgb(255,255,255,0.5); left:0px;
-  transition: 0.5;}
-.select-language-values:hover .select-language-val{ position:relative; transition: 0.5; }
-.select-language-val { width:50px; display:block; margin:0; padding: 0px 0px; vertical-align:top; cursor:pointer; margin-left:0px; text-align:center; }
-.select-language-val:hover {border-radius: 4px; border: 1px solid rgb(255,255,255,0.5); background:var(--custom-color);}
+  position:absolute;  left:0px;
+  transition: max-height 1s;}
+.select-language-values:hover .select-language-val{max-height: 100px;position:relative; transition: 0.5; }
+.select-language-val {
+  max-height: 0px;
+  width:50px;
+  display:block;
+  margin:1px 0 0 0;
+  background:rgb(255,255,255,0.5);
+  border: 1px solid rgb(255,255,255,0.6);
+  border-radius: 3px;
+  padding: 0px 0px;
+  vertical-align:top;
+  cursor:pointer;
+  text-align:center;
+  transition: max-height 0.6s;
+
+}
+.select-language-val:hover {
+  font-weight: 600;border-radius: 4px; border: 1px solid rgb(255,255,255,0.5);
+  background:var(--custom-color);
+    transition: background-color 0.4s;
+}

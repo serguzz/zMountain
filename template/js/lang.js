@@ -3,12 +3,22 @@
    let selectLanguageBox = document.getElementById('select-language-box');
    let selectLanguageValues = document.getElementById('select-language-values');
 
+   let selectLanguageValueList = document.getElementsByClassName('select-language-val');
+
+
    selectLanguageBox.addEventListener("mouseenter", function(event) {
       selectLanguageValues.style.visibility = "visible";
+      selectLanguageValues.style.maxHeight = "300px";
+
+      
+
    });
 
    selectLanguageBox.addEventListener("mouseleave", function(event) {
       selectLanguageValues.style.visibility = "hidden";
+      selectLanguageValues.style.maxHeight = "0px";
+
+
    });
 
    selectLanguage.innerText = "UA";
