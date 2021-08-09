@@ -9,8 +9,8 @@
   ================================================== -->
 	<meta charset="utf-8">
 	<title>Sergiy Brovchenko - My Portfolio</title>
-	<meta name="description" content="Free Travel Idea | travelearth.cu.ma">
-	<meta name="author" content="serguz">
+	<meta name="description" content="Free Travel Idea | travelearth.pp.ua">
+	<meta name="author" content="serguz@ukr.net">
 
     <!-- Mobile Specific Metas
   ================================================== -->

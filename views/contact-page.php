@@ -12,6 +12,7 @@
 	<title>Travelearth - Free Travel Idea</title>
 	<meta name="author" content="Serguz@ukr.net">
 	<meta name="description" content="Free Travel Idea | TravelEarth.pp.ua">
+	<meta property="og:image" content="template/images/previews/contact-page.jpg" />
 
     <!-- Mobile Specific Metas
   ================================================== -->

@@ -11,6 +11,7 @@
 	<title>Travelearth - Free Windsurfing</title>
 	<meta name="description" content="Free Travel Idea | travelearth.pp.ua">
 	<meta name="author" content="serguz">
+	<meta property="og:image" content="template/images/windsurfing/sunset_silouette.jpg" />
 
     <!-- Mobile Specific Metas
   ================================================== -->

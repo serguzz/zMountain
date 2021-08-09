@@ -12,6 +12,7 @@
 	<title>Travelearth - Free Hiking</title>
 	<meta name="description" content="Free Travel Idea | travelearth.pp.ua">
 	<meta name="author" content="serguz@ukr.net">
+	<meta property="og:image" content="template/images/kiteboarding/about.jpg" />
 
     <!-- Mobile Specific Metas
   ================================================== -->

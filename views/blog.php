@@ -54,11 +54,6 @@
 </head>
 <body class="index-page">
 
-	<!--Pulse Callback button-and form (hidden)-->
-	<?php
-		include 'layouts/callback_elements.php';
-	?>
-
 <div class="wrap-body">
 <!--////////////////////////////////////Header-->
 
@@ -92,15 +87,25 @@
 <!--////////////////////////////////////Container-->
 <section id="container">
 	<div class="wrap-container">
-		<!------------content-box-1-------------------->
+		<section class="content-box box-1">
+			<div class="">
+				<div class="row wrap-box"><!--Start Box-->
+					<div class="header">
+						<h2>Блог</h2>
+					</div>
 
-		<!------------content-box-BLog-------------------->
-		<div class="blog-container" id="blog_container">
+					<!------------content-box-1-------------------->
 
-			<?php
-				include "blog-content.php"; //the inner content of the blog feed
-			?>
-		</div> <!--blog-container -->
+					<!------------content-box-BLog-------------------->
+					<div class="blog-container" id="blog_container">
+
+						<?php
+							include "blog-content.php"; //the inner content of the blog feed
+						?>
+					</div> <!--blog-container -->
+				</div>
+			</div>
+		</section>
 
 		<!-----------------content-box-4-------------------->
 		<?php
@@ -154,6 +159,11 @@
 			</div>
 		</section>
 
+
+		<!--Pulse Callback button-and form (hidden)-->
+		<?php
+			include 'layouts/callback_elements.php';
+		?>
 
 		<!-----------------content-box-5-------------------->
 
