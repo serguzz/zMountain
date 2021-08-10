@@ -1,0 +1,56 @@
+/* ScrollToTop button */
+.scrollToTop {
+  opacity:0;
+  width:60px;height:60px;
+  position:fixed;bottom:40px;
+  left:48%;z-index:500;
+  transition: all .5s ease-in-out;
+  text-align:center;
+
+  transform: scaleX(1.4);
+  cursor:pointer;
+  border:1px solid transparent;
+  border-radius:4px;
+  background:#555; /* background - цвет кнопки*/
+}
+
+
+.scrollToTop span{line-height: 50px;vertical-align: middle;color:#FFF;}
+.showScrollTop{ font-size:14px;opacity:0.6;}
+.scrollToTop:hover{background-color:#f79008;}
+.scrollToTop:active{background-color:#f70808;}
+
+/* FontAwesome */
+@font-face {
+  font-family:'FontAwesome';
+  src: url('../font-awesome/fonts/fontawesome-webfont-custom-10.ttf?v=fontello') format('truetype');
+  font-weight:normal;
+  font-style:normal;
+}
+.fa-scroll-up{
+
+  vertical-align: middle;
+  font:normal normal normal 14px/1 FontAwesome;
+  font-size:40px;
+  transform: scaleX(1.8);
+  text-rendering:auto;
+
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+.fa-chevron-up:before{content:"\e805";}
+.fa-chevron-up {transform: scaleX(1.5);}
+
+@media all and (max-width: 500px) {
+  .scrollToTop {
+    width:30px;height:30px;
+    position:fixed;bottom:20px;
+    left:45%;z-index:500;
+  }
+  .scrollToTop span{line-height: 25px;}
+  .fa-scroll-up{
+    font-size:20px;
+
+  }
+}

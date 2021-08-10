@@ -242,7 +242,7 @@
 	include 'layouts/footer.php';
 ?>
 
-</div><
+</div>
 
 	<!-- Google Map -->
 	<script src="template/js/google-map.js"></script>

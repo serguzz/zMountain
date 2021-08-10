@@ -227,12 +227,13 @@
 				<div class="row wrap-box"><!--Start Box-->
 					<div class="header">
 						<h2>Instagram Feed</h2>
-						<p class="intro">Follow us on Instagram</p>
-					</div>
-					<div class="content" id="instafeed">
-
 
 					</div>
+
+					<!-- INSTAGRAM  feed from elfsight widgets -->
+					<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+					<div class="elfsight-app-3472638e-c62d-4da0-8663-eac93088a768"></div>
+
 				</div>
 			</div>
 		</section>
@@ -295,13 +296,12 @@
  			include 'layouts/contact-me-section.php';
 		?>
 
-		<?php
-			include 'layouts/callback_elements.php';
-		?>
-
 	</div>
 </section>
 
+<?php
+	include 'layouts/callback_elements.php';
+?>
 
 <!--////////////////////////////////////Footer-->
 <?php

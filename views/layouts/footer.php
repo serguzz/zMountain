@@ -1,3 +1,11 @@
+<!--Scroll To Top-->
+  <link rel="stylesheet" href="<?php echo SUBDOMAIN;?>/template/css/scroll-up.css">
+
+  <a class="scrollToTop" onclick="jQuery('html,body').animate({scrollTop:0}, 'slow');">
+    <span class="fa-scroll-up fa-chevron-up"></span>
+  </a>
+<!--/Scroll To Top-->
+
 <!--////////////////////////////////////Footer-->
 <footer id="footer">
 	<div class="zerogrid wrap-footer">
@@ -47,3 +55,6 @@
 	</div>
 
 </footer>
+
+<!-- script for ScrollUp button----------- -->
+<script src="<?php echo SUBDOMAIN;?>/template/js/scroll-up.js" type="text/javascript"></script>

@@ -86,15 +86,23 @@
 <!--////////////////////////////////////Container-->
 <section id="container">
 	<div class="wrap-container">
-		<!------------content-box-1-------------------->
+		<section class="content-box box-1">
+			<div class="">
+				<div class="row wrap-box"><!--Start Box-->
+					<div class="header">
+						<h2>Блог</h2>
+					</div>
+					<!------------content-box-1-------------------->
 
-		<!------------content-box-BLog-------------------->
-		<div class="blog-container" id="blog_container">
-			<?php
-			 	include "blogpost-content.php";//content of the blogpost + pagination of blogposts
-			?>
-		</div> <!--blog-container -->
-
+					<!------------content-box-BLog-------------------->
+					<div class="blog-container" id="blog_container">
+						<?php
+						 	include "blogpost-content.php";//content of the blogpost + pagination of blogposts
+						?>
+					</div> <!--blog-container -->
+				</div>
+			</div>
+		</section>
 
     <!--Pulse Callback button-and form (hidden)-->
   	<?php
