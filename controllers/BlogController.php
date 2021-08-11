@@ -28,7 +28,7 @@ class BlogController {
       // Создаем объект Pagination - постраничная навигация
       $blogPagination = new Pagination($total, $page, Blog::SHOW_BY_DEFAULT, 'page-');
 
-      require_once (ROOT.'/views/blog-content.php');
+      require_once (ROOT.'/views/layouts/blog-content.php');
       return true;
 
     }
@@ -52,7 +52,7 @@ class BlogController {
         // Создаем объект Pagination - постраничная навигация
         $blogpostPagination = new Pagination($total, $blogpostId, 1, '');
 
-        require_once (ROOT.'/views/blogpost-content.php');
+        require_once (ROOT.'/views/layouts/blogpost-content.php');
         return true;
     }
 }

@@ -9,7 +9,9 @@
 }
 .blogpost-container a:hover {
   border-color: #ff4d4d;
-  color: blue;
+  color: #ff7400;
+  text-shadow: 2px 1px #ff4d4d;
+  transition: all 0.5s;
 }
 .blogpost-cover {
     /* background: url(../images/mountains/machu_picchu_wide.jpg);

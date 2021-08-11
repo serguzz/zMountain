@@ -21,7 +21,7 @@ class NewsController {
         // Создаем объект Pagination - постраничная навигация
         $newspostPagination = new Pagination($total, $newspostId, 1, '');
 
-        require_once (ROOT.'/views/newspost-content.php');
+        require_once (ROOT.'/views/layouts/newspost-content.php');
         return true;
     }
 }

@@ -97,7 +97,7 @@
 					<!------------content-box-BLog-------------------->
 					<div class="blog-container" id="blog_container">
 						<?php
-						 	include "blogpost-content.php";//content of the blogpost + pagination of blogposts
+						 	include "layouts/blogpost-content.php";//content of the blogpost + pagination of blogposts
 						?>
 					</div> <!--blog-container -->
 				</div>

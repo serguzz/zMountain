@@ -14,11 +14,10 @@
   background:#555; /* background - цвет кнопки*/
 }
 
-
 .scrollToTop span{line-height: 50px;vertical-align: middle;color:#FFF;}
 .showScrollTop{ font-size:14px;opacity:0.6;}
-.scrollToTop:hover{background-color:#f79008;}
-.scrollToTop:active{background-color:#f70808;}
+.scrollToTop:hover{background-color:rgb(237, 100, 39);}
+.scrollToTop:active{background-color:rgb(237, 100, 39);}
 
 /* FontAwesome */
 @font-face {
@@ -49,8 +48,7 @@
     left:45%;z-index:500;
   }
   .scrollToTop span{line-height: 25px;}
-  .fa-scroll-up{
+  .fa-scroll-up {
     font-size:20px;
-
   }
 }

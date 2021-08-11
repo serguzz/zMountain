@@ -2,15 +2,16 @@
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en"> <!--<![endif]-->
 <head>
 
     <!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8">
 	<title>Travelearth - Free Windsurfing</title>
-	<meta name="description" content="Free Travel Idea | travelearth.pp.ua">
-	<meta name="author" content="serguz">
+	<meta name="description" content="Free Travel Idea | travelearth.pp.ua"/>
+	<meta name="author" content="serguz"/>
 	<meta property="og:image" content="template/images/windsurfing/sunset_silouette.jpg" />
 
     <!-- Mobile Specific Metas
@@ -246,7 +247,7 @@
 
 	<!-- Google Map -->
 	<script src="template/js/google-map.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7V-mAjEzzmP6PCQda8To0ZW_o3UOCVCE&callback=initMap" async defer></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7V-mAjEzzmP6PCQda8To0ZW_o3UOCVCE&callback=initMap" async defer></script>
 
 	<!-- Owl Carusel JavaScript -->
 	<script src="template/owlcarousel/owl.carousel.js"></script>
@@ -275,4 +276,5 @@
 <script type="text/javascript" src="template/js/callback.js"></script>
 <script type="text/javascript" src="template/js/lang.js"></script>
 
-</body></html>
+</body>
+</html>

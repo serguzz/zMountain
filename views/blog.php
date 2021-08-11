@@ -100,7 +100,7 @@
 					<div class="blog-container" id="blog_container">
 
 						<?php
-							include "blog-content.php"; //the inner content of the blog feed
+							include "layouts/blog-content.php"; //the inner content of the blog feed
 						?>
 					</div> <!--blog-container -->
 				</div>

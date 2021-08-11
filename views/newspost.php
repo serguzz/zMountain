@@ -100,13 +100,21 @@
 		 All the variables refer to News Model and DB table instead of Blog model on Blog pages.
 
 		-->
-		<!------------content-box-Newspost-------------------->
-		<div class="blog-container" id="blog_container">
-			<?php
-			 	include "newspost-content.php";//content of the blogpost + pagination of blogposts
-			?>
-		</div> <!--blog-container -->
-
+		<section class="content-box box-1">
+			<div class="">
+				<div class="row wrap-box"><!--Start Box-->
+					<div class="header">
+						<h2>Новини</h2>
+					</div>
+					<!------------content-box-Newspost-------------------->
+					<div class="blog-container" id="blog_container">
+						<?php
+						 	include "layouts/newspost-content.php";//content of the blogpost + pagination of blogposts
+						?>
+					</div> <!--blog-container -->
+				</div>
+			</div>
+		</section>
 
     <!--Pulse Callback button-and form (hidden)-->
   	<?php

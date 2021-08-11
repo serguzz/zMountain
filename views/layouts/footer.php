@@ -39,7 +39,6 @@
 						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
 						<li><a href="https://www.facebook.com/sergiy.shevchenko.16"><i class="fa fa-facebook"></i></a></li>
 						<li><a href="https://www.instagram.com/s.sergiy/"><i class="fa fa-instagram"></i></a></li>
-
 						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
 						<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
 					</ul>
